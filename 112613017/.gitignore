@@ -1,0 +1,6 @@
+*.pyc
+*.exe
+*.pdf
+*__pycache__*
+*temp*
+
