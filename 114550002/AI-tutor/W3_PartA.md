@@ -1,4 +1,6 @@
-Topic: pytest　　Date: 2026/9/22
+Topic: pytest
+
+Date: 2026/9/22
 
 # ① Check My Understanding
 
@@ -26,9 +28,13 @@ This behavior proves that test_b() has a flaw, but guarantees that test_a() is p
 ## Why?
 
 ■ Ambiguous
+
 ☐ Oversimplified
+
 ☐ Technically questionable
+
 ☐ Too easy
+
 ☐ Other: __________
 
 ## Brief explanation
