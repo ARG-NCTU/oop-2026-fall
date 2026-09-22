@@ -68,6 +68,7 @@ Before asking AI for hints, briefly describe how you planned to solve the proble
 Did you ask the AI Tutor for help?
 
 ■ No — I solved it independently
+
 ☐ Yes — I received one or more hints
 
 ## The most useful hint/question from AI was
