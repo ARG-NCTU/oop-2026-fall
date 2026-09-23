@@ -8,9 +8,9 @@ Answers revised after AI hints: 1 / 5
 
 ② My Misconception
 
-Before: I thought having a base case automatically guaranteed that a recursive function would terminate.
+Before: I thought the phrase “having a base case” already implied that the recursion was properly designed to reach it.
 
-Now: I understand that having a base case is not enough. The recursive steps must also make sure that every valid case can eventually reach the base case.
+Now: I understand that a base case and a recursive step that actually moves toward that base case are two separate requirements.
 
 ③ Challenge the AI
 
