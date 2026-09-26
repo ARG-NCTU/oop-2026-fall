@@ -1,0 +1,29 @@
+Topic: Tuples, Lists, Aliasing, Mutability, and Cloning  Date: 09/12
+Name:徐靖甯
+① Check My Understanding
+Questions completed: 5/ 5
+Answers revised after AI hints:0 / 5
+
+② My Misconception
+Before: I thought…
+I thought that tuples and lists were almost the same, I don't know how to modify or add elements to the two of them.
+Now: I understand…
+I understand that lists are mutable, which means I can change their contents after they are created, while tuples are immutable and cannot be changed. I also learned that aliasing happens when two variables refer to the same object, so changing the object through one variable can also affect the other variable. Cloning is different because it creates a separate copy, so changing one copy will not affect the other.
+③ Challenge the AI
+One AI-generated question I challenged:
+If I clone a list, and then change an inner list inside the clone, will the original list always stay unchanged?
+Why?
+☐ Ambiguous
+■ Oversimplified
+☐ Technically questionable
+☐ Too easy
+☐ Other: __________
+
+Brief explanation:
+I think this question is oversimplified because it depends on how the list is cloned. A shallow copy only creates a new outer list, so the inner lists can still be shared between the original and the clone. Therefore, changing an inner list may also change the original list. A deep copy creates separate inner objects, so the original list will not be affected.
+
+
+④ One-Minute Reflection
+
+One thing I am still unsure about:
+I am still a little confused about why a tuple cannot be changed, but a list inside a tuple can still be modified. I want to understand more clearly how mutability works when different data types are nested together.
