@@ -28,7 +28,7 @@ Why?
 
 Brief explanation:
 
-The wording was unclear because a properly designed recursive function should include both a base case and recursive steps that guarantee the base case can be reached. The question should clearly distinguish between simply having a base case and having a complete recursive design.
+The question was ambiguous because “having a base case” can be interpreted as either simply having a non-recursive branch in the code, or having a properly designed termination condition that every recursive path can reach. The question should state which meaning is intended.
 
 ④ One-Minute Reflection
 
