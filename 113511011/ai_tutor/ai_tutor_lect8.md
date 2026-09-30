@@ -25,7 +25,7 @@ Act as my AI Tutor.
 
 ```
 Topic: Object-Oriented Programming
-Date: 9/26
+Date: 9/30
 
 ========================================
 Part A: True or False
@@ -322,7 +322,7 @@ Finally, ask me to explain:
 
 ```
 Name: 程婕茵
-Date: 9/26
+Date: 9/30
 Topic: Classes, Objects, Methods, and Special Methods
 
 
