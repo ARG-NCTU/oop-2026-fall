@@ -6,7 +6,7 @@ Date: 2026/9/22
 
 Questions completed: 4 / 5
 
-Answers revised after AI hints: 5 / 5
+Answers revised after AI hints: 1 / 5
 
 # ② My Misconception
 
