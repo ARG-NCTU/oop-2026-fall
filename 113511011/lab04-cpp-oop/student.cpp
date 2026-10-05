@@ -41,18 +41,27 @@ double Battery::getLevel() const {
 // 把下面的 MyApp 取消註解，補完三個 ???，再把 make_app() 的 return nullptr 改成 return new MyApp;
 // ====================================================================
 
-// class MyApp : public BaseApp {
-//  public:
-//   std::string Name() const override { return ???; }
-//   bool Iterate() override { ???; return true; }
-//   int Count() const override { return ???; }
-//
-//  private:
-//   int m_count = 0;
-// };
+class MyApp : public BaseApp {
+ public:
+  std::string Name() const override {
+      return "MyApp";
+  }
+
+  bool Iterate() override {
+      m_count++;
+      return true;
+  }
+
+  int Count() const override {
+      return m_count;
+  }
+
+ private:
+  int m_count = 0;
+};
 
 BaseApp *make_app() {
-  return nullptr;  // TODO
+    return new MyApp;
 }
 
 // ====================================================================
