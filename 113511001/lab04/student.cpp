@@ -8,11 +8,13 @@
 // 把 v 夾在 lo 與 hi 之間：v < lo 就變成 lo，v > hi 就變成 hi，其他不動。
 // ====================================================================
 void clamp_value(double &v, double lo, double hi) {
-    if (v < lo) {
-        v = lo;
-    } else if (v > hi) {
-        v = hi;
-    }
+  // 在這裡寫
+  if(v < lo) {
+    v = lo;
+  } else if(v > hi) {
+    v = hi;
+  }
+  return;
 }
 
 // ====================================================================
@@ -21,15 +23,17 @@ void clamp_value(double &v, double lo, double hi) {
 // (b) setLevel：level 不在 0 ~ 100 之間就回傳 false，而且不能改 m_level；
 //               否則設定 m_level 並回傳 true
 // ====================================================================
-Battery::Battery(double level) : m_level(level) {}
+Battery::Battery(double level) : m_level(0) {
+  setLevel(level);
+}
 
 bool Battery::setLevel(double level) {
-    if (level < 0 || level > 100) {
-        return false;
-    }
-
+  // 在這裡寫
+  if(level >= 0 && level <= 100) {
     m_level = level;
     return true;
+  }
+  return false;
 }
 
 double Battery::getLevel() const {
@@ -43,25 +47,16 @@ double Battery::getLevel() const {
 
 class MyApp : public BaseApp {
  public:
-  std::string Name() const override {
-      return "MyApp";
-  }
-
-  bool Iterate() override {
-      m_count++;
-      return true;
-  }
-
-  int Count() const override {
-      return m_count;
-  }
+  std::string Name() const override { return "MyApp"; }
+  bool Iterate() override { m_count++; return true; }
+  int Count() const override { return m_count; }
 
  private:
   int m_count = 0;
 };
 
 BaseApp *make_app() {
-    return new MyApp;
+  return new MyApp;  // TODO
 }
 
 // ====================================================================
@@ -70,14 +65,13 @@ BaseApp *make_app() {
 // free_buffer(p)：釋放 p
 // ====================================================================
 double *make_buffer(int n) {
-    double *p = new double[n];
-
-    for (int i = 0; i < n; i++) {
-        p[i] = i;
-    }
-
-    return p;
+  double *p = new double[n];
+  for(int i = 0; i < n; i++) {
+    p[i] = i;
+  }
+  return p;  // TODO
 }
+
 void free_buffer(double *p) {
-    delete[] p;
+  delete[] p;  // TODO
 }
