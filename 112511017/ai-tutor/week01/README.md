@@ -9,4 +9,4 @@ The Lecture 5 questions and playlist challenge were recovered from the September
 
 The [recovered AI answer key, sample reflection, code, and tests](reference-material/) remain available. The records disclose AI assistance and do not reconstruct an earlier personal hint or revision cycle. First-person reflection text is AI-assisted wording supplied for this response.
 
-Completed response text does not establish completion of the original tutoring workflow or of Weeks 2–4.
+The [weekly index](../README.md) links to Part A and Part B for all four weeks. The written responses do not reconstruct the original tutoring workflow.

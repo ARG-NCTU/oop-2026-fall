@@ -42,7 +42,7 @@ The starter asks for a live TA check of the passing terminal output and a short 
 
 ## AI tutor
 
-[Recovered material and status for Weeks 1–4](ai-tutor/). Week 1 contains completed AI-assisted written responses plus the recovered references. Completed personal records for Weeks 2–4 have not been located.
+[Part A and Part B for Weeks 1–4](ai-tutor/) are complete as AI-assisted written responses. Week 1 keeps its recovered references; Weeks 2–4 contain new responses, challenge implementations, and tests prepared on October 5, 2026. The three new challenges passed 27 tests in total.
 
 [October 5 C++ OOP responses](ai-tutor/2026-10-05/cpp-oop/) contains five explained answers and a completed AI-assisted challenge response. Its delivery-device implementation passed six tests with sanitizers.
 

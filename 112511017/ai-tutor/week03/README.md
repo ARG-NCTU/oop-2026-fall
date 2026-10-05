@@ -1,15 +1,18 @@
-# Week 3 AI tutor status
+# Week 3 AI tutor material
 
-No completed tutor record for this week was located in the files and saved conversations checked on October 5, 2026. This folder records the gap, not a completed submission.
+Topic: MIT OCW Lecture 7, testing, debugging, exceptions, and assertions.
 
-## Part A
+Part A and Part B were prepared with AI assistance on October 5, 2026 at the student's request.
 
-True/False questions, personal answers, revisions after hints, and the learning record have not been located.
+| Part | File | Contents |
+| --- | --- | --- |
+| A: True or False | [Part A responses](part-a.md) | Five explained answers, a misconception reflection, a challenged question with its reason, and a remaining question. |
+| B: Lecture code transfer | [Part B response](part-b.md) | Checked laboratory measurements. Includes the approach, AI help, revision status, verification, correctness argument, complexity, and reflection. |
 
-## Part B
+The [implementation](solution/measurements.py) passed all nine [tests](solution/test_measurements.py), including the three challenge examples and edge cases.
 
-The lecture-code transfer challenge, student solution, hint history, verification, and reflection have not been located.
+These are newly prepared written responses. An earlier tutor session for this week was not recovered. The files disclose AI-supplied answers, code, and reflection wording; no independent student implementation or historical hint and revision cycle is claimed.
 
-Recovered records should be saved as `part-a.md` and `part-b.md` here when their source becomes available. Do not reuse the recovered Week 1 sample or the October 5 drafts as evidence of this week's work.
+The week/topic mapping follows the Lecture 5–8 sequence inferred from saved class-repository material. It has not been confirmed against an official weekly schedule.
 
 [Back to the weekly index](../README.md)
