@@ -7,7 +7,7 @@ AOOP 2026 Fall coursework for [MoobyMoo](https://github.com/MoobyMoo).
 | Material | Folder |
 | --- | --- |
 | Python lab and tests | [Lab 03](labs/lab03-pytest/) |
-| C++ OOP lab | [Lab 04](lab04-cpp-oop/) |
+| C++ OOP lab | [Lab 04](labs/lab04-cpp-oop/) |
 | Weekly tutor material, Part A and Part B | [AI tutor](ai-tutor/) |
 
 Run the Python lab tests from this directory:
@@ -19,12 +19,12 @@ python3 -m pytest labs/lab03-pytest
 ## C++ OOP lab
 
 The slides are labeled Lab 04; the matching starter was downloaded as `W5new.zip`.
-The completed exercises are in [lab04-cpp-oop/](lab04-cpp-oop/). Only `student.cpp` was changed from the instructor's starter.
+The completed exercises are in [labs/lab04-cpp-oop/](labs/lab04-cpp-oop/). Only `student.cpp` was changed from the instructor's starter.
 
 Run the lab from this directory:
 
 ```bash
-cd lab04-cpp-oop
+cd labs/lab04-cpp-oop
 make doctor
 make check
 ```

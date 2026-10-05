@@ -10,7 +10,7 @@ Topic: References, encapsulation, constructors, virtual functions, and dynamic a
 
 Status: AI-generated draft for student review. The suggested answers below are study responses, not a transcript of completed tutoring. Replace the review fields with your actual answers and reflections before submitting this as a completed learning record.
 
-Sources: [Lab 04 code](../../lab04-cpp-oop/student.cpp), [instructor's concept guide](../../lab04-cpp-oop/GUIDE.md), and the AOOP 2026 AI tutor learning-record format.
+Sources: [Lab 04 code](../../labs/lab04-cpp-oop/student.cpp), [instructor's concept guide](../../labs/lab04-cpp-oop/GUIDE.md), and the AOOP 2026 AI tutor learning-record format.
 
 ## Five True/False questions
 
