@@ -21,11 +21,15 @@ void clamp_value(double &v, double lo, double hi) {
 // (b) setLevel：level 不在 0 ~ 100 之間就回傳 false，而且不能改 m_level；
 //               否則設定 m_level 並回傳 true
 // ====================================================================
-Battery::Battery(double level) : m_level(0) {}
+Battery::Battery(double level) : m_level(level) {}
 
 bool Battery::setLevel(double level) {
-  // 在這裡寫
-  return false;
+    if (level < 0 || level > 100) {
+        return false;
+    }
+
+    m_level = level;
+    return true;
 }
 
 double Battery::getLevel() const {
