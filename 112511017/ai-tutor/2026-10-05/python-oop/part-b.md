@@ -10,9 +10,11 @@ Topic: MIT OCW 6.0001 classes, inherited initialization, overridden methods, and
 
 Status: AI-generated transfer challenge and response draft. Confirm the week's lecture assignment and complete the student-response fields during your actual tutoring session.
 
-## 1. Today's challenge
+Format: [Course AI tutor instructions](https://github.com/ARG-NCTU/oop-python-nycu/blob/d4ccf63b9252d0017e84d3bed10628f0f5ea7bc9/ai-tutor-2026.md)
 
-Core ideas from the lecture code: The `Animal` hierarchy reuses common initialization and replaces selected behavior. `Rabbit.tag` assigns an identifier at object creation. Methods such as `__str__` provide an object representation.
+## 1. Today's Challenge
+
+Core concept from today's OCW lecture: The `Animal` hierarchy reuses common initialization and replaces selected behavior. `Rabbit.tag` assigns an identifier at object creation. Methods such as `__str__` provide an object representation.
 
 AI-generated coding challenge title: Shipping quotes with shared tracking numbers
 
@@ -56,7 +58,7 @@ For the examples, each scenario starts with the tracking counter at 1. Within on
 | `[]` | `([], 0)` |
 | `[("E", 1), ("E", 1)]` | `(["001:13", "002:13"], 26)` |
 
-## 2. My initial approach, before AI help
+## 2. My Initial Approach Before AI Help
 
 Before coding, answer:
 
@@ -64,48 +66,64 @@ Before coding, answer:
 2. How will each subclass initialize the common state?
 3. How will the final loop obtain different prices without testing the type of each object?
 
-My initial approach: [write before requesting hints]
+My approach: [not recorded]
 
-## 3. AI tutor help
+Which concept from the lecture code am I applying? [personal response not recorded]
 
-Did I ask for help? [record from the actual interaction]
+## 3. AI Tutor Help
 
-Most useful hint or question: [record if used]
+Did you ask the AI Tutor for help?
 
-What it helped me realize: [describe in your own words]
+- [ ] No, I solved it independently
+- [ ] Yes, I received one or more hints
 
-## 4. My revision
+The most useful hint/question from AI was: [not recorded]
 
-Did I change my approach or code? [record after coding]
+It helped me realize that: [personal response not recorded]
 
-What I changed and why: [describe the actual revision]
+## 4. My Revision
+
+Did you change your approach or code after interacting with AI?
+
+- [ ] No
+- [ ] Yes
+
+What did you change, and why? [not recorded]
 
 ## 5. Verification
 
-The expected outputs were calculated from the rules. No student solution to this challenge has been supplied or tested yet.
+My final program:
 
-- Passed the provided examples: [fill after executing]
-- Passed additional edge cases: [fill after executing]
-- Unresolved problems: [record after testing]
+- [ ] Passed the provided examples
+- [ ] Passed additional edge cases
+- [ ] Still has unresolved problems
 
-Edge case to test: Identical parcel descriptions still produce separate objects and unique tracking numbers.
+No student solution to this challenge has been recorded or tested. Expected outputs follow the stated problem rules. Independent test scenarios start with the tracking counter at 1.
 
-Input: `[("S", 1), ("S", 1)]`
+One edge case I tested: [record the case actually run]
 
-Expected output: `(["001:7", "002:7"], 14)`
+Suggested edge case input:
 
-Actual output: [paste your program's output]
+```text
+[("S", 1), ("S", 1)]
+```
 
-Additional state check: After two objects are created, verify that the first object's stored tracking number remains 1. Then create a third object and verify that it receives 3.
+Expected output:
 
-## 6. One-minute reflection
+```text
+(["001:7", "002:7"], 14)
+```
 
-Suggested transfer explanation: I can reuse initialization through a base class and give each subclass its own `quote` implementation. The processing loop uses the common method. A shared counter creates identifiers, while each object stores its own assigned identifier.
+Actual output: [not recorded]
 
-Why my solution works: [explain after implementation]
+## 6. One-Minute Reflection
 
-Time complexity: [justify in terms of the number of descriptions]
+What idea from the OCW lecture did you transfer to this new problem? [personal response not recorded]
 
-One thing I understand better now: [write your own reflection]
+Why my solution works: [explain after writing and testing your solution]
 
-One thing I am still unsure about: [write your own remaining question]
+Time complexity: [state and justify after implementation]
+
+One thing I understand better now: [personal response not recorded]
+
+One thing I am still unsure about: [personal response not recorded]

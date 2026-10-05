@@ -1,4 +1,4 @@
-# AI tutor learning record: Python classes and inheritance, Part A
+# AI Tutor Learning Record: Part A
 
 Name: Yu-Liang Tan / 譚羽良
 
@@ -8,84 +8,104 @@ Date: 2026-10-05
 
 Topic: MIT OCW 6.0001, Lecture 8 object-oriented programming and Lecture 9 Python classes and inheritance
 
-Status: AI-generated study and response draft. The exact lecture assignment for this week has not yet been confirmed. Suggested answers are not a record of the student's answers, hints, or revisions.
+Status: Incomplete study draft. The exact OCW lecture assignment still needs confirmation. Personal answers, tutor hints, revisions, and reflections must be recorded from an actual session.
 
-## Sources
+Format: [Course AI tutor instructions](https://github.com/ARG-NCTU/oop-python-nycu/blob/d4ccf63b9252d0017e84d3bed10628f0f5ea7bc9/ai-tutor-2026.md)
 
-- [MIT OCW Lecture 8](https://ocw.mit.edu/courses/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/resources/lecture-8-object-oriented-programming/)
-- [MIT OCW Lecture 9](https://ocw.mit.edu/courses/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/resources/lecture-9-python-classes-and-inheritance/)
-- The course reference repository's `lec8_classes.py` and `lec9_inheritance.py`, including `Coordinate`, `Fraction`, `intSet`, `Animal`, `Person`, `Student`, and `Rabbit`.
+## ① Check My Understanding
 
-## Five True/False questions
+Questions completed: [not recorded] / 5
 
-### 1. Calling an instance method
+Answers revised after AI hints: [not recorded] / 5
 
-Statement: For the lecture's `Coordinate` class, `c.distance(origin)` and `Coordinate.distance(c, origin)` pass the same objects to the method.
+## ② My Misconception
 
-Suggested answer: True. The bound call supplies `c` as `self`; the explicit class call passes it as the first argument. Both use `c` and `origin` to calculate the distance.
+Before: I thought [personal response not recorded].
 
-Tutor hint if needed: Compare the definition's two parameters with the arguments in each call.
+Now: I understand [personal response not recorded].
 
-### 2. Object identity and aliasing
+## ③ Challenge the AI
 
-Statement: After `b = a`, where `a` is a `Coordinate`, changing `b.x` cannot change the value seen through `a.x` because the variable names differ.
+One AI-generated question I challenged: [not recorded]
 
-Suggested answer: False. The assignment gives the two names references to the same object. A separate `Coordinate(a.x, a.y)` would create a new object instead.
+Why?
 
-Tutor hint if needed: Count constructor calls rather than variable names.
+- [ ] Ambiguous
+- [ ] Oversimplified
+- [ ] Technically questionable
+- [ ] Too easy
+- [ ] Other: [specify]
 
-### 3. Inherited initialization
+Brief explanation: [personal response not recorded]
 
-Statement: The lecture's `Cat` must define its own `__init__` before `Cat(5)` can work.
+## ④ One-Minute Reflection
 
-Suggested answer: False. `Cat` does not define an initializer, so it inherits the base initializer. If a subclass defines its own `__init__`, it must explicitly invoke the needed parent initialization; Python does not automatically run every initializer in the hierarchy.
+One thing I am still unsure about: [personal response not recorded]
 
-Tutor hint if needed: Look for `Cat.__init__`, then trace which implementation Python finds.
+## Available question statements
 
-### 4. Overridden behavior
+These are previously generated study questions. A completed tutoring cycle must record your own answers, the tutor's actual hints, and any revisions.
 
-Statement: `s.speak()` on a lecture `Student` object always executes `Person.speak()` because `Student` inherits from `Person`.
+### Question 1
 
-Suggested answer: False. `Student` defines its own `speak`, which overrides the inherited method. Inherited methods remain available when they are not replaced, but an ordinary call uses the subclass's override when present.
+For the lecture's `Coordinate` class, `c.distance(origin)` and `Coordinate.distance(c, origin)` pass the same objects to the method.
 
-Tutor hint if needed: Inheritance can reuse behavior and also replace a specific behavior. Which definition is found first?
+My initial answer and reasoning: [not recorded]
 
-### 5. Shared counters and per-object values
+Actual tutor hint or follow-up: [not recorded]
 
-Statement: After a `Rabbit` saves `self.rid = Rabbit.tag`, incrementing `Rabbit.tag` changes every previously created rabbit's `rid`.
+My revised answer and reasoning: [not recorded, or mark no revision]
 
-Suggested answer: False. The shared class counter advances for the next object. Each existing `rid` keeps the integer value assigned to that instance. This differs from multiple attributes referring to one shared mutable list.
+Tutor explanation after my response: [not recorded]
 
-Tutor hint if needed: Compare the class attribute `Rabbit.tag` with the instance attribute `r1.rid` after creating a second rabbit.
+### Question 2
 
-## 1. Check my understanding
+After `b = a`, where `a` is a `Coordinate`, changing `b.x` cannot change the value seen through `a.x` because the variable names differ.
 
-Questions generated: 5 / 5
+My initial answer and reasoning: [not recorded]
 
-Questions personally completed: [fill after answering] / 5
+Actual tutor hint or follow-up: [not recorded]
 
-Answers revised after AI hints: [fill from the actual interaction] / 5
+My revised answer and reasoning: [not recorded, or mark no revision]
 
-## 2. My misconception
+Tutor explanation after my response: [not recorded]
 
-Suggested reflection, keep only if accurate for you:
+### Question 3
 
-Before: I thought that a subclass needed to copy its parent's methods and initializer to use them.
+The lecture's `Cat` must define its own `__init__` before `Cat(5)` can work.
 
-Now: I understand that methods are inherited through attribute lookup. A subclass can reuse them, override selected methods, and call the parent initializer when its own initializer needs the parent's setup. Reusing the interface does not mean every method call executes the parent implementation.
+My initial answer and reasoning: [not recorded]
 
-## 3. Challenge the AI
+Actual tutor hint or follow-up: [not recorded]
 
-Candidate question: "A class attribute is shared by all objects, so changing it changes each object's attributes."
+My revised answer and reasoning: [not recorded, or mark no revision]
 
-Reason: Ambiguous and oversimplified.
+Tutor explanation after my response: [not recorded]
 
-Suggested explanation: The statement must distinguish a class attribute from an instance attribute. Assigning `self.rid = Rabbit.tag` stores a value in the instance. Later incrementing the class counter does not update that instance's `rid`. Mutating a shared list is a different case.
+### Question 4
 
-My actual challenged question and explanation: [review or replace]
+`s.speak()` on a lecture `Student` object always executes `Person.speak()` because `Student` inherits from `Person`.
 
-## 4. One-minute reflection
+My initial answer and reasoning: [not recorded]
 
-Suggested remaining question: When should a subclass override a method, and when is composition a better way to reuse behavior?
+Actual tutor hint or follow-up: [not recorded]
 
-One thing I am still unsure about: [write your own remaining question]
+My revised answer and reasoning: [not recorded, or mark no revision]
+
+Tutor explanation after my response: [not recorded]
+
+### Question 5
+
+After a `Rabbit` saves `self.rid = Rabbit.tag`, incrementing `Rabbit.tag` changes every previously created rabbit's `rid`.
+
+My initial answer and reasoning: [not recorded]
+
+Actual tutor hint or follow-up: [not recorded]
+
+My revised answer and reasoning: [not recorded, or mark no revision]
+
+Tutor explanation after my response: [not recorded]
+
+## Study reference
+
+[Previously generated suggested answers, hints, and sample reflection](study-guide.md) are available for study. They are not your personal response history.
