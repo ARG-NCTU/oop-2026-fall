@@ -42,7 +42,7 @@ The starter asks for a live TA check of the passing terminal output and a short 
 
 ## AI tutor
 
-[Recovered material and status for Weeks 1–4](ai-tutor/). Week 1 includes the earlier AI-generated sample answer key and playlist challenge. Completed personal records for Weeks 2–4 have not been located.
+[Recovered material and status for Weeks 1–4](ai-tutor/). Week 1 contains Part A and Part B record forms plus the recovered AI references. Completed personal records for Weeks 2–4 have not been located.
 
 [October 5 C++ OOP study draft](ai-tutor/2026-10-05/cpp-oop/) contains five True/False questions, suggested answers, and a new coding challenge. The learning-record fields that require a personal response remain marked for review.
 

@@ -6,7 +6,7 @@ Recovery status checked on October 5, 2026.
 
 | Week | Part A: True or False | Part B: Lecture code transfer | Status |
 | --- | --- | --- | --- |
-| [1](week01/) | [Part A](week01/part-a.md) | [Part B](week01/part-b.md) | Recovered AI-generated sample from September 7. Personal responses are unverified. |
+| [1](week01/) | [Part A](week01/part-a.md) | [Part B](week01/part-b.md) | Recovered questions and challenge from September 7, with personal record forms. Earlier AI answers and solution are archived as references. |
 | [2](week02/) | [Not located](week02/README.md#part-a) | [Not located](week02/README.md#part-b) | Source still missing. |
 | [3](week03/) | [Not located](week03/README.md#part-a) | [Not located](week03/README.md#part-b) | Source still missing. |
 | [4](week04/) | [Not located](week04/README.md#part-a) | [Not located](week04/README.md#part-b) | Source still missing. |

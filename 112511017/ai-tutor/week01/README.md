@@ -1,12 +1,12 @@
-# Week 1 recovered AI tutor material
+# Week 1 AI tutor material
 
-The September 7 conversation included a complete AI-generated answer key for Lecture 5 and a playlist-editing challenge. These files recover that earlier material from the saved conversation history.
+The September 7 conversation contained an AI-generated Lecture 5 answer key and a playlist challenge with a reference solution. The files below separate the required personal record format from that earlier reference material.
 
-- [Part A: Five questions, answers, and sample reflection](part-a.md)
-- [Part B: Challenge and reference approach](part-b.md)
-- [Reference code](playlist_challenge.py)
-- [Example and edge-case tests](test_playlist_challenge.py)
+| Part | File | Status |
+| --- | --- | --- |
+| A: True or False | [Part A learning record](part-a.md) | Questions recovered. Personal answers, counts, and reflection are not recorded. |
+| B: Lecture code transfer | [Part B learning record](part-b.md) | Challenge recovered. Student approach, solution, hints, revisions, and verification are not recorded. |
 
-The code and tests are recovered from the earlier answer. Part B corrects the complexity bound to account for playlist growth. Original sample answer counts and reflection text remain explicitly labeled as sample material.
+[Recovered answer key, sample reflection, code, and tests](reference-material/) are preserved as references. The earlier Part B solution does not satisfy the tutor prompt's requirement to withhold a solution when generating the challenge.
 
-This recovery establishes that Week 1 study material existed in chat. It does not establish completion of Weeks 2, 3, or 4, or the student's personal answer and revision history.
+This recovery establishes that Week 1 study material existed. It does not establish a completed tutoring cycle or completion of Weeks 2–4.
