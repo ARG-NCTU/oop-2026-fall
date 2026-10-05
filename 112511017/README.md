@@ -42,8 +42,8 @@ The starter asks for a live TA check of the passing terminal output and a short 
 
 ## AI tutor
 
-[Recovered material and status for Weeks 1–4](ai-tutor/). Week 1 contains Part A and Part B record forms plus the recovered AI references. Completed personal records for Weeks 2–4 have not been located.
+[Recovered material and status for Weeks 1–4](ai-tutor/). Week 1 contains completed AI-assisted written responses plus the recovered references. Completed personal records for Weeks 2–4 have not been located.
 
-[October 5 C++ OOP study draft](ai-tutor/2026-10-05/cpp-oop/) contains five True/False questions, a new coding challenge, and the required personal record forms. Earlier suggested answers are in its study guide. The learning-record fields that require a personal response remain marked for review.
+[October 5 C++ OOP responses](ai-tutor/2026-10-05/cpp-oop/) contains five explained answers and a completed AI-assisted challenge response. Its delivery-device implementation passed six tests with sanitizers.
 
-[October 5 OCW Python study draft](ai-tutor/2026-10-05/python-oop/) covers classes and inheritance from Lectures 8 and 9. Confirm the assigned lecture and complete the personal learning-record fields before submitting it as a finished record.
+[October 5 OCW Python responses](ai-tutor/2026-10-05/python-oop/) covers classes and inheritance from Lectures 8 and 9, with AI-assisted answers and reflections. Its shipping-quote implementation passed eight tests. The exact assigned lecture still needs confirmation.

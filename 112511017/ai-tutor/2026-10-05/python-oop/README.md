@@ -1,12 +1,18 @@
-# October 5 OCW Python tutor draft
+# October 5 OCW Python tutor responses
 
-This draft covers MIT OCW 6.0001 Lecture 8, object-oriented programming, and Lecture 9, Python classes and inheritance. The examples were checked against the course reference repository's lecture code. Confirm the exact assigned lecture before treating this as the week's completed record.
+Prepared with AI assistance at the student's request. These responses cover MIT OCW 6.0001 Lectures 8 and 9, classes and inheritance. The exact lecture assigned for this week still needs confirmation.
 
-- [Part A: Questions and personal learning-record form](part-a.md)
-- [Part B: Shipping-quote transfer challenge](part-b.md)
+- [Part A: Five explained answers and reflection](part-a.md)
+- [Part B: Shipping-quote challenge response](part-b.md)
+- [AI-assisted implementation](solution/shipping_quotes.py)
+- [Earlier study guide and lecture sources](study-guide.md)
 
-These files use the course's AI tutor learning-record sections. They contain proposed responses and an original challenge. Personal answer counts, hint history, revisions, and reflection fields remain to be filled from the actual tutoring session. No coding challenge solution has been recorded or tested.
+Run challenge verification from `solution/`:
 
-[MIT lecture slides and code](https://ocw.mit.edu/courses/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/pages/lecture-slides-code/)
+```bash
+python3 -m pytest -q -p no:cacheprovider test_shipping_quotes.py
+```
 
-[Study guide with the earlier suggested answers](study-guide.md). These examples are separate from the personal learning-record fields.
+Eight tests passed, including all three examples, duplicate descriptions, counter continuity, stable object identifiers, maximum weight, and 100 parcels.
+
+The response fields and reflections are filled in. AI assistance is disclosed, and no earlier personal hint cycle or independent student implementation is claimed.

@@ -1,12 +1,12 @@
 # Week 1 AI tutor material
 
-The September 7 conversation contained an AI-generated Lecture 5 answer key and a playlist challenge with a reference solution. The files below separate the required personal record format from that earlier reference material.
+The Lecture 5 questions and playlist challenge were recovered from the September 7 conversation. Written responses were prepared with AI assistance on October 5, 2026 at the student's request.
 
 | Part | File | Status |
 | --- | --- | --- |
-| A: True or False | [Part A learning record](part-a.md) | Questions recovered. Personal answers, counts, and reflection are not recorded. |
-| B: Lecture code transfer | [Part B learning record](part-b.md) | Challenge recovered. Student approach, solution, hints, revisions, and verification are not recorded. |
+| A: True or False | [Part A responses](part-a.md) | Five explained answers, misconception reflection, a challenged question, and a remaining question are filled in. |
+| B: Lecture code transfer | [Part B response](part-b.md) | Approach, AI help, revision status, verification, correctness, complexity, and reflection are filled in. The AI reference passed two tests and both exact problem examples. |
 
-[Recovered answer key, sample reflection, code, and tests](reference-material/) are preserved as references. The earlier Part B solution does not satisfy the tutor prompt's requirement to withhold a solution when generating the challenge.
+The [recovered AI answer key, sample reflection, code, and tests](reference-material/) remain available. The records disclose AI assistance and do not reconstruct an earlier personal hint or revision cycle. First-person reflection text is AI-assisted wording supplied for this response.
 
-This recovery establishes that Week 1 study material existed. It does not establish a completed tutoring cycle or completion of Weeks 2–4.
+Completed response text does not establish completion of the original tutoring workflow or of Weeks 2–4.

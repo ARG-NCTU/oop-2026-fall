@@ -1,14 +1,20 @@
-# October 5 AI tutor study draft
+# October 5 C++ OOP tutor responses
 
-This week's available local material is the C++ Lab 04 exercise from `W5new.zip`.
+Prepared with AI assistance at the student's request. Both response files have their required sections filled in, with the assistance and verification described explicitly.
 
-- [Part A: Questions and personal learning-record form](part-a.md)
-- [Part B: A new OOP transfer challenge](part-b.md)
+- [Part A: Five explained answers and reflection](part-a.md)
+- [Part B: Delivery-device challenge response](part-b.md)
+- [AI-assisted implementation](solution/device_dispatcher.cpp)
+- [Earlier study guide](study-guide.md)
 
-The files follow the sections in the course's AI tutor learning-record template. They are drafts for completing an actual tutoring session. Personal answer counts, hint history, and reflections are marked for review. The Part B challenge has expected examples, but no student solution has been recorded.
+Run challenge verification from `solution/`:
 
-The lab itself is complete. On October 5, `make doctor` returned `ENV OK` and `make check` returned `ALL PASS (4/4)` with AddressSanitizer enabled. This validates the lab code, not the new Part B challenge.
+```bash
+make check
+```
 
-The lab starter requires a live TA check and a one-sentence explanation of a selected line. A GitHub submission does not replace that check. If this week's separate OCW assignment requires a Python lecture record, its lecture number and code must be identified before adapting these drafts to that assignment.
+Six tests passed with AddressSanitizer, UndefinedBehaviorSanitizer, and leak detection. They cover the three examples, rejection preserving state, zero requests, and maximum device and request counts.
 
-[Study guide with the earlier suggested answers](study-guide.md). These examples are separate from the personal learning-record fields.
+This is a C++ lab transfer exercise. It is separate from the OCW Python study record. The lab itself passed `make doctor` and all four `make check` items; the instructor still requires a live TA check and explanation.
+
+The written reflections were prepared with AI assistance. No earlier personal hint cycle or independent student implementation is claimed.
