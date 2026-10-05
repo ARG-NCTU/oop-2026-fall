@@ -31,3 +31,5 @@ The starter asks for a live TA check of the passing terminal output and a short 
 ## AI tutor
 
 [October 5 C++ OOP study draft](ai-tutor/2026-10-05-cpp-oop/) contains five True/False questions, suggested answers, and a new coding challenge. The learning-record fields that require a personal response remain marked for review.
+
+[October 5 OCW Python study draft](ai-tutor/2026-10-05-python-oop/) covers classes and inheritance from Lectures 8 and 9. Confirm the assigned lecture and complete the personal learning-record fields before submitting it as a finished record.
