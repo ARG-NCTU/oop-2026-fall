@@ -1,7 +1,7 @@
 # W04 AI Tutor Learning Record — Part A
 
 Topic: Object Oriented Programming
-Date: 2026/09/28
+Date: 2026/10/05
 
 ## ① Check My Understanding
 

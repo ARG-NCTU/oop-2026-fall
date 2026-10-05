@@ -1,7 +1,7 @@
 # W04 AI Tutor Learning Record — Part B
 
 Name: 114511066
-Date: 2026/09/28
+Date: 2026/10/05
 Topic: Object Oriented Programming
 
 ## 1. Today’s Challenge
