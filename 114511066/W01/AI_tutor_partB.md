@@ -1,7 +1,7 @@
 # W01 AI Tutor Learning Record — Part B
 
 Name: 114511066
-Date: 2026/10/05
+Date: 2026/09/07
 Topic: Tuples, Lists, Aliasing, Mutability, and Cloning
 
 ## 1. Today’s Challenge

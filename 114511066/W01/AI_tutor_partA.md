@@ -1,7 +1,7 @@
 # W01 AI Tutor Learning Record — Part A
 
 Topic: Tuples, Lists, Aliasing, Mutability, and Cloning
-Date: 2026/10/05
+Date: 2026/09/07
 
 ## ① Check My Understanding
 
