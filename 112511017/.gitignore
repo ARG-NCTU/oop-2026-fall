@@ -2,3 +2,4 @@ __pycache__/
 .pytest_cache/
 *.py[cod]
 labs/lab04-cpp-oop/lab
+ai-tutor/2026-10-05/cpp-oop/solution/device_dispatcher
