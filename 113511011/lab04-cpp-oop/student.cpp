@@ -70,9 +70,14 @@ BaseApp *make_app() {
 // free_buffer(p)：釋放 p
 // ====================================================================
 double *make_buffer(int n) {
-  return nullptr;  // TODO
-}
+    double *p = new double[n];
 
+    for (int i = 0; i < n; i++) {
+        p[i] = i;
+    }
+
+    return p;
+}
 void free_buffer(double *p) {
-  // TODO
+    delete[] p;
 }
