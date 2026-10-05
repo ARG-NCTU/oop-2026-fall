@@ -2,7 +2,19 @@
 
 AOOP 2026 Fall coursework for [MoobyMoo](https://github.com/MoobyMoo).
 
-Exercises and assignments will be kept in this directory.
+## Coursework folders
+
+| Material | Folder |
+| --- | --- |
+| Python lab and tests | [Lab 03](labs/lab03-pytest/) |
+| C++ OOP lab | [Lab 04](lab04-cpp-oop/) |
+| Weekly tutor material, Part A and Part B | [AI tutor](ai-tutor/) |
+
+Run the Python lab tests from this directory:
+
+```bash
+python3 -m pytest labs/lab03-pytest
+```
 
 ## C++ OOP lab
 
