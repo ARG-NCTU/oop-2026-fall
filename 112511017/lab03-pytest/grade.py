@@ -11,3 +11,9 @@ def letter_grade(score):
     if score >= 60:
         return "D"
     return "F"
+
+
+def average(scores):
+    if not scores:
+        raise ValueError("scores cannot be empty")
+    return sum(scores) / len(scores)
