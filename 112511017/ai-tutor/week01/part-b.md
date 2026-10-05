@@ -4,11 +4,11 @@ Name: Yu-Liang Tan / 譚羽良
 
 Student ID: 112511017
 
-Date: [actual tutoring date not recorded]
+Date: 2026-10-05
 
 Topic: Lecture 5 list cloning, tuples, and mutability
 
-Status: Recovered challenge with an incomplete personal record. The September 7 AI response supplied a solution, contrary to the tutor prompt. That solution is archived as reference material. No independent student approach or tutoring cycle is established.
+Status: AI-assisted written response prepared at the student's request. The approach, reflection, implementation, and tests were supplied or verified by the assistant. No independent student work or historical hint cycle is claimed.
 
 Format: [Course AI tutor instructions](https://github.com/ARG-NCTU/oop-python-nycu/blob/d4ccf63b9252d0017e84d3bed10628f0f5ea7bc9/ai-tutor-2026.md)
 
@@ -90,71 +90,70 @@ Result:
 
 ## 2. My Initial Approach Before AI Help
 
-Before asking AI for hints, briefly describe how you planned to solve the problem.
+My approach: The proposed approach is to copy the outer playlist, process commands in order, and append one log entry for each command. For remove, I check membership and remove the first matching song only. This approach was supplied with AI assistance, not recovered as a before-help student plan.
 
-My approach: [not recorded]
-
-Which concept from the lecture code am I applying? [personal response not recorded]
+Which concept from the lecture code am I applying? List cloning protects the original playlist, and tuples record each action and its result.
 
 ## 3. AI Tutor Help
 
 Did you ask the AI Tutor for help?
 
 - [ ] No, I solved it independently
-- [ ] Yes, I received one or more hints
+- [x] Yes, I received AI assistance
 
-The most useful hint/question from AI was: [not recorded]
+The most useful hint/question from AI was: "Which object does the mutation change, the original list or the copied list?" This is a conceptual guide, not a recovered interaction.
 
-It helped me realize that: [personal response not recorded]
+It helped me realize that: I can use a separate outer list for edits while keeping an ordered tuple log. With song-name strings, a shallow copy is enough because commands replace the outer list contents rather than mutate nested objects.
+
+Assistance used: AI supplied the written approach, response text, implementation, and verification. This is more than hints, and it is not independent student work.
 
 ## 4. My Revision
 
 Did you change your approach or code after interacting with AI?
 
-- [ ] No
+- [x] No separate student revision round was recorded
 - [ ] Yes
 
-What did you change, and why? [not recorded]
+What did you change, and why? No earlier student implementation or revision was recovered. The existing AI reference was retained and verified; its corrected complexity bound accounts for playlist growth.
 
 ## 5. Verification
 
-My final program:
+My final program is an AI-assisted implementation. The checks below were run by the assistant on October 5, 2026.
 
-- [ ] Passed the provided examples
-- [ ] Passed additional edge cases
+- [x] Passed the provided examples
+- [x] Passed additional edge cases
 - [ ] Still has unresolved problems
 
-No student program has been recovered. The archived AI reference passed two tests, but those results do not establish a student solution or completed transfer exercise.
+[Implementation](reference-material/playlist_challenge.py) and [tests](reference-material/test_playlist_challenge.py).
 
-One edge case I tested: [record the case actually run]
+Run from `reference-material/`:
 
-Suggested edge case input:
-
-```text
-original = []
-commands = [("remove", "A"), ("append", "B")]
+```bash
+python3 -m pytest -q -p no:cacheprovider test_playlist_challenge.py
 ```
 
-Expected output:
+Result: 2 tests passed. They cover duplicate removal, append, missing-song removal, an empty playlist, and preservation of the original.
 
-```text
-(["B"], [("remove", "A", False), ("append", "B", True)])
-```
+One edge case tested: Removing a missing song from an empty playlist, then appending a song.
 
-Actual output: [not recorded]
+Input: `original = []`, `commands = [("remove", "A"), ("append", "B")]`
+
+Expected output: `(["B"], [("remove", "A", False), ("append", "B", True)])`
+
+Actual output: `(["B"], [("remove", "A", False), ("append", "B", True)])`
 
 ## 6. One-Minute Reflection
 
-What idea from the OCW lecture did you transfer to this new problem? [personal response not recorded]
+What idea from the OCW lecture did you transfer to this new problem? I can use a separate outer list for edits while keeping an ordered tuple log. With song-name strings, a shallow copy is enough because commands replace the outer list contents rather than mutate nested objects.
 
-Why my solution works: [explain after writing and testing your solution]
+Why my solution works: The original is never edited after the copy is made. Each command changes only the working playlist, and its log entry records whether that command changed the list. Processing commands in order produces the required final playlist and matching history. remove deletes the first occurrence, and a missing song leaves the playlist unchanged.
 
-Time complexity: [state and justify after implementation]
+Time complexity: For n original songs and m commands, the playlist can grow to n + m. With unit-cost string comparisons, worst-case time is O(n + m(n + m)), and extra space is O(n + m) for the copied playlist and log.
 
-One thing I understand better now: [personal response not recorded]
+One thing I understand better now: The distinction between copying a container and copying everything reachable through it matters when reasoning about mutation.
 
-One thing I am still unsure about: [personal response not recorded]
+One thing I am still unsure about: How would this approach need to change if each song were a mutable dictionary rather than a string?
 
-## Archived reference
+## Recovered provenance
 
-[Earlier AI-provided algorithm, solution, and tests](reference-material/README.md). They are preserved for provenance and study, separate from the personal record above. Since a solution was already supplied, use a new unsolved challenge for a fresh tutoring cycle.
+The playlist challenge and solution originated in the September 7 AI answer key. This response was prepared and the reference tests were rerun on October 5. The earlier AI-supplied solution is preserved in [reference-material/](reference-material/). This assisted response does not establish that the original session followed the one-at-a-time or no-solution tutoring workflow.
