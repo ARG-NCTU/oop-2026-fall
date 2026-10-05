@@ -10,11 +10,15 @@ Topic: Transferring encapsulation and virtual dispatch to a new problem
 
 Status: AI-generated challenge and response draft. This is a transfer exercise based on the C++ lab. It is not a verified assignment for a particular OCW lecture. The student approach, hint history, revisions, and personal reflection remain to be recorded during the actual learning cycle.
 
-## 1. Today's challenge
+Format: [Course AI tutor instructions](https://github.com/ARG-NCTU/oop-python-nycu/blob/d4ccf63b9252d0017e84d3bed10628f0f5ea7bc9/ai-tutor-2026.md)
 
-Core concepts from the C++ lab: Private state, constructor initialization, input validation before assignment, inheritance, `virtual`, `override`, and deleting an object through a base pointer with a virtual destructor.
+## 1. Today's Challenge
 
-AI-generated challenge title: Energy-limited delivery devices
+Core concept from today's OCW lecture: [OCW lecture not confirmed for this C++ lab draft]
+
+C++ lab concepts transferred: Private state, constructor initialization, input validation before assignment, inheritance, `virtual`, `override`, and deleting an object through a base pointer with a virtual destructor.
+
+AI-generated coding challenge title: Energy-limited delivery devices
 
 ### Problem statement
 
@@ -108,7 +112,7 @@ REJECT 0
 ACCEPT 0
 ```
 
-## 2. My initial approach, before AI help
+## 2. My Initial Approach Before AI Help
 
 Before writing code, answer these tutor questions:
 
@@ -116,33 +120,43 @@ Before writing code, answer these tutor questions:
 2. Where will you check the required energy so a failed request preserves state?
 3. Which concept from `BaseApp` and `MyApp` are you transferring?
 
-My initial approach: [write before asking for hints]
+My approach: [not recorded]
 
-## 3. AI tutor help
+Which concept from the lecture code am I applying? [personal response not recorded]
 
-Did I ask for help? [record the actual interaction]
+## 3. AI Tutor Help
 
-The most useful hint or question was: [fill if a hint was used]
+Did you ask the AI Tutor for help?
 
-It helped me realize that: [fill from your experience]
+- [ ] No, I solved it independently
+- [ ] Yes, I received one or more hints
 
-## 4. My revision
+The most useful hint/question from AI was: [not recorded]
 
-Did I change my approach or code? [record after implementation]
+It helped me realize that: [personal response not recorded]
 
-What I changed and why: [fill from the actual revision]
+## 4. My Revision
+
+Did you change your approach or code after interacting with AI?
+
+- [ ] No
+- [ ] Yes
+
+What did you change, and why? [not recorded]
 
 ## 5. Verification
 
-The expected outputs above were calculated from the problem rules. No student solution to this new challenge has been supplied or tested yet.
+My final program:
 
-- Passed the provided examples: [record after running your solution]
-- Passed additional edge cases: [record after testing]
-- Unresolved problems: [record after testing]
+- [ ] Passed the provided examples
+- [ ] Passed additional edge cases
+- [ ] Still has unresolved problems
 
-One edge case to test:
+No student solution to this challenge has been recorded or tested. Expected outputs follow the stated problem rules. This C++ exercise transfers lab concepts; confirm whether the assigned OCW record must instead cover Python.
 
-Input:
+One edge case I tested: [record the case actually run]
+
+Suggested edge case input:
 
 ```text
 1 2
@@ -158,16 +172,16 @@ REJECT 1
 ACCEPT 0
 ```
 
-Actual output: [paste your program's output]
+Actual output: [not recorded]
 
-## 6. One-minute reflection
+## 6. One-Minute Reflection
 
-Suggested transfer explanation: The dispatcher uses a common base interface, as the lab's framework uses `BaseApp*`. Virtual dispatch chooses the concrete energy rule. Private state and validation before assignment prevent a failed request from changing the device's energy.
+What idea from the OCW lecture did you transfer to this new problem? [personal response not recorded]
 
-Why my solution works: [explain after implementation]
+Why my solution works: [explain after writing and testing your solution]
 
-Time complexity: [justify how many operations each request performs]
+Time complexity: [state and justify after implementation]
 
-One thing I understand better now: [write your own reflection]
+One thing I understand better now: [personal response not recorded]
 
-One thing I am still unsure about: [write your own remaining question]
+One thing I am still unsure about: [personal response not recorded]

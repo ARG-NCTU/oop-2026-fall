@@ -1,4 +1,4 @@
-# AI tutor learning record: C++ OOP, Part A
+# AI Tutor Learning Record: Part A
 
 Name: Yu-Liang Tan / 譚羽良
 
@@ -8,80 +8,104 @@ Date: 2026-10-05
 
 Topic: References, encapsulation, constructors, virtual functions, and dynamic arrays
 
-Status: AI-generated draft for student review. The suggested answers below are study responses, not a transcript of completed tutoring. Replace the review fields with your actual answers and reflections before submitting this as a completed learning record.
+Status: Incomplete study draft. This is a C++ lab study draft, separate from the OCW Python assignment. Personal answers, tutor hints, revisions, and reflections must be recorded from an actual session.
 
-Sources: [Lab 04 code](../../../labs/lab04-cpp-oop/student.cpp), [instructor's concept guide](../../../labs/lab04-cpp-oop/GUIDE.md), and the AOOP 2026 AI tutor learning-record format.
+Format: [Course AI tutor instructions](https://github.com/ARG-NCTU/oop-python-nycu/blob/d4ccf63b9252d0017e84d3bed10628f0f5ea7bc9/ai-tutor-2026.md)
 
-## Five True/False questions
+## ① Check My Understanding
 
-### 1. References
+Questions completed: [not recorded] / 5
 
-Statement: If `clamp_value` takes `double v` instead of `double &v`, assigning to `v` inside the function still changes the caller's variable.
+Answers revised after AI hints: [not recorded] / 5
 
-Suggested answer: False. Passing by value creates a separate copy. A reference parameter is an alias for the caller's variable, so changing it changes that variable.
+## ② My Misconception
 
-Tutor hint if needed: Start with `double x = 15`. After the function returns, which variable received the assignment, a copy or `x`?
+Before: I thought [personal response not recorded].
 
-### 2. Encapsulation
+Now: I understand [personal response not recorded].
 
-Statement: A private member alone guarantees that the member always contains a valid value.
+## ③ Challenge the AI
 
-Suggested answer: False. `private` restricts direct access from outside the class. The constructor and member functions still need to enforce the rules. In this lab, `setLevel` checks the range, but the constructor stores the supplied value directly as required by the exercise.
+One AI-generated question I challenged: [not recorded]
 
-Tutor hint if needed: What happens with `Battery b(120)` in the current implementation?
+Why?
 
-### 3. Initialization
+- [ ] Ambiguous
+- [ ] Oversimplified
+- [ ] Technically questionable
+- [ ] Too easy
+- [ ] Other: [specify]
 
-Statement: `Battery::Battery(double level) : m_level(level) {}` initializes `m_level` before the constructor body runs.
+Brief explanation: [personal response not recorded]
 
-Suggested answer: True. The member initialization list initializes the member. Assigning to it inside the constructor body would be a later assignment instead.
+## ④ One-Minute Reflection
 
-Tutor hint if needed: Compare initializing a member with changing an already initialized member. Which happens first?
+One thing I am still unsure about: [personal response not recorded]
 
-### 4. Virtual dispatch
+## Available question statements
 
-Statement: Calling `Iterate()` through a `BaseApp*` that points to a `MyApp` object executes `MyApp::Iterate()`.
+These are previously generated study questions. A completed tutoring cycle must record your own answers, the tutor's actual hints, and any revisions.
 
-Suggested answer: True. `Iterate` is virtual in the base class, so the call selects the override for the actual object. The base pointer determines which operations can be called, while the object's type determines the virtual implementation.
+### Question 1
 
-Tutor hint if needed: Compare this call with calling a nonvirtual function through a base pointer.
+If `clamp_value` takes `double v` instead of `double &v`, assigning to `v` inside the function still changes the caller's variable.
 
-### 5. Heap lifetime
+My initial answer and reasoning: [not recorded]
 
-Statement: When `make_buffer` returns, the dynamically allocated array is automatically destroyed because its local pointer variable goes out of scope.
+Actual tutor hint or follow-up: [not recorded]
 
-Suggested answer: False. The local pointer variable goes out of scope, but the allocated array remains alive. The caller receives its address and must eventually release it with `delete[]`, here through `free_buffer`.
+My revised answer and reasoning: [not recorded, or mark no revision]
 
-Tutor hint if needed: Distinguish the pointer variable from the allocation it points to.
+Tutor explanation after my response: [not recorded]
 
-## 1. Check my understanding
+### Question 2
 
-Questions generated: 5 / 5
+A private member alone guarantees that the member always contains a valid value.
 
-Questions personally completed: [fill after answering] / 5
+My initial answer and reasoning: [not recorded]
 
-Answers revised after AI hints: [fill from the actual interaction] / 5
+Actual tutor hint or follow-up: [not recorded]
 
-## 2. My misconception
+My revised answer and reasoning: [not recorded, or mark no revision]
 
-Suggested reflection, keep only if it describes your experience:
+Tutor explanation after my response: [not recorded]
 
-Before: I thought that making a field private was enough to keep its value valid.
+### Question 3
 
-Now: I understand that private access prevents outside code from writing directly to the field, but the constructor and member functions must also validate values. The lab's setter rejects invalid levels before assignment, so a rejected update preserves the old level.
+`Battery::Battery(double level) : m_level(level) {}` initializes `m_level` before the constructor body runs.
 
-## 3. Challenge the AI
+My initial answer and reasoning: [not recorded]
 
-Candidate question to challenge: "A private member alone guarantees that the member always contains a valid value."
+Actual tutor hint or follow-up: [not recorded]
 
-Reason: Oversimplified if it is presented without distinguishing access control from validation.
+My revised answer and reasoning: [not recorded, or mark no revision]
 
-Suggested explanation: Encapsulation can provide a place to enforce a rule, but it does not enforce that rule automatically. `Battery(120)` is a counterexample in the supplied exercise because the required constructor directly initializes `m_level`.
+Tutor explanation after my response: [not recorded]
 
-My actual chosen question and explanation: [review the candidate or replace it]
+### Question 4
 
-## 4. One-minute reflection
+Calling `Iterate()` through a `BaseApp*` that points to a `MyApp` object executes `MyApp::Iterate()`.
 
-Suggested point to investigate: How should a constructor handle an invalid initial value when it cannot return `false` like a setter? Should it reject construction, clamp the value, or use a default?
+My initial answer and reasoning: [not recorded]
 
-One thing I am still unsure about: [write your own remaining question]
+Actual tutor hint or follow-up: [not recorded]
+
+My revised answer and reasoning: [not recorded, or mark no revision]
+
+Tutor explanation after my response: [not recorded]
+
+### Question 5
+
+When `make_buffer` returns, the dynamically allocated array is automatically destroyed because its local pointer variable goes out of scope.
+
+My initial answer and reasoning: [not recorded]
+
+Actual tutor hint or follow-up: [not recorded]
+
+My revised answer and reasoning: [not recorded, or mark no revision]
+
+Tutor explanation after my response: [not recorded]
+
+## Study reference
+
+[Previously generated suggested answers, hints, and sample reflection](study-guide.md) are available for study. They are not your personal response history.
