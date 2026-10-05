@@ -13,7 +13,7 @@ The search covered the local AOOP coursework, the lab PC's AOOP folder, its Docu
 
 ## October 5 study drafts
 
-- [C++ OOP questions and coding challenge](2026-10-05-cpp-oop/)
-- [OCW Python classes and inheritance questions and coding challenge](2026-10-05-python-oop/)
+- [C++ OOP questions and coding challenge](2026-10-05/cpp-oop/)
+- [OCW Python classes and inheritance questions and coding challenge](2026-10-05/python-oop/)
 
 Both drafts still need personal learning-record responses. The Python lecture assignment also needs confirmation.
