@@ -1,0 +1,44 @@
+Topic: Lecture 5 — Tuples, Lists, Aliasing, Mutability, and Cloning
+Date: 2026-09-07
+
+① Check My Understanding
+
+Questions completed: 5 / 5
+
+Answers revised after AI hints: 2 / 5
+
+② My Misconception
+
+Before: I thought…
+
+Assigning one list variable to another, such as `b = a`, copied the value of the list. I also did not clearly distinguish between modifying an existing list and assigning a variable to a newly created list.
+
+Now: I understand…
+
+`b = a` makes both variables refer to the same list object rather than copying it. Mutating the list through either alias affects the same object. However, an expression such as `a = a + [3]` creates a new list and makes `a` refer to it, while other aliases still refer to the original list. I also understand that `a[:]` performs only a shallow copy, so mutable objects inside a nested list can still be shared.
+
+③ Challenge the AI
+
+One AI-generated question I challenged:
+
+The question asking what value is assigned by:
+
+`b = a.sort()`
+
+Why?
+
+☐ Ambiguous
+☐ Oversimplified
+☐ Technically questionable
+☐ Too easy
+☒ Other: Too dependent on memorizing Python API behavior
+
+Brief explanation:
+
+This question mainly tests whether I remember the specific behavior that `list.sort()` modifies the original list and returns `None`. Once that API behavior is known, relatively little reasoning about mutability or aliasing is required.
+
+④ One-Minute Reflection
+
+One thing I am still unsure about:
+
+For more complicated nested data structures, I may need to think carefully about which objects are actually copied by a shallow copy and which mutable inner objects are still shared.
