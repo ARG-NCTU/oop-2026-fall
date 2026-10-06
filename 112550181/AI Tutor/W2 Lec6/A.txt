@@ -1,0 +1,50 @@
+Name: 何昕叡  
+Topic: Lecture 6 — Recursion and Dictionaries  
+Date: 2026/09/14
+
+① Check My Understanding
+
+Questions completed: 5 / 5
+
+Answers revised after AI hints: 1 / 5
+
+② My Misconception
+
+Before: I thought…
+
+I thought types such as `int` and `float` could be considered mutable because a variable containing them can be assigned a different value after it is created.
+
+Now: I understand…
+
+Reassigning a variable is different from mutating an object. For example, `x = 3` followed by `x = 4` makes `x` refer to a different integer object; the integer `3` itself was never modified. Mutable objects such as lists and dictionaries can instead have the contents of the existing object changed. This is why immutable objects can be used as dictionary keys while lists cannot.
+
+③ Challenge the AI
+
+One AI-generated question I challenged:
+
+Question 5, which used the recurrence:
+
+```python
+def f(n):
+    if n <= 1:
+        return 1
+    return f(n - 1) + f(n - 1)
+```
+
+Why?
+
+☒ Oversimplified  
+☐ Ambiguous  
+☐ Technically questionable  
+☐ Too easy  
+☐ Other: __________
+
+Brief explanation:
+
+The recurrence is overly simplified because it can be recognized directly as `f(n) = 2^(n-1)` for positive `n`. Therefore, the intended recursion and memoization reasoning can be bypassed using a closed-form solution.
+
+④ One-Minute Reflection
+
+One thing I am still unsure about:
+
+I am not always immediately sure when memoization will provide a meaningful improvement. I understand that it is useful when recursive calls repeatedly solve the same subproblems, but identifying that pattern may be less obvious in more complicated recursive algorithms.
