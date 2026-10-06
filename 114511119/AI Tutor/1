@@ -1,0 +1,39 @@
+① Check My Understanding
+Questions completed: 5 / 5
+
+Answers revised after AI hints: 2 / 5 (第 1 題和第 3 題)
+
+② My Misconception
+Before: I thought…
+
+演算法只要能動就好，不一定要停機；且擁有更多條紙帶的電腦（多硬體）一定比單條紙帶的電腦功能更強大、能解決更多問題。
+
+Now: I understand…
+
+嚴格來說，演算法必須具備「在有限步驟內終止」的特質；而多條紙帶雖然能提升運算「效率（速度）」，但在「計算能力（能不能解出問題）」上，它與單一紙帶的圖靈機是完全等價的。
+
+③ Challenge the AI
+One AI-generated question I challenged:
+
+第 3 題（關於多條紙帶圖靈機與單條紙帶圖靈機的計算能力比較）
+
+Why?
+
+☐ Ambiguous
+
+☑ Oversimplified / Intuition trap（直覺上認為硬體升級就能算更多問題）
+
+☐ Technically questionable
+
+☐ Too easy
+
+☐ Other: __________
+
+Brief explanation:
+
+因為直覺上會覺得多幾條紙帶就像硬體升級、能力更強，容易忽略在計算理論中，「計算能力（Computability）」與「運算效率（Complexity）」是兩個不同的概念。
+
+④ One-Minute Reflection
+One thing I am still unsure about:
+
+演算法與一般程式在「無限迴圈」或「實際應用」上的嚴格界線，以及除了停機問題之外，還有哪些經典的不可判定問題。
