@@ -49,7 +49,7 @@ class MyApp : public BaseApp {
 
   bool Iterate() override {
       m_count++;
-      return true;
+      return m_count < 10;
   }
 
   int Count() const override {
