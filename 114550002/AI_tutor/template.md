@@ -1,4 +1,65 @@
 <!-- AI prompt
+I just learned [TOPIC] in today’s lecture.
+
+Act as my AI Tutor.
+
+1. Generate 5 True/False questions, one question at a time, to test my conceptual understanding of today’s topic.
+2. Focus on concepts and reasoning, not memorization or Python syntax.
+3. After I answer, do not immediately tell me the correct answer.
+4. If my answer or reasoning is incorrect, give me a hint, counterexample, or follow-up question.
+5. Let me revise my answer before explaining the concept.
+6. Adjust the difficulty based on my responses.
+7. After five questions, ask me to identify one question that may be ambiguous, misleading, too easy, or technically questionable.
+8. Finish by asking me what misconception I corrected and what I am still unsure about.
+-->
+# Part A
+Topic: ____________________
+
+Date: __________
+## ① Check My Understanding
+
+Questions completed: _ / 5
+
+Answers revised after AI hints: _ / 5
+
+## ② My Misconception
+### Before: I thought…
+
+⸻
+
+### Now: I understand…
+
+⸻
+
+## ③ Challenge the AI
+
+### One AI-generated question I challenged
+
+⸻
+
+### Why?
+
+■ Ambiguous
+
+☐ Oversimplified
+
+☐ Technically questionable
+
+☐ Too easy
+
+☐ Other: __________
+
+### Brief explanation
+
+⸻
+
+## ④ One-Minute Reflection
+
+### One thing I am still unsure about:
+
+⸻
+
+<!-- AI prompt
 I have just studied the following lecture code from today’s OCW programming lecture.
 
 [LECTURE CODE]
@@ -39,31 +100,33 @@ Finally, ask me to explain:
 * What idea from the lecture code I transferred to this new problem
 -->
 
+# Part B
+
 Name: 黃柏誠
 
 Date: ____________________
 
 Topic: ____________________
 
-# 1. Today’s Challenge
+## 1. Today’s Challenge
 
-## Core concept from today’s OCW lecture
+### Core concept from today’s OCW lecture
 
 ⸻
 
-## AI-generated coding challenge title
+### AI-generated coding challenge title
 
 ⸻⸻
 
-# 2. My Initial Approach — Before AI Help
+## 2. My Initial Approach — Before AI Help
 
 Before asking AI for hints, briefly describe how you planned to solve the problem.
 
-## My approach
+### My approach
 
 ⸻⸻⸻
 
-# 3. AI Tutor Help
+## 3. AI Tutor Help
 
 Did you ask the AI Tutor for help?
 
@@ -71,15 +134,15 @@ Did you ask the AI Tutor for help?
 
 ☐ Yes — I received one or more hints
 
-## The most useful hint/question from AI was
+### The most useful hint/question from AI was
 
 ⸻
 
-## It helped me realize that
+### It helped me realize that
 
 ⸻
 
-# 4. My Revision
+## 4. My Revision
 
 Did you change your approach or code after interacting with AI?
 
@@ -87,13 +150,13 @@ Did you change your approach or code after interacting with AI?
 
 ☐ Yes
 
-## What did you change, and why?
+### What did you change, and why?
 
 ⸻⸻⸻
 
-# 5. Verification
+## 5. Verification
 
-## My final program
+### My final program
 
 ☐ Passed the provided examples
 
@@ -101,7 +164,7 @@ Did you change your approach or code after interacting with AI?
 
 ☐ Still has unresolved problems
 
-## One edge case I tested
+### One edge case I tested
 
 Input: ___________________
 
@@ -109,16 +172,16 @@ Expected output: __________
 
 Actual output: ____________
 
-# 6. One-Minute Reflection
+## 6. One-Minute Reflection
 
-## What idea from the OCW lecture did you transfer to this new problem?
-
-⸻
-
-## One thing I understand better now
+### What idea from the OCW lecture did you transfer to this new problem?
 
 ⸻
 
-## One thing I am still unsure about
+### One thing I understand better now
+
+⸻
+
+### One thing I am still unsure about
 
 ⸻
