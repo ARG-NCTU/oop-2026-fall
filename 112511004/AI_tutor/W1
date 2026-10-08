@@ -1,0 +1,138 @@
+AI Tutor for AOOP 2026
+
+> Lecture 1 Learning Record | 2026-09-07
+## Part A: True or False
+### AI Tutor Learning Record
+Topic: Lecture 1 — Computation, Variable Assignment, Program Correctness, and Numeric Types    Date: 2026-09-07
+
+① Check My Understanding
+
+Questions completed: 5 / 5
+
+Answers revised after AI hints: 0 / 5 (counting changes to the True/False judgment)
+
+② My Misconception
+
+Before: I thought that if an iterative calculation did not stop, it simply meant that the guesses were not converging toward an answer.
+
+Now: I understand that convergence and termination are different. A sequence of guesses may approach the correct value while an exact-equality stopping condition is never satisfied.
+
+③ Challenge the AI
+
+One AI-generated question I challenged:
+The question claiming that exact equality is always a more reliable stopping condition and is guaranteed to terminate.
+
+Why?
+☐ Ambiguous
+☐ Oversimplified
+☑ Technically questionable
+☐ Too easy
+☐ Other: __________
+
+Brief explanation:
+The statement combines reliability and guaranteed termination, while the behavior of exact equality also depends on floating-point representation and rounding. The question is useful, but these ideas need to be distinguished carefully.
+
+④ One-Minute Reflection
+
+One thing I am still unsure about:
+I am still unsure about when floating-point values can compare as exactly equal after rounding and when a tolerance should be selected instead.
+
+##Part B: LeetCode-style Lecture Code Transfer
+
+Name: 張倖嘉
+Date: 2026-09-07
+Topic: Lecture 1 — Basic Python Arithmetic and Variable Assignment
+
+1. Today’s Challenge
+
+Core concept from today’s OCW lecture:
+
+Arithmetic expressions, variable assignment, and sequential execution.
+
+AI-generated coding challenge title:
+
+Material Required for a Framed Rectangular Display Board
+
+
+2. My Initial Approach — Before AI Help
+
+My approach:
+
+I first calculate the original area as width * height.
+
+Because the frame is added to both the left and right sides, the outer width is:
+
+width + 2 * thickness
+
+Similarly, because the frame is added to both the top and bottom, the outer height is:
+
+height + 2 * thickness
+
+I multiply the new dimensions to obtain the total outer area. I then subtract the original area from the total outer area to obtain the area belonging only to the frame.
+
+
+3. AI Tutor Help
+
+Did you ask the AI Tutor for help?
+
+☑ No — I solved it independently
+☐ Yes — I received one or more hints
+
+The most useful hint/question from AI was:
+
+I did not use an AI hint to determine the formula. AI mainly helped me organize the learning record and verify the results.
+
+It helped me realize that:
+
+AI did not change my core solution, but it helped me confirm that the formula correctly includes the frame on all four sides and at all four corners.
+
+
+4. My Revision
+
+Did you change your approach or code after interacting with AI?
+
+☑ No
+☐ Yes
+
+What did you change, and why?
+
+I did not change my original approach or code. My initial method was to save the original area, increase both dimensions by 2 * thickness, calculate the total outer area, and subtract the original area.
+
+AI only helped me make the calculation steps and written explanation clearer.
+
+
+5. Verification
+
+My final program:
+
+☑ Passed the provided examples
+☑ Passed additional edge cases
+☐ Still has unresolved problems
+
+One edge case I tested:
+
+Input:
+width = 4
+height = 3
+thickness = 0
+
+Expected output:
+12 0
+
+Actual output:
+12 0
+
+
+6. One-Minute Reflection
+
+What idea from the OCW lecture did you transfer to this new problem?
+
+I applied arithmetic expressions, variable assignment, and sequential execution. Because the frame appears on two opposite sides of each dimension, both the width and height must increase by 2 * thickness. I also save the original area before calculating the total outer area so that the original information is preserved.
+
+One thing I understand better now:
+
+I understand better how to divide a practical problem into a sequence of arithmetic steps and use separate variables to preserve the original data and intermediate results. The solution performs a fixed number of operations, so its time complexity and auxiliary space complexity are both O(1).
+
+One thing I am still unsure about:
+
+If the problem allows negative values, floating-point values, or other invalid input, I am still unsure how to design complete input validation.
