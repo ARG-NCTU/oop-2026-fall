@@ -1,0 +1,50 @@
+Topic: Tuples, Lists, Aliasing, Mutability, Cloning
+Date: 2026/10/10
+
+① Check My Understanding
+
+Questions completed: 5 / 5
+
+Answers revised after AI hints: 3 / 5
+
+
+② My Misconception
+
+Before: I thought…
+我原本以為 b = a 會複製串列，而 .copy() 會完整複製所有內容，
+包括內層的串列。另外，我以為 a 和 b 指向同一個串列後，
+重新指派 b 也會讓 a 改變。
+
+Now: I understand…
+b = a 會讓兩個變數指向同一個串列，不會建立副本。
+.copy() 是淺層複製，只建立新的外層串列，內層的 list 仍可能共用。
+此外，修改共用的串列會影響兩者看到的內容，但重新指派 b
+只是讓 b 指向新的物件，不會改變 a。
+
+
+③ Challenge the AI
+
+One AI-generated question I challenged:
+第 2 題：使用 a.copy() 複製串列後，對 b 執行 append，
+不會影響 a。
+
+Why?
+
+☐ Ambiguous
+☑ Oversimplified
+☐ Technically questionable
+☐ Too easy
+☐ Other
+
+Brief explanation:
+這題的答案正確，但只使用一層串列，可能讓初學者誤以為
+.copy() 會完整複製所有內層物件。我原本就有這個誤解。
+建議補充 .copy() 是淺層複製，並搭配第 4 題的巢狀串列
+範例，說明內層 list 仍可能共用。
+
+
+④ One-Minute Reflection
+
+One thing I am still unsure about:
+如果串列中包含多層巢狀 list，應該如何複製，
+才能讓修改副本時不影響原本的串列？
