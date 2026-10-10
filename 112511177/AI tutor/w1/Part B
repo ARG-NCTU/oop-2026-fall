@@ -1,0 +1,90 @@
+**AI Tutor Learning Record — Coding Challenge**
+
+Name：鄭宇辰  
+Date：2026/10/10  
+Topic：Tuples, Lists, Aliasing, Mutability, Cloning
+
+**1. Today’s Challenge**
+
+Core concept from today’s OCW lecture：  
+List 的操作與可變性、別名、建立獨立串列，以及使用 tuple 回傳多個結果。
+
+AI-generated coding challenge title：  
+購物清單預覽（Shopping Cart Preview）
+
+題目要求：  
+撰寫 `preview_cart(cart, unwanted)`，移除所有出現在 `unwanted` 中的商品，保留其餘商品的順序，並回傳「新清單、刪除總數」組成的 tuple。不能修改輸入，回傳的清單必須是獨立的 list。
+
+**2. My Initial Approach — Before AI Help**
+
+My approach：  
+我先建立新的空串列與刪除計數器，再依序檢查 `cart` 中的每個商品。若商品出現在 `unwanted` 中，就將刪除數量加一；否則，使用 `append()` 將商品加入新串列。最後回傳新串列與刪除總數。
+
+這個方法不會修改輸入，也能保留商品順序。因為沒有在遍歷時刪除原始串列的元素，所以不會漏掉連續重複的商品。
+
+**3. AI Tutor Help**
+
+Did you ask the AI Tutor for help？
+
+☑ No — I solved it independently  
+☐ Yes — I received one or more hints
+
+補充說明：  
+我自行提出解法並完成程式，沒有使用解題提示。完成後，AI 協助檢查程式、執行測試，並提出反思問題。
+
+The most useful hint/question from AI was：  
+「為什麼你的方法不會漏掉連續重複的商品？」
+
+It helped me realize that：  
+我的方法只讀取 `cart`，並將保留的商品加入另一個串列，因此原始串列的長度與元素位置不會改變，每個商品都能被檢查。
+
+**4. My Revision**
+
+Did you change your approach or code after interacting with AI？
+
+☑ No  
+☐ Yes
+
+What did you change, and why？  
+沒有修改。初版程式通過提供的範例與額外邊界測試，符合題目要求。
+
+**5. Verification**
+
+My final program：
+
+☑ Passed the provided examples  
+☑ Passed additional edge cases  
+☐ Still has unresolved problems
+
+測試由 AI 協助執行，共通過 8 組案例，包括三個題目範例、空購物清單、空刪除清單、連續重複商品、兩個輸入皆空，以及最大長度的輸入。
+
+另外，也確認輸入保持不變，且修改回傳的新串列不會影響原始清單。
+
+One edge case I tested：
+
+Input：  
+`cart = ["milk", "milk", "milk", "bread"]`  
+`unwanted = ["milk", "milk"]`
+
+Expected output：  
+`(["bread"], 3)`
+
+Actual output：  
+`(["bread"], 3)`
+
+**6. One-Minute Reflection**
+
+What idea from the OCW lecture did you transfer to this new problem？  
+我將 list 的可變性與別名觀念運用到這題，透過建立新的串列來保護原始資料，並使用 tuple 同時回傳新清單與刪除數量。
+
+One thing I understand better now：  
+`new_cart = cart` 只是讓兩個變數指向同一個串列，不會建立副本。使用 `new_cart = []`，再加入保留的商品，可以建立獨立的新清單。我也更理解，遍歷串列時直接刪除元素可能造成跳過元素。
+
+Why my solution works：  
+程式依序檢查每個商品，每次只會將它計入刪除數量，或加入新清單。因此，所有不要的商品都會被排除，保留商品的順序也不會改變。
+
+Time complexity：  
+設 `cart` 有 n 個商品，`unwanted` 有 m 個商品。程式走訪 n 個商品，每次成員檢查最多比較 m 個元素，因此當 m ≥ 1 時，最壞時間複雜度為 O(nm)。若 `unwanted` 為空，時間為 O(n)。涵蓋空串列情況可表示為 O(n(m + 1))。
+
+One thing I am still unsure about：  
+如果商品清單變得很大，是否有更有效率的方法判斷商品是否出現在刪除清單中？
