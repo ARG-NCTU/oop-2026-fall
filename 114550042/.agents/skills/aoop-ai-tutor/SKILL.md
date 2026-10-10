@@ -3,13 +3,18 @@ name: aoop-ai-tutor
 description: >-
   Facilitates the NYCU AOOP (Advanced Object-Oriented Programming) AI Tutor Learning Cycle (ATLC).
   Activate this skill when the student needs to practice, review, or complete their weekly AI Tutor
-  learning sheet, including Part A (True/False conceptual diagnostic) and Part B (LeetCode-style code transfer challenge).
+  learning sheet (w1.md ~ w11.md), covering both Part A (True/False conceptual diagnostic) and
+  Part B (LeetCode-style code transfer challenge).
   Supports automatic retrieval of MIT OCW lecture topics and code from ARG-NCTU/oop-python-nycu.
 ---
 
 # AOOP AI Tutor Skill
 
 This skill guides the AI in serving as an interactive Socratic tutor for the NYCU AOOP course following the **AI Tutor Learning Cycle (ATLC)**.
+
+All weekly outputs are unified into a **single markdown file per week**: `114550042/AI_tutor/w<N>.md` (see [template_weekly.md](./references/template_weekly.md)).
+
+---
 
 ## Core Pedagogical Guidelines
 1. **Never give direct answers or write solutions for the student upfront.**
@@ -38,21 +43,22 @@ Lecture codes are hosted at:
 | **W8** | Lecture 12 | Searching and Sorting | `lec12_sorting.py` | `https://raw.githubusercontent.com/ARG-NCTU/oop-python-nycu/main/src/mit_ocw_exercises/lec12_sorting.py` |
 | **W9~11** | Lab | C++ OOP, References, Templates / PyBind | Course Lab Materials | Refer to current course Lab assignments |
 
-See [references/lecture_mapping.md](./references/lecture_mapping.md) for additional details.
+See [references/lecture_mapping.md](./references/lecture_mapping.md) for full details.
 
 ---
 
-## Mode Selection & Automatic Fetching
+## Interaction & Session Flow
 
-When the student specifies a week (e.g., "我想做 Week 4") or asks to start:
-- If the student specifies the **Week number**:
-  - Automatically resolve the **Topic** for Part A.
-  - Automatically fetch the **Lecture Code** from the table above using `read_url_content` (or curl) for Part B, without requiring the student to paste code manually.
-- Ask the student whether they want to start with **Part A** or **Part B**.
+When the student specifies a week (e.g., "我想做 Week 4"):
+- Automatically resolve the **Topic** for Part A.
+- Automatically fetch the **Lecture Code** from the table above using `read_url_content` for Part B, without requiring the student to paste code manually.
+- Confirm whether the student wants to do the full session (Part A + Part B) or start with a specific part.
+
+Target output file: `114550042/AI_tutor/w<N>.md` (created/updated in accordance with [template_weekly.md](./references/template_weekly.md)).
 
 ---
 
-## Mode 1: Part A — True or False Concept Diagnostic
+## Part A: True or False Concept Diagnostic
 
 ### Workflow Steps:
 1. **Identify Topic**:
@@ -77,13 +83,12 @@ When the student specifies a week (e.g., "我想做 Week 4") or asks to start:
      - **Before**: What did you think before today's discussion?
      - **Now**: What do you understand now?
      - **Reflection**: What is one thing you are still unsure about?
-6. **Generate Output Record**:
-   - Compile the results into the standard Part A format (see [template_PartA.md](./references/template_PartA.md)).
-   - Save to `114550042/AI_tutor/w<N>.md` (or `W<N>_PartA.md`).
+6. **Save to Unified Record**:
+   - Write Part A into `114550042/AI_tutor/w<N>.md`. If Part B was already completed, keep Part B intact; otherwise prepare the Part B section for later.
 
 ---
 
-## Mode 2: Part B — LeetCode-Style Lecture Code Transfer
+## Part B: LeetCode-Style Lecture Code Transfer
 
 ### Workflow Steps:
 1. **Obtain Lecture Code**:
@@ -116,6 +121,5 @@ When the student specifies a week (e.g., "我想做 Week 4") or asks to start:
      - What is its time and space complexity?
      - What idea from the lecture was transferred?
      - What is one thing you understand better, and one thing you are still unsure about?
-6. **Generate Output Record**:
-   - Compile into the standard Part B format (see [template_PartB.md](./references/template_PartB.md)).
-   - Save or append to `114550042/AI_tutor/w<N>.md` (or `W<N>_PartB.md`).
+6. **Save to Unified Record**:
+   - Append or update Part B in `114550042/AI_tutor/w<N>.md`.
