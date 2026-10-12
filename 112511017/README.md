@@ -8,7 +8,7 @@ AOOP 2026 Fall coursework for [MoobyMoo](https://github.com/MoobyMoo).
 | --- | --- |
 | Python lab and tests | [Lab 03](labs/lab03-pytest/) |
 | C++ OOP lab | [Lab 04](labs/lab04-cpp-oop/) |
-| Weekly tutor material, Part A and Part B | [AI tutor](ai-tutor/) |
+| Weekly tutor material, Part A and Part B | [Weekly submissions](AI_tutor/) |
 
 Run the Python lab tests from this directory:
 
@@ -42,8 +42,17 @@ The starter asks for a live TA check of the passing terminal output and a short 
 
 ## AI tutor
 
-[Part A and Part B for Weeks 1–4](ai-tutor/) are complete as AI-assisted written responses. Week 1 keeps its recovered references; Weeks 2–4 contain new responses, challenge implementations, and tests prepared on October 5, 2026. The three new challenges passed 27 tests in total.
+Weekly submissions follow the October 7 announcement: `112511017/AI_tutor/wx.md`, with one Markdown file per week containing Part A and Part B.
 
-[October 5 C++ OOP responses](ai-tutor/2026-10-05/cpp-oop/) contains five explained answers and a completed AI-assisted challenge response. Its delivery-device implementation passed six tests with sanitizers.
+| Week | Assigned MIT OCW lecture | Submission |
+| --- | --- | --- |
+| 1 | Lecture 5: Lists, aliasing, and mutation | [w1.md](AI_tutor/w1.md) |
+| 2 | Lecture 6: Recursion and dictionaries | [w2.md](AI_tutor/w2.md) |
+| 3 | Lecture 7: Testing and exceptions | [w3.md](AI_tutor/w3.md) |
+| 4 | Lecture 8: Object oriented programming | [w4.md](AI_tutor/w4.md) |
+| 5 | Lecture 9: Python classes and inheritance | [w5.md](AI_tutor/w5.md) |
+| 6 | Lecture 10: Understanding program efficiency, Part 1 | [w6.md](AI_tutor/w6.md) |
 
-[October 5 OCW Python responses](ai-tutor/2026-10-05/python-oop/) covers classes and inheritance from Lectures 8 and 9, with AI-assisted answers and reflections. Its shipping-quote implementation passed eight tests. The exact assigned lecture still needs confirmation.
+The week/topic mapping is confirmed by the [official AOOP syllabus](https://timetable.nycu.edu.tw/?r=main/crsoutline&Acy=115&Sem=1&CrsNo=515106&lang=zh-tw).
+
+Weeks 1–5 consolidate the assisted responses prepared on October 5. Week 6 was prepared on October 12. Each record states the AI assistance used and preserves the distinction between supplied answers and a student-led tutoring session. The [supporting material](ai-tutor/) includes the original records and implementations. The [C++ OOP responses](ai-tutor/2026-10-05/cpp-oop/) supplement Lab 04; the Week 5 MIT assignment is Python inheritance.

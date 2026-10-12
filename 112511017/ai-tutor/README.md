@@ -1,4 +1,6 @@
-# AI tutor material
+# AI tutor supporting material
+
+The required weekly submissions are in [../AI_tutor/](../AI_tutor/), named `w1.md` through `w6.md`. This directory preserves the original records and supporting code.
 
 ## Weekly records
 
@@ -13,7 +15,7 @@ All four weeks contain Part A and Part B. Written responses were completed with 
 
 Week 1 uses questions and a challenge recovered from the September 7 conversation. Weeks 2–4 are new AI-assisted written responses with new challenges and verified implementations. Each new challenge passed nine tests, for 27 tests in total.
 
-The week/topic mapping follows the Lecture 5–8 sequence inferred from saved class-repository material. It has not been confirmed against an official weekly schedule.
+The Lecture 5–8 mapping for Weeks 1–4 was confirmed against the official AOOP syllabus on October 12. Week 5 is Lecture 9, and Week 6 is Lecture 10.
 
 The earlier search covered local AOOP coursework, the lab PC's AOOP folder, Documents, Downloads, Desktop, and relevant saved conversation histories. It recovered the Week 1 source material, but did not locate historical Week 2–4 records. The newly prepared files do not claim to be those older sessions.
 
@@ -22,7 +24,7 @@ The earlier search covered local AOOP coursework, the lab PC's AOOP folder, Docu
 | Topic | Part A | Part B | Status |
 | --- | --- | --- | --- |
 | [C++ OOP](2026-10-05/cpp-oop/) | [Part A](2026-10-05/cpp-oop/part-a.md) | [Part B](2026-10-05/cpp-oop/part-b.md) | AI-assisted written responses completed. Six challenge tests passed. |
-| [OCW Python](2026-10-05/python-oop/) | [Part A](2026-10-05/python-oop/part-a.md) | [Part B](2026-10-05/python-oop/part-b.md) | AI-assisted Lecture 8 and 9 responses completed. Eight challenge tests passed. Exact assignment confirmation pending. |
+| [OCW Python](2026-10-05/python-oop/) | [Part A](2026-10-05/python-oop/part-a.md) | [Part B](2026-10-05/python-oop/part-b.md) | AI-assisted Lecture 8 and 9 responses completed. Eight challenge tests passed. Confirmed as Week 5, Lecture 9, on October 12. |
 
 ## Required format
 
