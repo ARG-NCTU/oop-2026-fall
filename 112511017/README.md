@@ -8,6 +8,7 @@ AOOP 2026 Fall coursework for [MoobyMoo](https://github.com/MoobyMoo).
 | --- | --- |
 | Python lab and tests | [Lab 03](labs/lab03-pytest/) |
 | C++ OOP lab | [Lab 04](labs/lab04-cpp-oop/) |
+| MOOS-IvP mission and demo guide | [Lab 05](Lab05/) |
 | Weekly tutor material, Part A and Part B | [Weekly submissions](AI_tutor/) |
 
 Run the Python lab tests from this directory:

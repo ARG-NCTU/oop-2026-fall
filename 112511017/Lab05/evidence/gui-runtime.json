@@ -1,0 +1,28 @@
+{
+  "runtime_directory": "/tmp/aoop-lab05-xeran64v",
+  "gui": true,
+  "checks": [
+    "DB_UPTIME > 5",
+    "DEPLOY = false",
+    "DESIRED_SPEED = 3",
+    "DESIRED_SPEED = 1.0",
+    "((NAV_SPEED > 0.85) and (NAV_SPEED < 1.1))",
+    "DESIRED_SPEED = 4.0",
+    "((NAV_SPEED > 3.5) and (NAV_SPEED < 4.1))",
+    "CYCLE_INDEX >= 2",
+    "DESIRED_SPEED = 4",
+    "MISSION = complete",
+    "DEPLOY = false",
+    "NAV_SPEED < 0.1",
+    "NODE_REPORT colour is orange",
+    "WPT_INDEX selects all four corners",
+    "Settled straight-leg speeds at 1.0 and 4.0 m/s",
+    "NAV positions visit A-B-C-D-A and closing-leg midpoint"
+  ],
+  "screenshot": "/tmp/aoop-lab05-xeran64v/viewer.png",
+  "settled_speed_seconds": {
+    "1.0": 12.03878,
+    "4.0": 26.59471
+  },
+  "result": "PASS"
+}

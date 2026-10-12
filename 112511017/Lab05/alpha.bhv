@@ -1,0 +1,54 @@
+// Lab05, 112511017, Yu-Liang Tan
+// Adapted from MOOS-IvP v24.8.1 ivp/missions/s1_alpha/alpha.bhv.
+initialize DEPLOY = false
+initialize RETURN = false
+
+Behavior = BHV_Waypoint
+{
+  name = waypt_survey
+  pwt = 100
+  condition = RETURN = false
+  condition = DEPLOY = true
+  updates = WPT_UPDATE
+  perpetual = true
+
+  // The upstream example enables speed_alt=1.2, overriding speed updates.
+  // Disable it so the MUCHSLO/MUCHFST commands control the target speed.
+  use_alt_speed = false
+  speed = 3.0
+  lead = 8
+  lead_damper = 1
+  lead_to_start = true
+  capture_line = true
+  capture_radius = 5.0
+  slip_radius = 15.0
+
+  // Four corners of a 120 m square. Repetition closes D -> A.
+  points = 60,-40:60,-160:180,-160:180,-40
+  order = normal
+  repeat = forever
+  draw_path_loop = true
+
+  visual_hints = nextpt_color=yellow
+  visual_hints = nextpt_vertex_size=8
+  visual_hints = nextpt_lcolor=gray70
+  visual_hints = vertex_color=dodger_blue, edge_color=white
+  visual_hints = vertex_size=5, edge_size=1
+}
+
+Behavior = BHV_Waypoint
+{
+  name = waypt_return
+  pwt = 100
+  condition = RETURN = true
+  condition = DEPLOY = true
+  perpetual = true
+  updates = RETURN_UPDATE
+  endflag = RETURN = false
+  endflag = DEPLOY = false
+  endflag = MISSION = complete
+  speed = 2.0
+  capture_radius = 2.0
+  slip_radius = 8.0
+  points = 60,-40
+}

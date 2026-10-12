@@ -1,0 +1,132 @@
+// Lab05, 112511017, Yu-Liang Tan
+// Adapted from MOOS-IvP v24.8.1 ivp/missions/s1_alpha/alpha.moos.
+ServerHost   = localhost
+ServerPort   = 9000
+Community    = alpha
+MOOSTimeWarp = 1
+LatOrigin    = 43.825300
+LongOrigin   = -70.330400
+
+ProcessConfig = ANTLER
+{
+  MSBetweenLaunches = 200
+  // Keep all applications in the launcher's private process group.
+  GentleKill = false
+  Run = MOOSDB        @ NewConsole = false
+  Run = pLogger       @ NewConsole = false
+  Run = uSimMarineV22  @ NewConsole = false
+  Run = pMarinePIDV22  @ NewConsole = false
+  Run = pHelmIvP       @ NewConsole = false
+  Run = pMarineViewer  @ NewConsole = false
+  Run = uProcessWatch  @ NewConsole = false
+  Run = pNodeReporter  @ NewConsole = false
+}
+
+ProcessConfig = pLogger
+{
+  AppTick = 8
+  CommsTick = 8
+  AsyncLog = true
+  Log = BHV_SETTINGS @ 0 NOSYNC
+  LogAuxSrc = true
+  WildCardLogging = true
+  WildCardOmitPattern = *_STATUS
+  WildCardOmitPattern = DB_VARSUMMARY
+  WildCardOmitPattern = DB_RWSUMMARY
+}
+
+ProcessConfig = uProcessWatch
+{
+  AppTick = 4
+  CommsTick = 4
+  watch_all = true
+  nowatch = uPokeDB*
+  nowatch = uQueryDB*
+}
+
+ProcessConfig = uSimMarineV22
+{
+  AppTick = 4
+  CommsTick = 4
+  // Start at the first corner so there is no off-square approach leg.
+  start_pos = x=60, y=-40, heading=180, speed=0
+  prefix = NAV
+  turn_rate = 95
+  thrust_map = 0:0, 20:1, 40:2, 60:3, 80:4, 100:5
+  turn_spd_loss = 0.4
+}
+
+ProcessConfig = pHelmIvP
+{
+  AppTick = 4
+  CommsTick = 4
+  behaviors = alpha.bhv
+  domain = course:0:359:360
+  domain = speed:0:4:41
+}
+
+ProcessConfig = pMarinePIDV22
+{
+  AppTick = 20
+  CommsTick = 20
+  verbose = false
+  depth_control = false
+  yaw_pid_kp = 0.9
+  yaw_pid_kd = 0.3
+  yaw_pid_ki = 0.3
+  yaw_pid_integral_limit = 0.07
+  speed_pid_kp = 1.0
+  speed_pid_kd = 0.0
+  speed_pid_ki = 0.0
+  speed_pid_integral_limit = 0.07
+  maxrudder = 100
+  maxthrust = 100
+  speed_factor = 20
+}
+
+ProcessConfig = pMarineViewer
+{
+  AppTick = 4
+  CommsTick = 4
+  tiff_file = forrest19.tif
+  set_pan_x = -90
+  set_pan_y = -280
+  zoom = 0.65
+  vehicle_shape_scale = 1.5
+  hash_delta = 50
+  hash_shade = 0.22
+  hash_viewable = true
+  trails_point_size = 1
+  appcast_height = 75
+  appcast_width = 30
+  appcast_viewable = true
+  appcast_color_scheme = indigo
+  nodes_font_size = xlarge
+  procs_font_size = xlarge
+  appcast_font_size = large
+
+  scope = WPT_UPDATE
+  scope = RETURN_UPDATE
+  scope = DESIRED_SPEED
+  scope = NAV_SPEED
+  scope = WPT_STAT
+  scope = VIEW_SEGLIST
+
+  button_one = DEPLOY # DEPLOY=true
+  button_one = MOOS_MANUAL_OVERRIDE=false # RETURN=false
+  button_two = RETURN # RETURN=true
+  button_three = SLOWER # WPT_UPDATE=speed=1.5
+  button_four = FASTER # WPT_UPDATE=speed=3.5
+  // New buttons change both survey and return speeds.
+  button_five = MUCHSLO # WPT_UPDATE=speed=1.0 # RETURN_UPDATE=speed=1.0
+  button_six = MUCHFST # WPT_UPDATE=speed=4.0 # RETURN_UPDATE=speed=4.0
+}
+
+ProcessConfig = pNodeReporter
+{
+  AppTick = 2
+  CommsTick = 2
+  platform_type = kayak
+  platform_color = orange
+  platform_length = 4
+}
