@@ -1,0 +1,18 @@
+[
+  {"name": "example_1", "readings": [2,4,3,8,1], "k": 2, "limit": 8, "expected": 2},
+  {"name": "example_2_equal_limit", "readings": [3,3,3], "k": 2, "limit": 6, "expected": -1},
+  {"name": "example_3_no_complete_window", "readings": [9,1], "k": 3, "limit": 5, "expected": -1},
+  {"name": "empty", "readings": [], "k": 1, "limit": 0, "expected": -1},
+  {"name": "single_alert", "readings": [7], "k": 1, "limit": 6, "expected": 0},
+  {"name": "single_equal", "readings": [7], "k": 1, "limit": 7, "expected": -1},
+  {"name": "first_of_several_alerts", "readings": [5,5,5,5], "k": 2, "limit": 9, "expected": 0},
+  {"name": "last_window_only", "readings": [1,1,1,9], "k": 2, "limit": 9, "expected": 2},
+  {"name": "whole_list", "readings": [2,0,5], "k": 3, "limit": 6, "expected": 0},
+  {"name": "whole_list_equal", "readings": [2,0,5], "k": 3, "limit": 7, "expected": -1},
+  {"name": "all_zero", "readings": [0,0,0,0], "k": 2, "limit": 0, "expected": -1},
+  {"name": "k_one_late_alert", "readings": [0,0,1], "k": 1, "limit": 0, "expected": 2},
+  {"name": "exclude_partial_tail", "readings": [0,0,9], "k": 2, "limit": 9, "expected": -1},
+  {"name": "reset_between_windows", "readings": [4,0,0,4], "k": 2, "limit": 4, "expected": -1},
+  {"name": "overlapping_windows", "readings": [1,4,4,0], "k": 2, "limit": 6, "expected": 1},
+  {"name": "maximum_k_short_input", "readings": [100], "k": 1000, "limit": 0, "expected": -1}
+]
