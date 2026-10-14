@@ -1,0 +1,462 @@
+{
+  "date": "2026-10-14",
+  "python": "3.14.4",
+  "compiler": "g++ (Ubuntu 15.2.0-16ubuntu1) 15.2.0",
+  "sanitizers": [
+    "AddressSanitizer",
+    "UndefinedBehaviorSanitizer",
+    "leak detection"
+  ],
+  "weeks": {
+    "w2": {
+      "pytest_passed": 11,
+      "cli_cases": [
+        {
+          "name": "staged snapshot",
+          "expected": "20 10 10 10",
+          "actual": "20 10 10 10",
+          "result": "PASS"
+        },
+        {
+          "name": "not pushed",
+          "expected": "9 7 7 -1",
+          "actual": "9 7 7 -1",
+          "result": "PASS"
+        },
+        {
+          "name": "empty stream",
+          "expected": "-1 -1 -1 -1",
+          "actual": "-1 -1 -1 -1",
+          "result": "PASS"
+        }
+      ]
+    },
+    "w3": {
+      "pytest_passed": 15,
+      "cli_cases": [
+        {
+          "name": "ordinary transfer",
+          "expected": "70 50",
+          "actual": "70 50",
+          "result": "PASS"
+        },
+        {
+          "name": "full balance",
+          "expected": "0 5",
+          "actual": "0 5",
+          "result": "PASS"
+        },
+        {
+          "name": "invalid transfer",
+          "expected": "INVALID",
+          "actual": "INVALID",
+          "result": "PASS"
+        }
+      ]
+    },
+    "w4": {
+      "cases": [
+        {
+          "name": "example 1",
+          "expected": "55",
+          "actual": "55",
+          "result": "PASS"
+        },
+        {
+          "name": "example 2",
+          "expected": "380",
+          "actual": "380",
+          "result": "PASS"
+        },
+        {
+          "name": "example 3",
+          "expected": "0",
+          "actual": "0",
+          "result": "PASS"
+        },
+        {
+          "name": "zero minutes",
+          "expected": "0",
+          "actual": "0",
+          "result": "PASS"
+        },
+        {
+          "name": "hour boundary",
+          "expected": "60",
+          "actual": "60",
+          "result": "PASS"
+        },
+        {
+          "name": "free period boundary",
+          "expected": "15",
+          "actual": "15",
+          "result": "PASS"
+        },
+        {
+          "name": "half-hour boundary",
+          "expected": "45",
+          "actual": "45",
+          "result": "PASS"
+        },
+        {
+          "name": "regular cap boundary",
+          "expected": "400",
+          "actual": "400",
+          "result": "PASS"
+        },
+        {
+          "name": "short-stay cap boundary",
+          "expected": "360",
+          "actual": "360",
+          "result": "PASS"
+        },
+        {
+          "name": "maximum cars",
+          "expected": "200000",
+          "actual": "200000",
+          "result": "PASS"
+        },
+        {
+          "name": "independent-oracle-1",
+          "expected": "2690",
+          "actual": "2690",
+          "result": "PASS"
+        },
+        {
+          "name": "independent-oracle-2",
+          "expected": "320",
+          "actual": "320",
+          "result": "PASS"
+        },
+        {
+          "name": "independent-oracle-3",
+          "expected": "2630",
+          "actual": "2630",
+          "result": "PASS"
+        },
+        {
+          "name": "independent-oracle-4",
+          "expected": "4220",
+          "actual": "4220",
+          "result": "PASS"
+        },
+        {
+          "name": "independent-oracle-5",
+          "expected": "2915",
+          "actual": "2915",
+          "result": "PASS"
+        },
+        {
+          "name": "independent-oracle-6",
+          "expected": "1860",
+          "actual": "1860",
+          "result": "PASS"
+        },
+        {
+          "name": "independent-oracle-7",
+          "expected": "3105",
+          "actual": "3105",
+          "result": "PASS"
+        },
+        {
+          "name": "independent-oracle-8",
+          "expected": "20",
+          "actual": "20",
+          "result": "PASS"
+        },
+        {
+          "name": "independent-oracle-9",
+          "expected": "4465",
+          "actual": "4465",
+          "result": "PASS"
+        },
+        {
+          "name": "independent-oracle-10",
+          "expected": "180",
+          "actual": "180",
+          "result": "PASS"
+        },
+        {
+          "name": "independent-oracle-11",
+          "expected": "4625",
+          "actual": "4625",
+          "result": "PASS"
+        },
+        {
+          "name": "independent-oracle-12",
+          "expected": "3475",
+          "actual": "3475",
+          "result": "PASS"
+        },
+        {
+          "name": "independent-oracle-13",
+          "expected": "1495",
+          "actual": "1495",
+          "result": "PASS"
+        },
+        {
+          "name": "independent-oracle-14",
+          "expected": "2600",
+          "actual": "2600",
+          "result": "PASS"
+        },
+        {
+          "name": "independent-oracle-15",
+          "expected": "2090",
+          "actual": "2090",
+          "result": "PASS"
+        },
+        {
+          "name": "independent-oracle-16",
+          "expected": "1260",
+          "actual": "1260",
+          "result": "PASS"
+        },
+        {
+          "name": "independent-oracle-17",
+          "expected": "3920",
+          "actual": "3920",
+          "result": "PASS"
+        },
+        {
+          "name": "independent-oracle-18",
+          "expected": "360",
+          "actual": "360",
+          "result": "PASS"
+        },
+        {
+          "name": "independent-oracle-19",
+          "expected": "380",
+          "actual": "380",
+          "result": "PASS"
+        },
+        {
+          "name": "independent-oracle-20",
+          "expected": "3735",
+          "actual": "3735",
+          "result": "PASS"
+        }
+      ]
+    },
+    "w6": {
+      "cases": [
+        {
+          "name": "example 1",
+          "expected": "RETURN 2",
+          "actual": "RETURN 2",
+          "result": "PASS"
+        },
+        {
+          "name": "example 2",
+          "expected": "SURVEY 3",
+          "actual": "SURVEY 3",
+          "result": "PASS"
+        },
+        {
+          "name": "example 3",
+          "expected": "DONE 0",
+          "actual": "DONE 0",
+          "result": "PASS"
+        },
+        {
+          "name": "no events",
+          "expected": "PARK 0",
+          "actual": "PARK 0",
+          "result": "PASS"
+        },
+        {
+          "name": "inactive return",
+          "expected": "PARK 0",
+          "actual": "PARK 0",
+          "result": "PASS"
+        },
+        {
+          "name": "inactive reached",
+          "expected": "PARK 0",
+          "actual": "PARK 0",
+          "result": "PASS"
+        },
+        {
+          "name": "pending speed",
+          "expected": "SURVEY 1",
+          "actual": "SURVEY 1",
+          "result": "PASS"
+        },
+        {
+          "name": "zero survey speed",
+          "expected": "SURVEY 0",
+          "actual": "SURVEY 0",
+          "result": "PASS"
+        },
+        {
+          "name": "speed does not change return",
+          "expected": "RETURN 2",
+          "actual": "RETURN 2",
+          "result": "PASS"
+        },
+        {
+          "name": "return while paused",
+          "expected": "RETURN 2",
+          "actual": "RETURN 2",
+          "result": "PASS"
+        },
+        {
+          "name": "reached ignored in manual",
+          "expected": "PARK 0",
+          "actual": "PARK 0",
+          "result": "PASS"
+        },
+        {
+          "name": "restart after done",
+          "expected": "SURVEY 3",
+          "actual": "SURVEY 3",
+          "result": "PASS"
+        },
+        {
+          "name": "duplicate return",
+          "expected": "RETURN 2",
+          "actual": "RETURN 2",
+          "result": "PASS"
+        },
+        {
+          "name": "late reached after done",
+          "expected": "DONE 0",
+          "actual": "DONE 0",
+          "result": "PASS"
+        },
+        {
+          "name": "manual after done",
+          "expected": "DONE 0",
+          "actual": "DONE 0",
+          "result": "PASS"
+        },
+        {
+          "name": "independent-oracle-1",
+          "expected": "DONE 0",
+          "actual": "DONE 0",
+          "result": "PASS"
+        },
+        {
+          "name": "independent-oracle-2",
+          "expected": "SURVEY 1",
+          "actual": "SURVEY 1",
+          "result": "PASS"
+        },
+        {
+          "name": "independent-oracle-3",
+          "expected": "PARK 0",
+          "actual": "PARK 0",
+          "result": "PASS"
+        },
+        {
+          "name": "independent-oracle-4",
+          "expected": "DONE 0",
+          "actual": "DONE 0",
+          "result": "PASS"
+        },
+        {
+          "name": "independent-oracle-5",
+          "expected": "SURVEY 4",
+          "actual": "SURVEY 4",
+          "result": "PASS"
+        },
+        {
+          "name": "independent-oracle-6",
+          "expected": "SURVEY 1",
+          "actual": "SURVEY 1",
+          "result": "PASS"
+        },
+        {
+          "name": "independent-oracle-7",
+          "expected": "PARK 0",
+          "actual": "PARK 0",
+          "result": "PASS"
+        },
+        {
+          "name": "independent-oracle-8",
+          "expected": "RETURN 2",
+          "actual": "RETURN 2",
+          "result": "PASS"
+        },
+        {
+          "name": "independent-oracle-9",
+          "expected": "SURVEY 1",
+          "actual": "SURVEY 1",
+          "result": "PASS"
+        },
+        {
+          "name": "independent-oracle-10",
+          "expected": "SURVEY 1",
+          "actual": "SURVEY 1",
+          "result": "PASS"
+        },
+        {
+          "name": "independent-oracle-11",
+          "expected": "RETURN 2",
+          "actual": "RETURN 2",
+          "result": "PASS"
+        },
+        {
+          "name": "independent-oracle-12",
+          "expected": "SURVEY 0",
+          "actual": "SURVEY 0",
+          "result": "PASS"
+        },
+        {
+          "name": "independent-oracle-13",
+          "expected": "DONE 0",
+          "actual": "DONE 0",
+          "result": "PASS"
+        },
+        {
+          "name": "independent-oracle-14",
+          "expected": "DONE 0",
+          "actual": "DONE 0",
+          "result": "PASS"
+        },
+        {
+          "name": "independent-oracle-15",
+          "expected": "DONE 0",
+          "actual": "DONE 0",
+          "result": "PASS"
+        },
+        {
+          "name": "independent-oracle-16",
+          "expected": "DONE 0",
+          "actual": "DONE 0",
+          "result": "PASS"
+        },
+        {
+          "name": "independent-oracle-17",
+          "expected": "SURVEY 1",
+          "actual": "SURVEY 1",
+          "result": "PASS"
+        },
+        {
+          "name": "independent-oracle-18",
+          "expected": "SURVEY 0",
+          "actual": "SURVEY 0",
+          "result": "PASS"
+        },
+        {
+          "name": "independent-oracle-19",
+          "expected": "SURVEY 4",
+          "actual": "SURVEY 4",
+          "result": "PASS"
+        },
+        {
+          "name": "independent-oracle-20",
+          "expected": "PARK 0",
+          "actual": "PARK 0",
+          "result": "PASS"
+        },
+        {
+          "name": "maximum events",
+          "expected": "SURVEY 4",
+          "actual": "SURVEY 4",
+          "result": "PASS"
+        }
+      ]
+    }
+  }
+}

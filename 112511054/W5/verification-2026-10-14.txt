@@ -1,0 +1,23 @@
+Date: 2026-10-14 (Asia/Taipei)
+
+Command: python3 verify_scheduler.py (Ubuntu/WSL, W5 directory)
+PASS: mixed tasks; expected=4; actual=4
+PASS: zero rounds; expected=7; actual=7
+PASS: all completed; expected=0; actual=0
+PASS: empty task list; expected=0; actual=0
+PASS: zero initial work; expected=0; actual=0
+PASS: fast task with one unit; expected=0; actual=0
+PASS: maximum constraints; expected=0; actual=0
+ALL PASS (7/7)
+
+Command: make -B check (Ubuntu/WSL, W5/lab directory)
+========== C++ 上機驗收 ==========
+[1/4] 參考 clamp_value ........ PASS
+[2/4] 封裝與建構子 Battery .... PASS
+[3/4] 繼承與 virtual MyApp ..... PASS
+[4/4] new[] / delete[] ........ PASS
+通過 4/4 項
+----------------------------------
+ALL PASS (4/4)  助教可簽過
+
+This file records actual command outputs. It does not confirm a TA signature.

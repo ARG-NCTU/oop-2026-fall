@@ -1,0 +1,5 @@
+LOG_*/
+MOOSLog_*/
+.LastOpenedMOOSLogDirectory
+*.moos++
+*.log

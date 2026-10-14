@@ -1,0 +1,87 @@
+{
+  "source_log": "MOOSLog_12_10_2026_____19_30_03/MOOSLog_12_10_2026_____19_30_03.alog",
+  "git_tag": "v24.8.1",
+  "git_commit": "477be7e91bf220185d55e5a2a9dba16dbde32c3f",
+  "time_warp": 10,
+  "speed_updates": [
+    {
+      "time": "181.41130",
+      "value": "speed=1.0"
+    },
+    {
+      "time": "181.41130",
+      "value": "speed=1.0"
+    },
+    {
+      "time": "181.41130",
+      "value": "speed=1.0"
+    },
+    {
+      "time": "181.41130",
+      "value": "speed=1.0"
+    },
+    {
+      "time": "287.73681",
+      "value": "speed=4.0"
+    },
+    {
+      "time": "287.73681",
+      "value": "speed=4.0"
+    },
+    {
+      "time": "287.73681",
+      "value": "speed=4.0"
+    },
+    {
+      "time": "287.73681",
+      "value": "speed=4.0"
+    }
+  ],
+  "desired_speed_values": [
+    "0.00000",
+    "1.00000",
+    "2.00000",
+    "3.00000",
+    "4.00000"
+  ],
+  "first_desired_speed_1": {
+    "time": "185.50105",
+    "value": "1.00000"
+  },
+  "first_desired_speed_4": {
+    "time": "291.22885",
+    "value": "4.00000"
+  },
+  "square_path": {
+    "time": "175.19331",
+    "value": "pts={60,-40:60,-160:180,-160:180,-40:60,-40},label=alpha_waypt_survey,label_color=white,edge_color=white,vertex_color=dodger_blue,vertex_size=5,edge_size=1"
+  },
+  "blue_ship": {
+    "time": "13.37944",
+    "value": "NAME=alpha,X=0,Y=-20,SPD=0,HDG=180,DEP=0,LAT=43.82511993,LON=-70.33039599,TYPE=kayak,COLOR=dodger_blue,MODE=PARK,ALLSTOP=ManualOverride,YAW=-1.5707963,TIME=17918046043.04,LENGTH=4"
+  },
+  "survey_completed": [
+    {
+      "time": "393.44626",
+      "value": "behavior-name=waypt_survey,completed"
+    }
+  ],
+  "return_completed": [
+    {
+      "time": "422.14472",
+      "value": "behavior-name=waypt_return,completed"
+    },
+    {
+      "time": "422.14472",
+      "value": "behavior-name=waypt_return,completed"
+    }
+  ],
+  "mission": [
+    {
+      "time": "422.14493",
+      "value": "complete"
+    }
+  ],
+  "bhv_errors": [],
+  "bhv_warnings": []
+}
