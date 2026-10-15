@@ -1,0 +1,55 @@
+1. Problem Statement 題目敘述
+English
+A customer buys some items from a store. Each item has a price. The program calculates the total cost.
+Later, the customer decides to buy more items. The program updates the quantity, but the stored total cost does not automatically change.
+Your task is to write a Python program to show what happens before and after recalculating the total cost.
+中文翻譯
+一位顧客在商店購買商品，每件商品都有自己的價格，程式會計算購買的總金額。
+後來，顧客決定多買一些商品。程式更新了購買數量，但是原本儲存的總金額不會自動改變。
+你的任務是撰寫一個 Python 程式，展示重新計算總金額之前和之後的結果。
+你需要完成的事情（Your Tasks）
+1. 讀取商品單價、原本的購買數量，以及額外購買的數量。
+   Read the item price, the original quantity, and the additional quantity.
+2. 計算並印出原本的總金額。
+   Calculate and print the initial total cost.
+3. 更新購買數量，但先不要重新計算總金額。
+   Update the quantity without recalculating the total cost yet.
+4. 再次印出原本儲存的總金額。
+   Print the stored total cost again.
+5. 重新計算總金額，並印出新的結果。
+   Recalculate and print the final total cost.
+
+   Question 1 — Algorithm 演算法
+English: Explain your proposed algorithm in your own words.
+中文： 請用自己的話描述你打算按照什麼順序完成這道題目。
+提示：假設 quantity 從 3 變成 5，原本儲存的 total 會自動改變嗎？為什麼？
+宣告變數讀取單價及數量，計算金額存入一個變數，然後再更新數量再更改總金額
+
+不會 要再跑一次他才會改變
+
+Question 2 — Lecture Concept 課堂觀念
+English: Which concept from today's lecture are you applying?
+中文： 你認為今天上課的哪個觀念可以用在這道題目？
+
+A. Variables automatically update when other variables change.
+
+      其他變數改變時，變數的值就會自動更新。
+
+B. Assignment stores a value. Changing another variable does not automatically recalculate it.
+
+      指定運算會儲存一個值；改變另一個變數時，不會自動重新計算原本的值。
+
+C. Comments change how Python performs calculations.
+
+      註解會改變 Python 的計算方式。
+
+D. Variable names must always be short.
+
+      變數名稱一定要很短。
+
+我的演算法想法是：
+宣告變數讀取單價及數量，計算金額存入一個變數，然後再更新數量再更改總金額
+
+不會 要再跑一次他才會改變
+我的選項是：B
+請指出推理是否正確；如果不正確，請給提示或反例，不要直接提供解答或程式碼。
