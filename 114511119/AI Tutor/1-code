@@ -79,3 +79,17 @@ B. 10
 C. 7
 
 我的變數追蹤答案：print(y) = 10；print(x) = 7。
+
+price = float(input())
+quantity = int(input())
+additional = int(input())
+
+total = price * quantity
+print(total)
+
+quantity = quantity + additional
+
+print(total)
+
+total = price * quantity
+print(total)
