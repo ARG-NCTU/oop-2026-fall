@@ -1,0 +1,38 @@
+**Topic:** Decomposition, Abstraction, Functions  
+**Date:** 2026-10-15
+
+### ① Check My Understanding
+
+Questions completed: **5 / 5**
+
+Answers revised after AI hints: **1 / 5**
+
+### ② My Misconception
+
+**Before: I thought…**
+
+I thought I needed to understand how a function works internally in order to use it correctly.
+
+**Now: I understand…**
+
+I understand that abstraction allows us to use a function by knowing its purpose and how to use it, without understanding every implementation detail.
+
+### ③ Challenge the AI
+
+**One AI-generated question I challenged:**
+
+Question 5 about abstraction and functions.
+
+**Why?**
+
+☑ Ambiguous
+
+**Brief explanation:**
+
+The question could confuse understanding how to use a function with understanding its internal implementation. These are two different things.
+
+### ④ One-Minute Reflection
+
+**One thing I am still unsure about:**
+
+I am still unsure how to distinguish important information from unnecessary details when applying abstraction. I hope to improve through more programming practice.
