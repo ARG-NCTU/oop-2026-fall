@@ -1,0 +1,42 @@
+**Topic:** String Manipulation, Guess and Check, Approximations, and Bisection  
+**Date:** October 15, 2026
+
+### ① Check My Understanding
+
+Questions completed: **5 / 5**
+
+Answers revised after AI hints: **0 / 5**
+
+### ② My Misconception
+
+**Before: I thought…**
+
+I thought guess and check required starting over whenever a guess was wrong.
+
+**Now: I understand…**
+
+I understand that a wrong guess can provide useful information. Bisection uses this information to narrow the search interval, while approximations provide useful answers even when they are not exact.
+
+### ③ Challenge the AI
+
+**One AI-generated question I challenged:**
+
+Question 1: The question about converting a string to uppercase without necessarily changing the original string.
+
+**Why?**
+
+☐ Ambiguous  
+☐ Oversimplified  
+☐ Technically questionable  
+☑ Too easy  
+☐ Other: __________
+
+**Brief explanation:**
+
+The question was too easy because it tested a basic concept without asking me to apply string manipulation in a practical situation.
+
+### ④ One-Minute Reflection
+
+**One thing I am still unsure about:**
+
+I am still unsure about the conditions required for bisection to work correctly and how to choose an appropriate approximation.
