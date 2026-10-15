@@ -53,3 +53,29 @@ D. Variable names must always be short.
 不會 要再跑一次他才會改變
 我的選項是：B
 請指出推理是否正確；如果不正確，請給提示或反例，不要直接提供解答或程式碼。
+
+Question 1：第一個 print(y) 會印出什麼？
+What will the first print(y) output?
+
+A. 10
+
+
+B. 13
+
+
+C. 7
+
+
+
+Question 2：第二個 print(x) 會印出什麼？
+What will the second print(x) output?
+
+A. 4
+
+
+B. 10
+
+
+C. 7
+
+我的變數追蹤答案：print(y) = 10；print(x) = 7。
