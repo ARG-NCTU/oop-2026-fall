@@ -1,0 +1,42 @@
+**Topic:** Branching and Iteration  
+**Date:** October 15, 2026
+
+### ① Check My Understanding
+
+Questions completed: **5 / 5**
+
+Answers revised after AI hints: **3 / 5**
+
+### ② My Misconception
+
+**Before: I thought…**
+
+I thought branching and iteration could both make a program repeat actions.
+
+**Now: I understand…**
+
+Branching allows a program to choose different paths based on conditions, while iteration repeats a block of code. I also understand that an infinite loop may occur if its stopping condition is never reached.
+
+### ③ Challenge the AI
+
+**One AI-generated question I challenged:**
+
+Question 4: A loop that executes a fixed number of times does not necessarily need to check a condition before every repetition.
+
+**Why?**
+
+☐ Ambiguous  
+☐ Oversimplified  
+☑ Technically questionable  
+☐ Too easy  
+☐ Other: __________
+
+**Brief explanation:**
+
+The statement may be technically questionable because different loop structures work differently. The question should specify the type of loop to avoid confusion.
+
+### ④ One-Minute Reflection
+
+**One thing I am still unsure about:**
+
+I am still unsure about how different types of loops work and how to determine whether a loop will stop or become an infinite loop.
