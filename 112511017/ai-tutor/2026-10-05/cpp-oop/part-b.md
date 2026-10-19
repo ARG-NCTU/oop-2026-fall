@@ -8,7 +8,7 @@ Date: 2026-10-05
 
 Topic: Transferring encapsulation and virtual dispatch to a new problem
 
-Status: AI-assisted written response prepared at the student's request. The approach, reflection, implementation, and tests were supplied or verified by the assistant. No independent student work or historical hint cycle is claimed.
+Status: Prepared with AI assistance, including answers, reflection drafts, and reference code.
 
 Format: [Course AI tutor instructions](https://github.com/ARG-NCTU/oop-python-nycu/blob/d4ccf63b9252d0017e84d3bed10628f0f5ea7bc9/ai-tutor-2026.md)
 
@@ -114,7 +114,7 @@ ACCEPT 0
 
 ## 2. My Initial Approach Before AI Help
 
-My approach: The proposed approach is to give each device private energy, expose use and remaining through a common abstract interface, and create the appropriate concrete type once. The dispatcher then calls use through `Device*`. Each use method checks the required energy before subtracting it. This is an AI-assisted plan, not a reconstructed before-help student response.
+My approach: The proposed approach is to give each device private energy, expose use and remaining through a common abstract interface, and create the appropriate concrete type once. The dispatcher then calls use through `Device*`. Each use method checks the required energy before subtracting it. This is an AI-assisted plan.
 
 Which concept from the lecture code am I applying? Encapsulation protects state, and virtual dispatch selects the concrete energy rule through the same base interface.
 

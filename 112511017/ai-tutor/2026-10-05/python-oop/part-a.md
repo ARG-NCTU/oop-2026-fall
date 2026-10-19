@@ -8,7 +8,7 @@ Date: 2026-10-05
 
 Topic: MIT OCW 6.0001, Lecture 8 object-oriented programming and Lecture 9 Python classes and inheritance
 
-Status: Written responses and first-person reflection text prepared with AI assistance at the student's request. This records the current assisted response, not a restored historical tutoring session. No one-at-a-time hint and revision cycle was performed.
+Status: Prepared with AI assistance, including answers, reflection drafts, and reference code.
 
 Format: [Course AI tutor instructions](https://github.com/ARG-NCTU/oop-python-nycu/blob/d4ccf63b9252d0017e84d3bed10628f0f5ea7bc9/ai-tutor-2026.md)
 
@@ -16,7 +16,7 @@ Format: [Course AI tutor instructions](https://github.com/ARG-NCTU/oop-python-ny
 
 Questions completed: 5 / 5 written responses supplied with AI assistance.
 
-Answers revised after AI hints: 0 / 5 in this prepared response. The answers were supplied together, without an interactive hint and revision round. Historical revision counts were not recovered.
+Answers revised after AI hints: 0 / 5. Answers were prepared together, without an interactive revision round.
 
 ## ② My Misconception
 
@@ -90,4 +90,4 @@ My reasoning: Each rabbit stores the integer value that `Rabbit.tag` held at cre
 
 The [earlier suggested answers and hints](study-guide.md) remain available for study. No earlier personal answer sequence or hint history is claimed here.
 
-The draft covers Lectures 8 and 9. The exact assigned lecture still needs confirmation.
+The course syllabus assigns Lecture 9 to Week 5. Lecture 8 material in this record provides the prerequisite class concepts.

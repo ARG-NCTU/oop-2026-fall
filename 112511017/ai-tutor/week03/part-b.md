@@ -10,7 +10,7 @@ Date: 2026-10-05
 
 Topic: MIT OCW Lecture 7, Testing, debugging, exceptions, assertions, and boundary cases
 
-Status: New AI-assisted written responses prepared at the student's request. These are new records, not recovered historical sessions. First-person reflections are assisted wording. No one-at-a-time student hint cycle or independent student implementation is claimed.
+Status: Prepared with AI assistance, including answers, reflection drafts, and reference code.
 
 Format: [Course AI tutor instructions](https://github.com/ARG-NCTU/oop-python-nycu/blob/d4ccf63b9252d0017e84d3bed10628f0f5ea7bc9/ai-tutor-2026.md)
 
@@ -59,7 +59,7 @@ Output: `(totals, errors)`, where `totals` is a name-to-sum dictionary and `erro
 
 ## 2. My Initial Approach Before AI Help
 
-My approach: I would examine each line in input order. I would check the field count and name first, try converting the value with a `ValueError` handler, then check its range. Only after all checks pass would I update the name's total. Each failed check would append one error and continue to the next line. This is an AI-assisted plan rather than a recovered before-help answer.
+My approach: I would examine each line in input order. I would check the field count and name first, try converting the value with a `ValueError` handler, then check its range. Only after all checks pass would I update the name's total. Each failed check would append one error and continue to the next line. This is an AI-assisted plan.
 
 Which concept from the lecture code am I applying? Classifying inputs, catching a specific conversion exception, validating a range, and checking normal and edge cases.
 

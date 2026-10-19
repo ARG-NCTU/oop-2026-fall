@@ -1,4 +1,4 @@
-# Week 1 AI tutor material recovered from September 7
+# Week 1 AI tutor reference material
 
 Name: Yu-Liang Tan / 譚羽良
 
@@ -8,7 +8,7 @@ Original source date: 2026-09-07
 
 Topic: Lecture 5, tuples, lists, aliasing, mutability, and cloning
 
-Status: Recovered AI-generated answer key from an earlier conversation. This is the previously generated study material, not evidence of a completed student tutoring session. The reflection and revision counts below were labeled as samples in the original response.
+Status: AI-generated answer key. The reflection and revision counts below are sample responses.
 
 ## Part A: True/False answer key
 

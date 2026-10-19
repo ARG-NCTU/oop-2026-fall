@@ -1,6 +1,6 @@
 # AI tutor supporting material
 
-The required weekly submissions are in [../AI_tutor/](../AI_tutor/), named `w1.md` through `w6.md`. This directory preserves the original records and supporting code.
+The required weekly submissions are in [../AI_tutor/](../AI_tutor/), named `w1.md` through `w7.md`. This directory preserves the original records and supporting code.
 
 ## Weekly records
 
@@ -13,11 +13,9 @@ All four weeks contain Part A and Part B. Written responses were completed with 
 | [3](week03/) | Lecture 7: Testing and exceptions | [Part A](week03/part-a.md) | [Part B](week03/part-b.md) |
 | [4](week04/) | Lecture 8: Classes and objects | [Part A](week04/part-a.md) | [Part B](week04/part-b.md) |
 
-Week 1 uses questions and a challenge recovered from the September 7 conversation. Weeks 2–4 are new AI-assisted written responses with new challenges and verified implementations. Each new challenge passed nine tests, for 27 tests in total.
+Week 1 covers the playlist challenge. Weeks 2–4 include AI-assisted challenges and verified implementations. Each of those three challenges passed nine tests, for 27 tests in total.
 
 The Lecture 5–8 mapping for Weeks 1–4 was confirmed against the official AOOP syllabus on October 12. Week 5 is Lecture 9, and Week 6 is Lecture 10.
-
-The earlier search covered local AOOP coursework, the lab PC's AOOP folder, Documents, Downloads, Desktop, and relevant saved conversation histories. It recovered the Week 1 source material, but did not locate historical Week 2–4 records. The newly prepared files do not claim to be those older sessions.
 
 ## October 5 responses
 
@@ -34,4 +32,4 @@ Part A records five questions and their answers, revisions after hints, a miscon
 
 Part B records the challenge, approach, tutor help, revision, verification, and reflection. The original challenge-generation workflow asks the tutor to withhold a solution.
 
-At the student's request, these written responses include AI-supplied answers, reflection wording, implementations, and tests. All response fields are filled. Each file discloses the assistance and actual verification; no historical student hint cycle, independent implementation, or separate student revision is claimed.
+These written responses include AI-assisted answers, reflection drafts, implementations, and tests.

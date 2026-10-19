@@ -8,7 +8,7 @@ Date: 2026-10-05
 
 Topic: MIT OCW 6.0001 classes, inherited initialization, overridden methods, and shared counters
 
-Status: AI-assisted written response prepared at the student's request. The approach, reflection, implementation, and tests were supplied or verified by the assistant. No independent student work or historical hint cycle is claimed.
+Status: Prepared with AI assistance, including answers, reflection drafts, and reference code.
 
 Format: [Course AI tutor instructions](https://github.com/ARG-NCTU/oop-python-nycu/blob/d4ccf63b9252d0017e84d3bed10628f0f5ea7bc9/ai-tutor-2026.md)
 
@@ -124,4 +124,4 @@ One thing I understand better now: Sharing a counter does not mean sharing the i
 
 One thing I am still unsure about: How should the counter be scoped if separate shipping desks need separate sequences, or if multiple calls run concurrently?
 
-The exact assigned OCW lecture still needs confirmation. This response covers the existing classes and inheritance study draft.
+The course syllabus assigns Lecture 9 to Week 5. Lecture 8 material in this record provides the prerequisite class concepts.

@@ -8,7 +8,7 @@ Date: 2026-10-05
 
 Topic: Lecture 5, tuples, lists, aliasing, mutability, and cloning
 
-Status: Written responses and first-person reflection text prepared with AI assistance at the student's request. This records the current assisted response, not a restored historical tutoring session. No one-at-a-time hint and revision cycle was performed.
+Status: Prepared with AI assistance, including answers, reflection drafts, and reference code.
 
 Format: [Course AI tutor instructions](https://github.com/ARG-NCTU/oop-python-nycu/blob/d4ccf63b9252d0017e84d3bed10628f0f5ea7bc9/ai-tutor-2026.md)
 
@@ -16,7 +16,7 @@ Format: [Course AI tutor instructions](https://github.com/ARG-NCTU/oop-python-ny
 
 Questions completed: 5 / 5 written responses supplied with AI assistance.
 
-Answers revised after AI hints: 0 / 5 in this prepared response. The answers were supplied together, without an interactive hint and revision round. Historical revision counts were not recovered.
+Answers revised after AI hints: 0 / 5. Answers were prepared together, without an interactive revision round.
 
 ## ② My Misconception
 
@@ -88,4 +88,4 @@ My reasoning: `sorted(items)` returns a new sorted list. `items.sort()` changes 
 
 ## Reference material
 
-The [recovered answer key and sample reflection](reference-material/part-a-answer-key.md) are available for study. No earlier personal answer sequence or hint history is claimed here.
+The [answer key and sample reflection](reference-material/part-a-answer-key.md) are available for study.

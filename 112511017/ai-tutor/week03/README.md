@@ -11,8 +11,8 @@ Part A and Part B were prepared with AI assistance on October 5, 2026 at the stu
 
 The [implementation](solution/measurements.py) passed all nine [tests](solution/test_measurements.py), including the three challenge examples and edge cases.
 
-These are newly prepared written responses. An earlier tutor session for this week was not recovered. The files disclose AI-supplied answers, code, and reflection wording; no independent student implementation or historical hint and revision cycle is claimed.
+These responses include AI-assisted answers, reflection drafts, and reference code.
 
-The week/topic mapping follows the Lecture 5–8 sequence inferred from saved class-repository material. It has not been confirmed against an official weekly schedule.
+The week/topic mapping follows the official AOOP syllabus: Weeks 1 through 4 use Lectures 5 through 8.
 
 [Back to the weekly index](../README.md)

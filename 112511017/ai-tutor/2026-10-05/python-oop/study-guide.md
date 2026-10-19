@@ -8,7 +8,7 @@ Date: 2026-10-05
 
 Topic: MIT OCW 6.0001, Lecture 8 object-oriented programming and Lecture 9 Python classes and inheritance
 
-Status: AI-generated study and response draft. The exact lecture assignment for this week has not yet been confirmed. Suggested answers are not a record of the student's answers, hints, or revisions.
+Status: AI-generated study and response draft. Suggested answers are not a record of the student's answers, hints, or revisions.
 
 ## Sources
 

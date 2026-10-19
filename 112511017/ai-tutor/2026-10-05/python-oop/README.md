@@ -1,6 +1,6 @@
 # October 5 OCW Python tutor responses
 
-Prepared with AI assistance at the student's request. These responses cover MIT OCW 6.0001 Lectures 8 and 9, classes and inheritance. The exact lecture assigned for this week still needs confirmation.
+Prepared with AI assistance at the student's request. These responses cover MIT OCW 6.0001 Lectures 8 and 9, classes and inheritance. Week 5 assigns Lecture 9; Lecture 8 supplies prerequisite class concepts.
 
 - [Part A: Five explained answers and reflection](part-a.md)
 - [Part B: Shipping-quote challenge response](part-b.md)

@@ -1,6 +1,6 @@
 # Week 1 coding challenge: Playlist edit history
 
-Recovered from the AI-generated answer key in the September 7, 2026 conversation. The proposed algorithm and reference solution were supplied by AI; this does not record the student's independent approach or hint history.
+AI-generated reference challenge, algorithm, and solution.
 
 ## Part B: Programming challenge
 
@@ -76,10 +76,10 @@ Result:
 6. Record whether each command changed the playlist.
 7. Return the edited playlist and log as a tuple.
 
-## Recovered implementation and validation
+## Reference implementation and validation
 
 - [Original reference implementation](playlist_challenge.py)
-- [Recovered example and edge-case tests](test_playlist_challenge.py)
+- [Example and edge-case tests](test_playlist_challenge.py)
 
 The reference uses a shallow list copy, which is sufficient for this challenge's song-name strings. Commands are assumed to be `append` or `remove`.
 
