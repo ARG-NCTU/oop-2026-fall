@@ -1,4 +1,4 @@
-# Lab 05 Learning Record — MOOS-IvP
+# week6 Learning Record — MOOS-IvP
 
 **Topic:** MOOS-IvP Introduction and Simulation  
 **Date:** 2026/10/12
