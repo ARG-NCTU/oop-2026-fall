@@ -9,4 +9,6 @@ This directory stores the AI Tutor learning records and reflections for the AOOP
 | **2026-09-21** | MIT 6.0001 Lecture 7: Testing, Debugging, Exceptions, Assertions | [Part A](W3/Tutoring_Reflection_L7_PartA.md) · [Part B](W3/Tutoring_Reflection_L7_PartB.md) |
 | **2026-09-28** | MIT 6.0001 Lecture 8: Object Oriented Programming | [Part A](W4/Tutoring_Reflection_L8_PartA.md) · [Part B](W4/Tutoring_Reflection_L8_PartB.md) |
 | **2026-10-05** | MIT 6.0001 Lecture 9: Python Classes and Inheritance | [Part A](W5/Tutoring_Reflection_L9_PartA.md) · [Part B](W5/Tutoring_Reflection_L9_PartB.md) |
+| **2026-10-12** | MIT 6.0001 Lecture 10: Understanding Program Efficiency, Part 1 | [Part A](W6/Tutoring_Reflection_L10_PartA.md) |
+| **2026-10-19** | MIT 6.0001 Lecture 11: Understanding Program Efficiency, Part 2 | [Part A](W7/Tutoring_Reflection_L11_PartA.md) |
 

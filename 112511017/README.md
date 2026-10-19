@@ -53,7 +53,10 @@ Weekly submissions follow the October 7 announcement: `112511017/AI_tutor/wx.md`
 | 4 | Lecture 8: Object oriented programming | [w4.md](AI_tutor/w4.md) |
 | 5 | Lecture 9: Python classes and inheritance | [w5.md](AI_tutor/w5.md) |
 | 6 | Lecture 10: Understanding program efficiency, Part 1 | [w6.md](AI_tutor/w6.md) |
+| 7 | Lecture 11: Understanding program efficiency, Part 2 | [w7.md](AI_tutor/w7.md) |
 
 The week/topic mapping is confirmed by the [official AOOP syllabus](https://timetable.nycu.edu.tw/?r=main/crsoutline&Acy=115&Sem=1&CrsNo=515106&lang=zh-tw).
 
 Weeks 1–5 consolidate the assisted responses prepared on October 5. Week 6 was prepared on October 12. Each record states the AI assistance used and preserves the distinction between supplied answers and a student-led tutoring session. The [supporting material](ai-tutor/) includes the original records and implementations. The [C++ OOP responses](ai-tutor/2026-10-05/cpp-oop/) supplement Lab 04; the Week 5 MIT assignment is Python inheritance.
+
+Week 7 was prepared on October 19 with AI-supplied explanations and a tested bisection exercise. It remains study material for student review and does not claim a completed student-led tutoring session.

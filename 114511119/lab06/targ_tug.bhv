@@ -1,0 +1,52 @@
+//==================================================================
+//  FILE: meta_tug.bhv   (AOOP Ch2 實驗一：拔河)
+//  由 ./launch.sh --case=N 用 nsplug 展開成 targ_tug.bhv
+//==================================================================
+
+// 各情境的 priority：PWT_EAST (往東航點) / PWT_NORTH (朝北航向)
+
+initialize   DEPLOY = false
+
+//----------------------------------------------
+// 行為 A：往正東方遠處的航點
+//   ipf_type = roc：目標函數是 cos 形狀，才看得出「折衷」
+Behavior = BHV_Waypoint
+{
+  name      = go_east
+  pwt       = 30
+  condition = DEPLOY = true
+  endflag   = DEPLOY = false
+
+        ipf_type = roc
+           speed = 2.0
+  capture_radius = 10
+     slip_radius = 20
+          points = 3000,0
+}
+
+//----------------------------------------------
+// 行為 B：固定航向朝正北
+//   duration 預設為 0（會立刻結束），所以一定要給 no-time-limit
+//   basewidth=360、summitdelta=0：效用隨偏差線性緩降，避免贏者全拿
+Behavior = BHV_ConstantHeading
+{
+  name      = go_north
+  pwt       = 100
+  condition = DEPLOY = true
+
+      heading = 0
+     duration = no-time-limit     
+    peakwidth = 0                 // 指定效用函數的峰值寬度，0 表示在峰值處有滿分
+    basewidth = 360                // 指定效用函數的基底寬度，360 表示整個圓周都會有效用
+  summitdelta = 0
+}
+
+Behavior = BHV_ConstantSpeed
+{
+    name      = keep_moving
+    pwt       = 100
+    condition = DEPLOY = true
+    speed     = 1.0
+    duration  = no-time-limit
+}
+
