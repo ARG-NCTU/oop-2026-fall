@@ -15,3 +15,9 @@ def uncalibrated_readings(readings, calibrations, tol):
         if not calibrated and r not in ans:
             ans.append(r)
     return ans
+
+readings = [25, 25, 25]
+calibrations = [5]
+tol = 2
+
+print(uncalibrated_readings(readings, calibrations, tol))
