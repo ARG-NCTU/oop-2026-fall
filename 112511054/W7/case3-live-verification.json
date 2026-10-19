@@ -1,0 +1,31 @@
+{
+  "mission": "/home/nick0/moos-ivp/ivp/missions/exp1_tugofwar",
+  "source_log": "/home/nick0/moos-ivp/ivp/missions/exp1_tugofwar/LOG_TUG_CASE3_19_10_2026_____19_21_28/LOG_TUG_CASE3_19_10_2026_____19_21_28.alog",
+  "live_case3_reload": true,
+  "latest": {
+    "NAV_X": {
+      "time": 965.272,
+      "value": "-13.64135"
+    },
+    "NAV_Y": {
+      "time": 965.272,
+      "value": "-64.13011"
+    },
+    "NAV_SPEED": {
+      "time": 965.272,
+      "value": "2.00000"
+    },
+    "DESIRED_SPEED": {
+      "time": 965.1778,
+      "value": "2.00000"
+    },
+    "IVPHELM_BHV_ACTIVE": {
+      "time": 837.09848,
+      "value": "go_east,go_north,keep_moving"
+    },
+    "IVPHELM_RESTARTED": {
+      "time": 837.09188,
+      "value": "true"
+    }
+  }
+}

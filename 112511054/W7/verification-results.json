@@ -1,0 +1,150 @@
+{
+  "date": "2026-10-19",
+  "warp": 5,
+  "results": [
+    {
+      "case": 1,
+      "weight_scale": 1,
+      "added_speed_behavior": false,
+      "DESIRED_HEADING": 32.0,
+      "DESIRED_SPEED": 3.5,
+      "NAV_SPEED": 3.4,
+      "last_position": {
+        "NAV_X": {
+          "time": 75.47315,
+          "value": "108.59783    "
+        },
+        "NAV_Y": {
+          "time": 75.47315,
+          "value": "-137.05781   "
+        }
+      },
+      "warnings": [],
+      "errors": [],
+      "helm_state": {
+        "time": 75.49884,
+        "value": "DRIVE "
+      }
+    },
+    {
+      "case": 2,
+      "weight_scale": 1,
+      "added_speed_behavior": false,
+      "DESIRED_HEADING": 65.0,
+      "DESIRED_SPEED": 2.1,
+      "NAV_SPEED": 2.09,
+      "last_position": {
+        "NAV_X": {
+          "time": 75.35805,
+          "value": "108.77349    "
+        },
+        "NAV_Y": {
+          "time": 75.35805,
+          "value": "-257.25171   "
+        }
+      },
+      "warnings": [],
+      "errors": [],
+      "helm_state": {
+        "time": 75.48085,
+        "value": "DRIVE "
+      }
+    },
+    {
+      "case": 3,
+      "weight_scale": 1,
+      "added_speed_behavior": false,
+      "DESIRED_HEADING": 0.0,
+      "DESIRED_SPEED": 0.0,
+      "NAV_SPEED": 0.0,
+      "last_position": {
+        "NAV_X": {
+          "time": 75.38496,
+          "value": "0.00000      "
+        },
+        "NAV_Y": {
+          "time": 75.38496,
+          "value": "-300.00000   "
+        }
+      },
+      "warnings": [],
+      "errors": [],
+      "helm_state": {
+        "time": 75.4718,
+        "value": "DRIVE "
+      }
+    },
+    {
+      "case": 4,
+      "weight_scale": 1,
+      "added_speed_behavior": false,
+      "DESIRED_HEADING": 84.0,
+      "DESIRED_SPEED": 2.0,
+      "NAV_SPEED": 2.0,
+      "last_position": {
+        "NAV_X": {
+          "time": 75.39392,
+          "value": "112.08069    "
+        },
+        "NAV_Y": {
+          "time": 75.39392,
+          "value": "-298.21099   "
+        }
+      },
+      "warnings": [],
+      "errors": [],
+      "helm_state": {
+        "time": 75.45687,
+        "value": "DRIVE "
+      }
+    },
+    {
+      "case": 1,
+      "weight_scale": 2,
+      "added_speed_behavior": false,
+      "DESIRED_HEADING": 32.0,
+      "DESIRED_SPEED": 3.5,
+      "NAV_SPEED": 3.4,
+      "last_position": {
+        "NAV_X": {
+          "time": 75.39936,
+          "value": "108.71478    "
+        },
+        "NAV_Y": {
+          "time": 75.39936,
+          "value": "-137.77685   "
+        }
+      },
+      "warnings": [],
+      "errors": [],
+      "helm_state": {
+        "time": 75.46465,
+        "value": "DRIVE "
+      }
+    },
+    {
+      "case": 3,
+      "weight_scale": 1,
+      "added_speed_behavior": true,
+      "DESIRED_HEADING": 0.0,
+      "DESIRED_SPEED": 2.0,
+      "NAV_SPEED": 2.0,
+      "last_position": {
+        "NAV_X": {
+          "time": 75.40901,
+          "value": "-13.66224    "
+        },
+        "NAV_Y": {
+          "time": 75.40901,
+          "value": "-201.08091   "
+        }
+      },
+      "warnings": [],
+      "errors": [],
+      "helm_state": {
+        "time": 75.42514,
+        "value": "DRIVE "
+      }
+    }
+  ]
+}
