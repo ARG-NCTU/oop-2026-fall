@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Battle Tabs Online</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+<div class="app-shell">
+  <header class="topbar">
+    <div>
+      <h1>⚓ Battle Tabs Online</h1>
+      <p>雙人房間制海戰</p>
+    </div>
+  </header>
+
+  <main>
+    <section id="lobbyScreen" class="panel lobby-panel">
+      <h2>開始遊戲</h2>
+      <div class="lobby-actions">
+        <button id="createRoomBtn" class="primary-btn">建立房間</button>
+        <div class="join-row">
+          <input id="roomCodeInput" maxlength="4" placeholder="輸入 4 碼" />
+          <button id="joinRoomBtn" class="ghost-btn">加入房間</button>
+        </div>
+      </div>
+      <p id="lobbyStatus" class="muted"></p>
+    </section>
+
+    <section id="waitingScreen" class="panel hidden center-panel">
+      <h2>等待對手加入</h2>
+      <p>房間代碼</p>
+      <div id="roomCodeDisplay" class="room-code">----</div>
+      <p class="muted">把這 4 碼傳給朋友。</p>
+    </section>
+
+    <section id="setupScreen" class="panel hidden">
+      <div class="room-strip">房間 <span id="roomCodeTop"></span> ｜ <span id="playerLabel"></span></div>
+      <h2>部署艦隊</h2>
+      <p class="muted">依序放置 4 艘戰艦。</p>
+      <div class="setup-layout">
+        <div>
+          <div class="board-title">你的戰場</div>
+          <div id="setupBoard" class="board"></div>
+        </div>
+        <aside class="fleet-panel">
+          <h3>艦隊</h3>
+          <div id="shipList"></div>
+          <div class="direction-row">
+            <button id="horizontalBtn" class="active">橫向</button>
+            <button id="verticalBtn">直向</button>
+          </div>
+          <button id="confirmSetupBtn" class="primary-btn" disabled>完成部署</button>
+          <p id="setupStatus" class="muted"></p>
+        </aside>
+      </div>
+    </section>
+
+    <section id="battleScreen" class="hidden">
+      <div class="battle-header panel">
+        <div>
+          <span class="badge">房間 <span id="battleRoomCode"></span></span>
+          <h2 id="turnText">等待中</h2>
+        </div>
+        <div id="statusText" class="status">等待遊戲開始</div>
+      </div>
+
+      <div class="battle-layout">
+        <section class="panel">
+          <div class="board-title">你的艦隊</div>
+          <div id="ownBoard" class="board"></div>
+        </section>
+        <section class="panel">
+          <div class="board-title">敵方海域</div>
+          <div id="enemyBoard" class="board"></div>
+        </section>
+        <aside class="panel skill-panel">
+          <h3>技能</h3>
+          <div id="skillList"></div>
+          <div class="legend">
+            <div><span class="legend-box ship"></span> 自己的船</div>
+            <div><span class="legend-box hit"></span> 命中</div>
+            <div><span class="legend-box miss"></span> 未命中</div>
+            <div><span class="legend-box scan"></span> 雷達掃描中心</div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="gameOverScreen" class="panel hidden center-panel">
+      <h2 id="winnerText">遊戲結束</h2>
+      <button id="backLobbyBtn" class="primary-btn">回到大廳</button>
+    </section>
+  </main>
+</div>
+<script src="/static/game.js"></script>
+</body>
+</html>
