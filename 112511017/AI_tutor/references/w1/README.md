@@ -4,9 +4,9 @@ These files preserve the September 7 AI-generated answer key, sample reflection,
 
 - [Part A answer key and sample reflection](part-a-answer-key.md)
 - [Part B challenge, proposed algorithm, and complexity notes](part-b-reference.md)
-- [AI-provided reference implementation](playlist_challenge.py)
-- [Reference tests](test_playlist_challenge.py)
+- [AI-provided reference implementation](../../solutions/w1/playlist_challenge.py)
+- [Reference tests](../../solutions/w1/test_playlist_challenge.py)
 
 The reference implementation passes the included example and edge-case tests.
 
-[Back to Week 1](../README.md)
+[Back to Week 1](../../w1.md)

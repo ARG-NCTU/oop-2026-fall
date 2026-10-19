@@ -78,8 +78,8 @@ Result:
 
 ## Reference implementation and validation
 
-- [Original reference implementation](playlist_challenge.py)
-- [Example and edge-case tests](test_playlist_challenge.py)
+- [Reference implementation](../../solutions/w1/playlist_challenge.py)
+- [Example and edge-case tests](../../solutions/w1/test_playlist_challenge.py)
 
 The reference uses a shallow list copy, which is sufficient for this challenge's song-name strings. Commands are assumed to be `append` or `remove`.
 
