@@ -1,0 +1,10 @@
+Question1: false
+L1也會跟著被修改，因為L2=L1是將L2指向和L1相同的物件，而非複製一個新的物件，因此修改L2的物件也就修改L1指向的物件
+Question2: true
+不能修改tuple中的元素
+Question3: true
+L2會複製一個新的物件，所以修改L2不會改變L1
+Question4: false
+L會被修改，sorted_L會得到修改後的L
+Question5: true
+因為在進行L.remove(e)時，L的元素數量會改變，進而讓for的執行次數和L原始元素數量不同
