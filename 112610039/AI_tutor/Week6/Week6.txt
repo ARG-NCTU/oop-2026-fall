@@ -1,0 +1,10 @@
+Question1: False
+這是程式端紀錄執行的時間，會受到排程、硬體效率等影響
+Question2: True
+通常以worst case做為評估演算法效率的依據，big O也以此計算
+Question3: True
+正確，選取dominant term，並忽略常數
+Question4: False
+遇到大於目標值的元素時提早結束，則worst case time complexity仍為O(n)
+Question5: True
+平行則各執行O(n)次，巢狀則執行O(n*n)次
