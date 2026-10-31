@@ -1,0 +1,10 @@
+Question1: True
+切片長度每次都減半，所以時間複雜度為O(logn)
+Question2: False
+遞迴版本與迴圈版本進行的計算數量是一樣的，差別僅在前者是top-down，後者是bottum-up
+Question3: True
+i大小程指數型遞減，因此執行次數為O(logi)
+Question4: True
+正確，因為元素數量為n的集合的所有子集數量為2^n
+Question5: False
+dictionary中key in d的time complexity為O(n)，因為需要遍歷d所有的鍵值
