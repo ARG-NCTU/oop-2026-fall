@@ -20,7 +20,7 @@ namespace py = pybind11;
 double add_bonus(double score, double bonus) {
     // TODO C1：回傳 score + bonus，但最高只能 100 分。
     // 提示：可用 std::min(100.0, score + bonus)
-    return -1.0;  // ← 替換這一行
+    return std::min(100.0, score + bonus);
 }
 
 // ──────────────────────────────────────────────
@@ -30,16 +30,16 @@ double add_bonus(double score, double bonus) {
 // ──────────────────────────────────────────────
 double average_scores(const std::vector<double>& scores) {
     if (scores.empty()) {
-        // TODO C2：拋出 std::invalid_argument("scores cannot be empty");
+        throw std::invalid_argument("scores cannot be empty");
     }
 
     double total = 0.0;
     for (double score : scores) {
-        // TODO C3：把 score 加進 total。
+        total += score;
     }
 
     // TODO C4：回傳平均分數（total / scores.size()）。
-    return -1.0;  // ← 替換這一行
+    return total / scores.size();
 }
 
 // ──────────────────────────────────────────────
@@ -48,17 +48,17 @@ double average_scores(const std::vector<double>& scores) {
 class GradeBook {
 public:
     void add(double score) {
-        // TODO C5：把 score 存入 scores_。
+        scores_.push_back(score);
     }
 
     std::size_t count() const {
         // TODO C6：回傳目前成績筆數。
-        return 0;  // ← 替換這一行
+        return scores_.size();
     }
 
     double average() const {
         // TODO C7：重用上方的 average_scores(scores_)。
-        return -1.0;  // ← 替換這一行
+        return average_scores(scores_);
     }
 
 private:
@@ -73,8 +73,10 @@ PYBIND11_MODULE(gradecpp, m) {
     m.doc() = "C++ grade analysis with pybind11";
 
     // TODO C8：用 m.def(...) 匯出 add_bonus，Python 名稱也叫 add_bonus。
+    m.def("add_bonus", &add_bonus);
 
     // TODO C9：用 m.def(...) 匯出 average_scores，Python 名稱也叫 average_scores。
+    m.def("average_scores", &average_scores);
 
     py::class_<GradeBook>(m, "GradeBook")
         .def(py::init<>())
@@ -82,5 +84,7 @@ PYBIND11_MODULE(gradecpp, m) {
         //   Python 的 "add"     ↔ &GradeBook::add
         //   Python 的 "count"   ↔ &GradeBook::count
         //   Python 的 "average" ↔ &GradeBook::average
-        ;
+        .def("add", &GradeBook::add)
+        .def("count", &GradeBook::count)
+        .def("average", &GradeBook::average);
 }
