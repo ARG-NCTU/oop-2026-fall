@@ -1,7 +1,0 @@
-LOG_*/
-MOOSLog_*/
-*.moos++
-.LastOpenedMOOSLogDirectory
-*.log
-.checkvars
-__pycache__/

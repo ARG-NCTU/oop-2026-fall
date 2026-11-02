@@ -1,0 +1,38 @@
+**Topic:** Tuples, Lists, Aliasing, Mutability, and Cloning  
+**Date:** 2026-10-19
+
+### ① Check My Understanding
+
+Questions completed: **5 / 5**
+
+Answers revised after AI hints: **2 / 5**
+
+### ② My Misconception
+
+**Before: I thought…**
+
+I was not very clear about the differences between tuples and lists, or whether assigning a variable creates a new list or refers to an existing one.
+
+**Now: I understand…**
+
+I understand the differences between tuples and lists better. I also have a clearer understanding of aliasing, cloning, and how assigning a variable differs from creating a new list.
+
+### ③ Challenge the AI
+
+**One AI-generated question I challenged:**
+
+Question 3 about assigning a new list to a variable.
+
+**Why?**
+
+☑ Other: No major issues, but I needed a hint to understand the concept.
+
+**Brief explanation:**
+
+I initially thought reassigning `b` would modify the original list. The hint helped me understand that assigning a new list to `b` does not change the list referenced by `a`.
+
+### ④ One-Minute Reflection
+
+**One thing I am still unsure about:**
+
+I still need more practice distinguishing between modifying an existing list, assigning a variable to a new list, and cloning a list.

@@ -1,0 +1,10 @@
+Question1: true
+正確，c會放在self的位置，因此函式接受到的self為c
+Question2: false
+__str__的return值必須為string
+Question3: true
+這樣做語法上合法，但違反物件的封裝原則，可能會導致錯誤，若要修改，應設計子函式進行修改
+Question4: true
+正確，類別本身也是種物件
+Question5: true
+__add__定義執行"a + b"時會執行甚麼動作

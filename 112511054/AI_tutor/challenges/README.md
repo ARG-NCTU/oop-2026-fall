@@ -7,8 +7,9 @@
 | W4 | 多型停車帳單計費 | [parking_fees.cpp](w4/parking_fees.cpp) | [verify_challenges.py](verify_challenges.py) |
 | W5 | 多型任務排程 | [task_scheduler.cpp](../../W5/task_scheduler.cpp) | [verify_scheduler.py](../../W5/verify_scheduler.py) |
 | W6 | 無人載具任務消息狀態機 | [mission_state.cpp](w6/mission_state.cpp) | [verify_challenges.py](verify_challenges.py) |
+| W7 | 安全候選的多行為加權決策器 | [weighted_decision.cpp](w7/weighted_decision.cpp) | [verify_weighted_decision.py](w7/verify_weighted_decision.py) |
 
-完整題目、三組範例、解法、複雜度與反思在上層的 w2.md～w6.md。
+完整題目、三組範例、解法、複雜度與反思在上層的 w2.md～w7.md。
 
 ## Reproduce the results
 
@@ -31,3 +32,14 @@ verify_challenges.py 在臨時目錄編譯執行檔，結束後自動清理；Gi
 - W5 本次重新驗證：[verification-2026-10-14.txt](../../W5/verification-2026-10-14.txt)。
 
 verification.json 會在重新執行成功時更新。程式挑戰中的簡化狀態模型不能代替真實 Git 的全部功能或實際 MOOS 航行測試。
+
+## W7
+
+2026-10-20：W7 加權決策器 114／114 組通過；結果見 [w7/verification.json](w7/verification.json)。
+
+```bash
+cd 112511054/AI_tutor/challenges/w7
+python3 verify_weighted_decision.py
+```
+
+本週測試工具獨立執行，不需要 pytest。既有 W2～W6 的 105 項結果保留為原測試日期的紀錄。

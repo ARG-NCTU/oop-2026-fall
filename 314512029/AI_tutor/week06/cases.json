@@ -1,0 +1,16 @@
+[
+  {"name": "example_between", "times": [3, 8, 12, 20], "target": 10, "expected": 2},
+  {"name": "example_duplicates", "times": [2, 5, 5, 5, 11], "target": 5, "expected": 1},
+  {"name": "example_after_all", "times": [4, 9, 15], "target": 16, "expected": -1},
+  {"name": "empty", "times": [], "target": 0, "expected": -1},
+  {"name": "single_equal", "times": [7], "target": 7, "expected": 0},
+  {"name": "single_before", "times": [7], "target": 2, "expected": 0},
+  {"name": "single_after", "times": [7], "target": 8, "expected": -1},
+  {"name": "before_all", "times": [4, 9, 15], "target": 0, "expected": 0},
+  {"name": "exact_last", "times": [4, 9, 15], "target": 15, "expected": 2},
+  {"name": "between_last_two", "times": [4, 9, 15], "target": 10, "expected": 2},
+  {"name": "all_duplicates_equal", "times": [6, 6, 6, 6], "target": 6, "expected": 0},
+  {"name": "after_duplicate_block", "times": [6, 6, 6, 9], "target": 7, "expected": 3},
+  {"name": "zero_timestamp", "times": [0, 0, 3], "target": 0, "expected": 0},
+  {"name": "large_values", "times": [0, 999999999, 1000000000], "target": 1000000000, "expected": 2}
+]

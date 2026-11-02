@@ -1,0 +1,697 @@
+{
+  "date": "2026-10-20",
+  "seed": 1125110547,
+  "compiler": "g++ (Ubuntu 15.2.0-16ubuntu1) 15.2.0",
+  "sanitizers": [
+    "AddressSanitizer",
+    "UndefinedBehaviorSanitizer",
+    "leak detection"
+  ],
+  "passed": 114,
+  "cases": [
+    {
+      "name": "example 1 - compromise",
+      "expected": "45 20 260",
+      "actual": "45 20 260",
+      "result": "PASS"
+    },
+    {
+      "name": "example 2 - blocked maximum",
+      "expected": "90 10 120",
+      "actual": "90 10 120",
+      "result": "PASS"
+    },
+    {
+      "name": "example 3 - zero weights",
+      "expected": "0 10 0",
+      "actual": "0 10 0",
+      "result": "PASS"
+    },
+    {
+      "name": "empty candidates",
+      "expected": "-1",
+      "actual": "-1",
+      "result": "PASS"
+    },
+    {
+      "name": "all blocked",
+      "expected": "-1",
+      "actual": "-1",
+      "result": "PASS"
+    },
+    {
+      "name": "speed tie-break first",
+      "expected": "180 10 50",
+      "actual": "180 10 50",
+      "result": "PASS"
+    },
+    {
+      "name": "heading tie-break second",
+      "expected": "0 10 50",
+      "actual": "0 10 50",
+      "result": "PASS"
+    },
+    {
+      "name": "64-bit product",
+      "expected": "359 40 100000000000",
+      "actual": "359 40 100000000000",
+      "result": "PASS"
+    },
+    {
+      "name": "maximum weighted score",
+      "expected": "359 40 2000000000000",
+      "actual": "359 40 2000000000000",
+      "result": "PASS"
+    },
+    {
+      "name": "zero utilities",
+      "expected": "0 0 0",
+      "actual": "0 0 0",
+      "result": "PASS"
+    },
+    {
+      "name": "inactive zero-weight behavior",
+      "expected": "90 20 100",
+      "actual": "90 20 100",
+      "result": "PASS"
+    },
+    {
+      "name": "stop is a valid candidate",
+      "expected": "50 0 1",
+      "actual": "50 0 1",
+      "result": "PASS"
+    },
+    {
+      "name": "consume blocked score row",
+      "expected": "20 10 5",
+      "actual": "20 10 5",
+      "result": "PASS"
+    },
+    {
+      "name": "independent-oracle-1",
+      "expected": "347 38 373916",
+      "actual": "347 38 373916",
+      "result": "PASS"
+    },
+    {
+      "name": "positive-weight-scaling-1",
+      "expected": "347 38 747832",
+      "actual": "347 38 747832",
+      "result": "PASS"
+    },
+    {
+      "name": "input-permutation-1",
+      "expected": "347 38 373916",
+      "actual": "347 38 373916",
+      "result": "PASS"
+    },
+    {
+      "name": "independent-oracle-2",
+      "expected": "186 21 117797",
+      "actual": "186 21 117797",
+      "result": "PASS"
+    },
+    {
+      "name": "positive-weight-scaling-2",
+      "expected": "186 21 824579",
+      "actual": "186 21 824579",
+      "result": "PASS"
+    },
+    {
+      "name": "input-permutation-2",
+      "expected": "186 21 117797",
+      "actual": "186 21 117797",
+      "result": "PASS"
+    },
+    {
+      "name": "independent-oracle-3",
+      "expected": "245 28 138545",
+      "actual": "245 28 138545",
+      "result": "PASS"
+    },
+    {
+      "name": "positive-weight-scaling-3",
+      "expected": "245 28 831270",
+      "actual": "245 28 831270",
+      "result": "PASS"
+    },
+    {
+      "name": "input-permutation-3",
+      "expected": "245 28 138545",
+      "actual": "245 28 138545",
+      "result": "PASS"
+    },
+    {
+      "name": "independent-oracle-4",
+      "expected": "14 12 238291",
+      "actual": "14 12 238291",
+      "result": "PASS"
+    },
+    {
+      "name": "positive-weight-scaling-4",
+      "expected": "14 12 714873",
+      "actual": "14 12 714873",
+      "result": "PASS"
+    },
+    {
+      "name": "input-permutation-4",
+      "expected": "14 12 238291",
+      "actual": "14 12 238291",
+      "result": "PASS"
+    },
+    {
+      "name": "independent-oracle-5",
+      "expected": "127 10 93258",
+      "actual": "127 10 93258",
+      "result": "PASS"
+    },
+    {
+      "name": "positive-weight-scaling-5",
+      "expected": "127 10 652806",
+      "actual": "127 10 652806",
+      "result": "PASS"
+    },
+    {
+      "name": "input-permutation-5",
+      "expected": "127 10 93258",
+      "actual": "127 10 93258",
+      "result": "PASS"
+    },
+    {
+      "name": "independent-oracle-6",
+      "expected": "321 9 28870",
+      "actual": "321 9 28870",
+      "result": "PASS"
+    },
+    {
+      "name": "positive-weight-scaling-6",
+      "expected": "321 9 86610",
+      "actual": "321 9 86610",
+      "result": "PASS"
+    },
+    {
+      "name": "input-permutation-6",
+      "expected": "321 9 28870",
+      "actual": "321 9 28870",
+      "result": "PASS"
+    },
+    {
+      "name": "independent-oracle-7",
+      "expected": "231 30 414919",
+      "actual": "231 30 414919",
+      "result": "PASS"
+    },
+    {
+      "name": "positive-weight-scaling-7",
+      "expected": "231 30 1659676",
+      "actual": "231 30 1659676",
+      "result": "PASS"
+    },
+    {
+      "name": "input-permutation-7",
+      "expected": "231 30 414919",
+      "actual": "231 30 414919",
+      "result": "PASS"
+    },
+    {
+      "name": "independent-oracle-8",
+      "expected": "258 33 309571",
+      "actual": "258 33 309571",
+      "result": "PASS"
+    },
+    {
+      "name": "positive-weight-scaling-8",
+      "expected": "258 33 1547855",
+      "actual": "258 33 1547855",
+      "result": "PASS"
+    },
+    {
+      "name": "input-permutation-8",
+      "expected": "258 33 309571",
+      "actual": "258 33 309571",
+      "result": "PASS"
+    },
+    {
+      "name": "independent-oracle-9",
+      "expected": "16 0 735258",
+      "actual": "16 0 735258",
+      "result": "PASS"
+    },
+    {
+      "name": "positive-weight-scaling-9",
+      "expected": "16 0 1470516",
+      "actual": "16 0 1470516",
+      "result": "PASS"
+    },
+    {
+      "name": "input-permutation-9",
+      "expected": "16 0 735258",
+      "actual": "16 0 735258",
+      "result": "PASS"
+    },
+    {
+      "name": "independent-oracle-10",
+      "expected": "79 2 500065",
+      "actual": "79 2 500065",
+      "result": "PASS"
+    },
+    {
+      "name": "positive-weight-scaling-10",
+      "expected": "79 2 3500455",
+      "actual": "79 2 3500455",
+      "result": "PASS"
+    },
+    {
+      "name": "input-permutation-10",
+      "expected": "79 2 500065",
+      "actual": "79 2 500065",
+      "result": "PASS"
+    },
+    {
+      "name": "independent-oracle-11",
+      "expected": "114 25 139089",
+      "actual": "114 25 139089",
+      "result": "PASS"
+    },
+    {
+      "name": "positive-weight-scaling-11",
+      "expected": "114 25 834534",
+      "actual": "114 25 834534",
+      "result": "PASS"
+    },
+    {
+      "name": "input-permutation-11",
+      "expected": "114 25 139089",
+      "actual": "114 25 139089",
+      "result": "PASS"
+    },
+    {
+      "name": "independent-oracle-12",
+      "expected": "-1",
+      "actual": "-1",
+      "result": "PASS"
+    },
+    {
+      "name": "positive-weight-scaling-12",
+      "expected": "-1",
+      "actual": "-1",
+      "result": "PASS"
+    },
+    {
+      "name": "input-permutation-12",
+      "expected": "-1",
+      "actual": "-1",
+      "result": "PASS"
+    },
+    {
+      "name": "independent-oracle-13",
+      "expected": "234 30 419888",
+      "actual": "234 30 419888",
+      "result": "PASS"
+    },
+    {
+      "name": "positive-weight-scaling-13",
+      "expected": "234 30 2099440",
+      "actual": "234 30 2099440",
+      "result": "PASS"
+    },
+    {
+      "name": "input-permutation-13",
+      "expected": "234 30 419888",
+      "actual": "234 30 419888",
+      "result": "PASS"
+    },
+    {
+      "name": "independent-oracle-14",
+      "expected": "3 33 255592",
+      "actual": "3 33 255592",
+      "result": "PASS"
+    },
+    {
+      "name": "positive-weight-scaling-14",
+      "expected": "3 33 1277960",
+      "actual": "3 33 1277960",
+      "result": "PASS"
+    },
+    {
+      "name": "input-permutation-14",
+      "expected": "3 33 255592",
+      "actual": "3 33 255592",
+      "result": "PASS"
+    },
+    {
+      "name": "independent-oracle-15",
+      "expected": "224 12 200891",
+      "actual": "224 12 200891",
+      "result": "PASS"
+    },
+    {
+      "name": "positive-weight-scaling-15",
+      "expected": "224 12 1205346",
+      "actual": "224 12 1205346",
+      "result": "PASS"
+    },
+    {
+      "name": "input-permutation-15",
+      "expected": "224 12 200891",
+      "actual": "224 12 200891",
+      "result": "PASS"
+    },
+    {
+      "name": "independent-oracle-16",
+      "expected": "72 20 436748",
+      "actual": "72 20 436748",
+      "result": "PASS"
+    },
+    {
+      "name": "positive-weight-scaling-16",
+      "expected": "72 20 3057236",
+      "actual": "72 20 3057236",
+      "result": "PASS"
+    },
+    {
+      "name": "input-permutation-16",
+      "expected": "72 20 436748",
+      "actual": "72 20 436748",
+      "result": "PASS"
+    },
+    {
+      "name": "independent-oracle-17",
+      "expected": "196 26 408078",
+      "actual": "196 26 408078",
+      "result": "PASS"
+    },
+    {
+      "name": "positive-weight-scaling-17",
+      "expected": "196 26 2040390",
+      "actual": "196 26 2040390",
+      "result": "PASS"
+    },
+    {
+      "name": "input-permutation-17",
+      "expected": "196 26 408078",
+      "actual": "196 26 408078",
+      "result": "PASS"
+    },
+    {
+      "name": "independent-oracle-18",
+      "expected": "284 2 345190",
+      "actual": "284 2 345190",
+      "result": "PASS"
+    },
+    {
+      "name": "positive-weight-scaling-18",
+      "expected": "284 2 1035570",
+      "actual": "284 2 1035570",
+      "result": "PASS"
+    },
+    {
+      "name": "input-permutation-18",
+      "expected": "284 2 345190",
+      "actual": "284 2 345190",
+      "result": "PASS"
+    },
+    {
+      "name": "independent-oracle-19",
+      "expected": "228 32 458052",
+      "actual": "228 32 458052",
+      "result": "PASS"
+    },
+    {
+      "name": "positive-weight-scaling-19",
+      "expected": "228 32 1832208",
+      "actual": "228 32 1832208",
+      "result": "PASS"
+    },
+    {
+      "name": "input-permutation-19",
+      "expected": "228 32 458052",
+      "actual": "228 32 458052",
+      "result": "PASS"
+    },
+    {
+      "name": "independent-oracle-20",
+      "expected": "123 19 691009",
+      "actual": "123 19 691009",
+      "result": "PASS"
+    },
+    {
+      "name": "positive-weight-scaling-20",
+      "expected": "123 19 3455045",
+      "actual": "123 19 3455045",
+      "result": "PASS"
+    },
+    {
+      "name": "input-permutation-20",
+      "expected": "123 19 691009",
+      "actual": "123 19 691009",
+      "result": "PASS"
+    },
+    {
+      "name": "independent-oracle-21",
+      "expected": "163 6 229840",
+      "actual": "163 6 229840",
+      "result": "PASS"
+    },
+    {
+      "name": "positive-weight-scaling-21",
+      "expected": "163 6 1379040",
+      "actual": "163 6 1379040",
+      "result": "PASS"
+    },
+    {
+      "name": "independent-oracle-22",
+      "expected": "208 28 252400",
+      "actual": "208 28 252400",
+      "result": "PASS"
+    },
+    {
+      "name": "positive-weight-scaling-22",
+      "expected": "208 28 757200",
+      "actual": "208 28 757200",
+      "result": "PASS"
+    },
+    {
+      "name": "independent-oracle-23",
+      "expected": "246 21 171100",
+      "actual": "246 21 171100",
+      "result": "PASS"
+    },
+    {
+      "name": "positive-weight-scaling-23",
+      "expected": "246 21 855500",
+      "actual": "246 21 855500",
+      "result": "PASS"
+    },
+    {
+      "name": "independent-oracle-24",
+      "expected": "357 28 440746",
+      "actual": "357 28 440746",
+      "result": "PASS"
+    },
+    {
+      "name": "positive-weight-scaling-24",
+      "expected": "357 28 2644476",
+      "actual": "357 28 2644476",
+      "result": "PASS"
+    },
+    {
+      "name": "independent-oracle-25",
+      "expected": "163 3 120622",
+      "actual": "163 3 120622",
+      "result": "PASS"
+    },
+    {
+      "name": "positive-weight-scaling-25",
+      "expected": "163 3 844354",
+      "actual": "163 3 844354",
+      "result": "PASS"
+    },
+    {
+      "name": "independent-oracle-26",
+      "expected": "79 36 590819",
+      "actual": "79 36 590819",
+      "result": "PASS"
+    },
+    {
+      "name": "positive-weight-scaling-26",
+      "expected": "79 36 4135733",
+      "actual": "79 36 4135733",
+      "result": "PASS"
+    },
+    {
+      "name": "independent-oracle-27",
+      "expected": "159 36 17127",
+      "actual": "159 36 17127",
+      "result": "PASS"
+    },
+    {
+      "name": "positive-weight-scaling-27",
+      "expected": "159 36 85635",
+      "actual": "159 36 85635",
+      "result": "PASS"
+    },
+    {
+      "name": "independent-oracle-28",
+      "expected": "356 34 387357",
+      "actual": "356 34 387357",
+      "result": "PASS"
+    },
+    {
+      "name": "positive-weight-scaling-28",
+      "expected": "356 34 1162071",
+      "actual": "356 34 1162071",
+      "result": "PASS"
+    },
+    {
+      "name": "independent-oracle-29",
+      "expected": "219 18 429317",
+      "actual": "219 18 429317",
+      "result": "PASS"
+    },
+    {
+      "name": "positive-weight-scaling-29",
+      "expected": "219 18 1717268",
+      "actual": "219 18 1717268",
+      "result": "PASS"
+    },
+    {
+      "name": "independent-oracle-30",
+      "expected": "73 11 192745",
+      "actual": "73 11 192745",
+      "result": "PASS"
+    },
+    {
+      "name": "positive-weight-scaling-30",
+      "expected": "73 11 1349215",
+      "actual": "73 11 1349215",
+      "result": "PASS"
+    },
+    {
+      "name": "independent-oracle-31",
+      "expected": "177 27 309784",
+      "actual": "177 27 309784",
+      "result": "PASS"
+    },
+    {
+      "name": "positive-weight-scaling-31",
+      "expected": "177 27 1858704",
+      "actual": "177 27 1858704",
+      "result": "PASS"
+    },
+    {
+      "name": "independent-oracle-32",
+      "expected": "257 12 520803",
+      "actual": "257 12 520803",
+      "result": "PASS"
+    },
+    {
+      "name": "positive-weight-scaling-32",
+      "expected": "257 12 3645621",
+      "actual": "257 12 3645621",
+      "result": "PASS"
+    },
+    {
+      "name": "independent-oracle-33",
+      "expected": "32 2 135368",
+      "actual": "32 2 135368",
+      "result": "PASS"
+    },
+    {
+      "name": "positive-weight-scaling-33",
+      "expected": "32 2 676840",
+      "actual": "32 2 676840",
+      "result": "PASS"
+    },
+    {
+      "name": "independent-oracle-34",
+      "expected": "273 9 408539",
+      "actual": "273 9 408539",
+      "result": "PASS"
+    },
+    {
+      "name": "positive-weight-scaling-34",
+      "expected": "273 9 817078",
+      "actual": "273 9 817078",
+      "result": "PASS"
+    },
+    {
+      "name": "independent-oracle-35",
+      "expected": "95 33 578483",
+      "actual": "95 33 578483",
+      "result": "PASS"
+    },
+    {
+      "name": "positive-weight-scaling-35",
+      "expected": "95 33 4049381",
+      "actual": "95 33 4049381",
+      "result": "PASS"
+    },
+    {
+      "name": "independent-oracle-36",
+      "expected": "138 23 367223",
+      "actual": "138 23 367223",
+      "result": "PASS"
+    },
+    {
+      "name": "positive-weight-scaling-36",
+      "expected": "138 23 2570561",
+      "actual": "138 23 2570561",
+      "result": "PASS"
+    },
+    {
+      "name": "independent-oracle-37",
+      "expected": "308 3 393690",
+      "actual": "308 3 393690",
+      "result": "PASS"
+    },
+    {
+      "name": "positive-weight-scaling-37",
+      "expected": "308 3 2755830",
+      "actual": "308 3 2755830",
+      "result": "PASS"
+    },
+    {
+      "name": "independent-oracle-38",
+      "expected": "288 25 28980",
+      "actual": "288 25 28980",
+      "result": "PASS"
+    },
+    {
+      "name": "positive-weight-scaling-38",
+      "expected": "288 25 144900",
+      "actual": "288 25 144900",
+      "result": "PASS"
+    },
+    {
+      "name": "independent-oracle-39",
+      "expected": "346 29 608874",
+      "actual": "346 29 608874",
+      "result": "PASS"
+    },
+    {
+      "name": "positive-weight-scaling-39",
+      "expected": "346 29 3653244",
+      "actual": "346 29 3653244",
+      "result": "PASS"
+    },
+    {
+      "name": "independent-oracle-40",
+      "expected": "231 40 291373",
+      "actual": "231 40 291373",
+      "result": "PASS"
+    },
+    {
+      "name": "positive-weight-scaling-40",
+      "expected": "231 40 1456865",
+      "actual": "231 40 1456865",
+      "result": "PASS"
+    },
+    {
+      "name": "full 14760-point domain",
+      "expected": "0 0 2000000000000",
+      "actual": "0 0 2000000000000",
+      "result": "PASS"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+__pycache__/
+LOG_*/
+MOOSLog_*/
+exp1_tugofwar_solution/LOG_*/
+exp1_tugofwar_solution/MOOSLog_*/
+exp1_tugofwar_solution/targ_*
+exp1_tugofwar_solution/*.moos++
+exp1_tugofwar_solution/.LastOpenedMOOSLogDirectory

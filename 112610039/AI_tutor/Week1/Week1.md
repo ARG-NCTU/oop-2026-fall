@@ -30,7 +30,7 @@
 
 ## Part B: LeetCode-style Lecture Code Transfer
 
-**Name:** [ 請填寫你的姓名 / 學號 ]  
+**Name:** 112610039
 **Date:** 2026-10-18  
 **Topic:** List Mutability, Aliasing & In-Place Mutation[cite: 3, 9, 19, 21]
 

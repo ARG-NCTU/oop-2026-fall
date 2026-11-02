@@ -1,0 +1,10 @@
+Question1: False
+線性搜尋的時間複雜度：O(n)，排序演算法時間複雜度至少(nlogn)，因此先進行排序再進行二分搜尋會比直接線性搜尋慢
+Question2: True
+若低一次嘗試排序正確，則用O(n)時間確認，理論上可能隨機排序無限次後才成功，因此worst case無上限
+Question3: True
+正確，不論best case或worst case，都需要完整便利suffix的最小值，並與suffix的頭交換
+Question4: True
+正確，僅需完整遍歷兩個長度n/2的sorted list各一次
+Question5: True
+正確，O(nlogn)是基於比較的排序演算法的最低時間複雜度，這是已被證明的

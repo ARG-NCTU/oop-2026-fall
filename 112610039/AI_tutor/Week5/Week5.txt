@@ -1,0 +1,10 @@
+Question1: true
+正確，只需修改class內部就好，外部不需調整
+Question2: true
+預設為父類別的__init__，如果有自行定義，則需要呼叫父類別的__init__
+Question3: false
+從子類別往父類別尋找，優先採用子類別的method去override父類別
+Question4: true
+所有有可能修改該變數的method，不論是在父類別或子類別，都會被執行
+Question5: false
+如果other.parent1非None，則會無限向上尋找parent1，直至輸出true或是TypeError為止，這樣做不正確，應該以編號等方式比較，或是事先排除None

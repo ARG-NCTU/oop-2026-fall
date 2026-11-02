@@ -1,0 +1,15 @@
+Question1: true
+每次呼叫函式都會產生獨立作用域，子呼叫對n的修改不會影響上一層呼叫
+Question2: false
+還須保證所有情況最終都會收斂至base case，否則可能進入infinite recursion
+Question3: false
+key須為不變，包含list元素的tuple，其中的list在tuple中僅物件不變，內容可以被修改，因此不合法
+Question4: true
+正確，不違反tuple呼叫的規則
+Question5:  true
+正確，每次計算時數值都相同，可以直接用dict來記憶
+
+Question4: false
+在遍歷dictionary時，若嘗試修改dictionary大小，編譯器會直接報錯
+Question5: false
+若函式帶有副作用(如修改外部變數)或是結果不固定，則無法透過dict來記憶結果

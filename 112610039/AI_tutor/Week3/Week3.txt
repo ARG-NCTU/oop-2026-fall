@@ -1,0 +1,10 @@
+Question1: False
+仍有部分邏輯未驗證到，如負責分配執行路徑的邏輯
+Question2: True
+black box testing是針對任務進行驗證，而非程式，因此只要任務不變可重複使用
+Question3: False
+不論如何最後都會執行
+Question4: False
+raise exception是比較好的做法
+Question5: True
+try...except...更能夠系統性且使用使用者的輸入訊息

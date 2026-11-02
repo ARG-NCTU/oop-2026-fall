@@ -1,0 +1,6 @@
+[
+  {"name":"base_vehicle","kind":"Vehicle","args":["cart",5],"distance":20,"expected_id":null,"expected_time":4.0,"expected_str":"Vehicle:cart:5"},
+  {"name":"first_survey","kind":"SurveyVehicle","args":["alpha",4,"sonar"],"distance":20,"expected_id":"001","expected_time":5.0,"expected_str":"SurveyVehicle:001:alpha:sonar:4","survey_checks":[["sonar",true],["camera",false]]},
+  {"name":"second_survey","kind":"SurveyVehicle","args":["bravo",2.5,"camera"],"distance":5,"expected_id":"002","expected_time":2.0,"expected_str":"SurveyVehicle:002:bravo:camera:2.5","survey_checks":[["camera",true],["Camera",false]]},
+  {"name":"zero_distance","kind":"SurveyVehicle","args":["charlie",10,"lidar"],"distance":0,"expected_id":"003","expected_time":0.0,"expected_str":"SurveyVehicle:003:charlie:lidar:10","survey_checks":[["lidar",true]]}
+]

@@ -1,0 +1,38 @@
+**Topic:** Recursion, Dictionaries  
+**Date:** 2026-10-19
+
+### ① Check My Understanding
+
+Questions completed: **5 / 5**
+
+Answers revised after AI hints: **1 / 5**
+
+### ② My Misconception
+
+**Before: I thought…**
+
+I was not completely clear about how recursive calls work or how dictionaries handle missing keys.
+
+**Now: I understand…**
+
+I have a clearer understanding of recursion and dictionaries. I learned that recursive calls wait for deeper calls to return, and accessing a missing dictionary key with square brackets raises a `KeyError`. I also learned that dictionaries can store previously computed results to avoid repeated calculations.
+
+### ③ Challenge the AI
+
+**One AI-generated question I challenged:**
+
+Question 3 about the execution order of recursive calls.
+
+**Why?**
+
+☑ Other: The question could be clearer.
+
+**Brief explanation:**
+
+The question about a function calling itself could be worded more clearly to explain that the current call pauses and waits for the recursive call to return before continuing.
+
+### ④ One-Minute Reflection
+
+**One thing I am still unsure about:**
+
+I am still unsure how to design a dictionary to store the results of recursive function calls and avoid repeated calculations.
