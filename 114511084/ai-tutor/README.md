@@ -11,4 +11,5 @@ This directory stores the AI Tutor learning records and reflections for the AOOP
 | **2026-10-05** | MIT 6.0001 Lecture 9: Python Classes and Inheritance | [Part A](W5/Tutoring_Reflection_L9_PartA.md) · [Part B](W5/Tutoring_Reflection_L9_PartB.md) |
 | **2026-10-12** | MIT 6.0001 Lecture 10: Understanding Program Efficiency, Part 1 | [Part A](W6/Tutoring_Reflection_L10_PartA.md) |
 | **2026-10-19** | MIT 6.0001 Lecture 11: Understanding Program Efficiency, Part 2 | [Part A](W7/Tutoring_Reflection_L11_PartA.md) |
+| **2026-11-02** | MIT 6.0002 Lecture 1: Optimization Problems, 0/1 Knapsack, Greedy Algorithms | [Part A](W9/Tutoring_Reflection_L1_PartA.md) |
 
