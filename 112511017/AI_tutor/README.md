@@ -20,4 +20,4 @@ Each report contains Part A, Part B, and its final Python implementation.
 
 Weeks 10 and 11 were prepared ahead of their November 9 and November 16 course dates. Each report identifies the AI assistance used.
 
-All 109 local tests passed on November 2, 2026. [Verification details](verification.json) include per-week counts and the lecture mapping. Tests and study references are retained in the local workspace.
+The implementations embedded in the reports passed all 109 local tests on November 2, 2026.
