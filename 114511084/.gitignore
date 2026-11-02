@@ -3,3 +3,5 @@ __pycache__/
 .pytest_cache/
 lab04-cpp-oop/lab
 *.o
+pybind11_mini_lab/.venv/
+pybind11_mini_lab/*.so
