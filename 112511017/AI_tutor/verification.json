@@ -204,7 +204,20 @@
       "output": "............                                                             [100%]\n12 passed in 0.11s"
     }
   ],
-  "sha256": {
+  "published_sha256": {
+    "w1.md": "b74e73923d02701d3dd2ee28e7707d99823b7f4bb22db0243aa03dd14854f7a7",
+    "w10.md": "6ec0dd94cd706714bc56bba164c8284c5b3bdd26d1f4f86fb9755f21f60db877",
+    "w11.md": "7eee8ae4b66c07a6c373ba8e8d6e34f3641181056abe3f0e4c34383345575698",
+    "w2.md": "b93c0175122ef8f8ec04a00fce6b1c03ab6af3651d57e2d1d78b833b98dede2b",
+    "w3.md": "00bb4efcd292dc82614fdb2a384ef5ddaf1875f008bce2593849dc242fc59821",
+    "w4.md": "a85ad858326db2bb4c763da4606b7ab06c7c3778e22afb228c35f0318576eee6",
+    "w5.md": "d2659f8137aed2374f5bc8962595c154f393b35fc334efb8039651f62c7ef27d",
+    "w6.md": "5f87b3b0080e8c5f3eed25efab31558b92a474ebc9733c1fd16243e3c5850181",
+    "w7.md": "31f99327b8b5761cded2a18c5c28207f7edc4499c59da069896110ee6374bcf9",
+    "w8.md": "aa0126a3fa1bb76d4d1d1fc540ee7d18d298505736809ea8a7845610b1452136",
+    "w9.md": "d77c2089093be70559b7c3fb23da0fdf0087669b913850fc22bbcbc9fca954c6"
+  },
+  "local_python_sha256": {
     "solutions/w1/playlist_challenge.py": "3b288ab1538bea558886d26a5e492db2704dbecf4be936cbb08ed6ccaa3f0fe3",
     "solutions/w1/test_playlist_challenge.py": "4ee062d09953c71eebdc5db07ce41b25fb0678a193038f3dfd1b91db541debf8",
     "solutions/w10/test_upgrade_cost.py": "1497bcf9f074269eb1da18f9356bf48efdeabbba65fb8e49fd9423b6f8a33b57",
@@ -226,17 +239,12 @@
     "solutions/w8/event_order.py": "ce94564b6f6c0ac0a0cc7c0ed9683aff740d2871593b1236b649af0c5c2dd1fb",
     "solutions/w8/test_event_order.py": "3302c371b72498360932600121e459f1de88507685b34c3787293f7eb74e7620",
     "solutions/w9/inspection_greedy.py": "1d2070cac101e0cada8ee962b6017ce090c555de51f338f46be485f4c44e4854",
-    "solutions/w9/test_inspection_greedy.py": "37b79a1ec6ae379a6a436a78b6d6a5edafc5b1a87b872a0ded2ba65fca4859c3",
-    "w1.md": "a24e5c43aa6875529ccaec7dc9bc6d5dd5bf2a54d07a7a9d04c9cf6e3da71840",
-    "w10.md": "c46f864498b75e82584ab1ccf32e0edf14654e159d9c07fdedf88cd44682f142",
-    "w11.md": "ab44e9cd3e818e19baa60e82c6cf2e35fe1b226a9034dee64e159ef6d2296fe3",
-    "w2.md": "223395f8fe9cac76190abf2c5d80110b60c8ea4314e6c6f79e41e3e92d3a64d1",
-    "w3.md": "c43848b0ef2dd2d4cec14b1efe8aa7a003796e74be95088305bd33e51d59b8fe",
-    "w4.md": "964d4d95860f6d13116d38dbd04de933f45d68ae5f232c2e132358543ed7f92b",
-    "w5.md": "4f80121af7b58ccca77e6550ae6f349f4a93b6cc67411cfe153b2d55bd5b3df7",
-    "w6.md": "6e06ab28aa464f3fd002b7010a1e853485d8e681f00dbf3e87d3aa5e0f2c4227",
-    "w7.md": "6be2a76b003a8a74cdbd57ed4613871dedc82cb58e6b5b0c7089b2c39f16ac40",
-    "w8.md": "e9d6a47e41c9eba2eafaa729c145c178d5f802cb7be6af72e1f21710079a2954",
-    "w9.md": "96c6a27e03e9d86647b2b5b3519cdf4529030064bde3ea219a7599146ece21d7"
-  }
+    "solutions/w9/test_inspection_greedy.py": "37b79a1ec6ae379a6a436a78b6d6a5edafc5b1a87b872a0ded2ba65fca4859c3"
+  },
+  "local_directories_not_published": [
+    "solutions/",
+    "references/"
+  ],
+  "embedded_implementations_verified_at": "2026-11-02T19:09:51.796775+08:00",
+  "implementation_verification": "Each final Python block matched its local implementation exactly; all 109 local tests also passed with modules loaded from the report blocks."
 }

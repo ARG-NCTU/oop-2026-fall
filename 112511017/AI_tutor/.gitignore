@@ -1,3 +1,7 @@
 .venv/
 __pycache__/
 .pytest_cache/
+
+# Retain development material locally without publishing it.
+/solutions/
+/references/

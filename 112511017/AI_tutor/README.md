@@ -16,34 +16,8 @@ One Markdown record per week at `112511017/AI_tutor/wx.md`, combining Part A and
 
 The lecture mapping follows the [official course syllabus](https://timetable.nycu.edu.tw/?r=main/crsoutline&Acy=115&Sem=1&CrsNo=515106&lang=zh-tw).
 
-## Supporting code and references
+Each report contains Part A, Part B, and its final Python implementation.
 
-- [Implementations and tests](solutions/), grouped by week.
-- [Study references](references/), including the Week 1 answer key and Week 5 class/inheritance notes.
+Weeks 10 and 11 were prepared ahead of their November 9 and November 16 course dates. Each report identifies the AI assistance used.
 
-Each weekly record identifies the AI assistance used. Reference answer keys and sample reflections are study material.
-
-Weeks 10 and 11 were prepared ahead of their November 9 and November 16 course dates. Preparation does not establish lecture attendance, video completion, or a live student hint/revision sequence.
-
-All 109 tests passed on November 2, 2026. [Verification details](verification.json) include per-week counts, commands, interpreter version, and the report-to-lecture mapping.
-
-From the repository root, the prepared environment runs without activation:
-
-```bash
-112511017/AI_tutor/.venv/bin/python -m pytest -q -p no:cacheprovider 112511017/AI_tutor/solutions
-```
-
-On another machine, create the environment with Python 3.11 or newer:
-
-```bash
-python3 -m venv 112511017/AI_tutor/.venv
-112511017/AI_tutor/.venv/bin/python -m ensurepip
-112511017/AI_tutor/.venv/bin/python -m pip install -r 112511017/AI_tutor/requirements-dev.txt
-```
-
-From the repository root, run one week's tests:
-
-```bash
-cd 112511017/AI_tutor
-.venv/bin/python -m pytest -q -p no:cacheprovider solutions/w7
-```
+All 109 local tests passed on November 2, 2026. [Verification details](verification.json) include per-week counts and the lecture mapping. Tests and study references are retained in the local workspace.
