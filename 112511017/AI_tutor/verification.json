@@ -1,0 +1,242 @@
+{
+  "verified_at": "2026-11-02T18:44:30.093765+08:00",
+  "python": "Python 3.14.8",
+  "pytest": "8.4.2",
+  "full_suite": {
+    "command": [
+      "112511017/AI_tutor/.venv/bin/python",
+      "-m",
+      "pytest",
+      "-q",
+      "-p",
+      "no:cacheprovider",
+      "112511017/AI_tutor/solutions"
+    ],
+    "tests_passed": 109,
+    "output": "........................................................................ [ 66%]\n.....................................                                    [100%]\n109 passed in 1.03s"
+  },
+  "weeks": [
+    {
+      "week": 1,
+      "mit_course": "6.0001",
+      "lecture": 5,
+      "report": "w1.md",
+      "tests_passed": 2,
+      "command": [
+        "112511017/AI_tutor/.venv/bin/python",
+        "-m",
+        "pytest",
+        "-q",
+        "-p",
+        "no:cacheprovider",
+        "112511017/AI_tutor/solutions/w1"
+      ],
+      "output": "..                                                                       [100%]\n2 passed in 0.03s"
+    },
+    {
+      "week": 2,
+      "mit_course": "6.0001",
+      "lecture": 6,
+      "report": "w2.md",
+      "tests_passed": 9,
+      "command": [
+        "112511017/AI_tutor/.venv/bin/python",
+        "-m",
+        "pytest",
+        "-q",
+        "-p",
+        "no:cacheprovider",
+        "112511017/AI_tutor/solutions/w2"
+      ],
+      "output": ".........                                                                [100%]\n9 passed in 0.05s"
+    },
+    {
+      "week": 3,
+      "mit_course": "6.0001",
+      "lecture": 7,
+      "report": "w3.md",
+      "tests_passed": 9,
+      "command": [
+        "112511017/AI_tutor/.venv/bin/python",
+        "-m",
+        "pytest",
+        "-q",
+        "-p",
+        "no:cacheprovider",
+        "112511017/AI_tutor/solutions/w3"
+      ],
+      "output": ".........                                                                [100%]\n9 passed in 0.05s"
+    },
+    {
+      "week": 4,
+      "mit_course": "6.0001",
+      "lecture": 8,
+      "report": "w4.md",
+      "tests_passed": 9,
+      "command": [
+        "112511017/AI_tutor/.venv/bin/python",
+        "-m",
+        "pytest",
+        "-q",
+        "-p",
+        "no:cacheprovider",
+        "112511017/AI_tutor/solutions/w4"
+      ],
+      "output": ".........                                                                [100%]\n9 passed in 0.04s"
+    },
+    {
+      "week": 5,
+      "mit_course": "6.0001",
+      "lecture": 9,
+      "report": "w5.md",
+      "tests_passed": 8,
+      "command": [
+        "112511017/AI_tutor/.venv/bin/python",
+        "-m",
+        "pytest",
+        "-q",
+        "-p",
+        "no:cacheprovider",
+        "112511017/AI_tutor/solutions/w5"
+      ],
+      "output": "........                                                                 [100%]\n8 passed in 0.04s"
+    },
+    {
+      "week": 6,
+      "mit_course": "6.0001",
+      "lecture": 10,
+      "report": "w6.md",
+      "tests_passed": 10,
+      "command": [
+        "112511017/AI_tutor/.venv/bin/python",
+        "-m",
+        "pytest",
+        "-q",
+        "-p",
+        "no:cacheprovider",
+        "112511017/AI_tutor/solutions/w6"
+      ],
+      "output": "..........                                                               [100%]\n10 passed in 0.06s"
+    },
+    {
+      "week": 7,
+      "mit_course": "6.0001",
+      "lecture": 11,
+      "report": "w7.md",
+      "tests_passed": 15,
+      "command": [
+        "112511017/AI_tutor/.venv/bin/python",
+        "-m",
+        "pytest",
+        "-q",
+        "-p",
+        "no:cacheprovider",
+        "112511017/AI_tutor/solutions/w7"
+      ],
+      "output": "...............                                                          [100%]\n15 passed in 0.16s"
+    },
+    {
+      "week": 8,
+      "mit_course": "6.0001",
+      "lecture": 12,
+      "report": "w8.md",
+      "tests_passed": 11,
+      "command": [
+        "112511017/AI_tutor/.venv/bin/python",
+        "-m",
+        "pytest",
+        "-q",
+        "-p",
+        "no:cacheprovider",
+        "112511017/AI_tutor/solutions/w8"
+      ],
+      "output": "...........                                                              [100%]\n11 passed in 0.59s"
+    },
+    {
+      "week": 9,
+      "mit_course": "6.0002",
+      "lecture": 1,
+      "report": "w9.md",
+      "tests_passed": 11,
+      "command": [
+        "112511017/AI_tutor/.venv/bin/python",
+        "-m",
+        "pytest",
+        "-q",
+        "-p",
+        "no:cacheprovider",
+        "112511017/AI_tutor/solutions/w9"
+      ],
+      "output": "...........                                                              [100%]\n11 passed in 0.06s"
+    },
+    {
+      "week": 10,
+      "mit_course": "6.0002",
+      "lecture": 2,
+      "report": "w10.md",
+      "tests_passed": 13,
+      "command": [
+        "112511017/AI_tutor/.venv/bin/python",
+        "-m",
+        "pytest",
+        "-q",
+        "-p",
+        "no:cacheprovider",
+        "112511017/AI_tutor/solutions/w10"
+      ],
+      "output": ".............                                                            [100%]\n13 passed in 0.14s"
+    },
+    {
+      "week": 11,
+      "mit_course": "6.0002",
+      "lecture": 3,
+      "report": "w11.md",
+      "tests_passed": 12,
+      "command": [
+        "112511017/AI_tutor/.venv/bin/python",
+        "-m",
+        "pytest",
+        "-q",
+        "-p",
+        "no:cacheprovider",
+        "112511017/AI_tutor/solutions/w11"
+      ],
+      "output": "............                                                             [100%]\n12 passed in 0.11s"
+    }
+  ],
+  "sha256": {
+    "solutions/w1/playlist_challenge.py": "3b288ab1538bea558886d26a5e492db2704dbecf4be936cbb08ed6ccaa3f0fe3",
+    "solutions/w1/test_playlist_challenge.py": "4ee062d09953c71eebdc5db07ce41b25fb0678a193038f3dfd1b91db541debf8",
+    "solutions/w10/test_upgrade_cost.py": "1497bcf9f074269eb1da18f9356bf48efdeabbba65fb8e49fd9423b6f8a33b57",
+    "solutions/w10/upgrade_cost.py": "20a5aa7b22c9353527743f1439220849826ec8aa7d74abdd5ece08b996044a71",
+    "solutions/w11/safe_route.py": "07260298bcce5d271e27439eebdcf14fc8e7401f98cf40a29bc0fb101690b1ce",
+    "solutions/w11/test_safe_route.py": "39efae9dd471fe3b504de6d8c8f837ba55f81f4fe6ba236b22103c1a1cec26e3",
+    "solutions/w2/delivery_routes.py": "4627783f32910e54b9953ee2e9b3cd20eb0b3886a5d3c7fd603d6167a57bf4df",
+    "solutions/w2/test_delivery_routes.py": "1aa427fe9a503694e9d9411fa28d0b0c3d344a8fe9518668e63bd244456ba46b",
+    "solutions/w3/measurements.py": "7f9c751618df662e05058eb82f91ff56e5da9e5114804462cdaceee45acb8f3e",
+    "solutions/w3/test_measurements.py": "701f9ce9d1929fd865cab4eb2702e16c408b306417b23b21777193e38b53392a",
+    "solutions/w4/locker.py": "2bfff93d91de8eb75d935346255b541a180cfb2b86d1942d523e8ec3983a5313",
+    "solutions/w4/test_locker.py": "5a4c5f38ebb2b44d6498b210530480a37394485ab00c84dbe5500209864ed498",
+    "solutions/w5/shipping_quotes.py": "5cbba6f23e9d54372729d7275cd8c82a45633fc2ed95aa31c3473e1672e37b43",
+    "solutions/w5/test_shipping_quotes.py": "5c6f77fd0bc7e6467c76fde33c6c11d96fdda8dee0e6ee99dcf128f79c498680",
+    "solutions/w6/compress_events.py": "c68721244699c68b91f4d582cd1362ee52cafde2b6a6ae590fab4612fd7f3a0a",
+    "solutions/w6/test_compress_events.py": "58bc491526cca0f43ad43070407facb8806bf3abbfe77b31a26e30bb0b8a691a",
+    "solutions/w7/event_window.py": "e12daa8a167030b0a4f6d372d984c15aa9f75dfc84671ffe6f4be098cf153f1d",
+    "solutions/w7/test_event_window.py": "1e52c63e79110e999aaf7d2811593581097c9956a3a838c75f5133513082dae0",
+    "solutions/w8/event_order.py": "ce94564b6f6c0ac0a0cc7c0ed9683aff740d2871593b1236b649af0c5c2dd1fb",
+    "solutions/w8/test_event_order.py": "3302c371b72498360932600121e459f1de88507685b34c3787293f7eb74e7620",
+    "solutions/w9/inspection_greedy.py": "1d2070cac101e0cada8ee962b6017ce090c555de51f338f46be485f4c44e4854",
+    "solutions/w9/test_inspection_greedy.py": "37b79a1ec6ae379a6a436a78b6d6a5edafc5b1a87b872a0ded2ba65fca4859c3",
+    "w1.md": "a24e5c43aa6875529ccaec7dc9bc6d5dd5bf2a54d07a7a9d04c9cf6e3da71840",
+    "w10.md": "c46f864498b75e82584ab1ccf32e0edf14654e159d9c07fdedf88cd44682f142",
+    "w11.md": "ab44e9cd3e818e19baa60e82c6cf2e35fe1b226a9034dee64e159ef6d2296fe3",
+    "w2.md": "223395f8fe9cac76190abf2c5d80110b60c8ea4314e6c6f79e41e3e92d3a64d1",
+    "w3.md": "c43848b0ef2dd2d4cec14b1efe8aa7a003796e74be95088305bd33e51d59b8fe",
+    "w4.md": "964d4d95860f6d13116d38dbd04de933f45d68ae5f232c2e132358543ed7f92b",
+    "w5.md": "4f80121af7b58ccca77e6550ae6f349f4a93b6cc67411cfe153b2d55bd5b3df7",
+    "w6.md": "6e06ab28aa464f3fd002b7010a1e853485d8e681f00dbf3e87d3aa5e0f2c4227",
+    "w7.md": "6be2a76b003a8a74cdbd57ed4613871dedc82cb58e6b5b0c7089b2c39f16ac40",
+    "w8.md": "e9d6a47e41c9eba2eafaa729c145c178d5f802cb7be6af72e1f21710079a2954",
+    "w9.md": "96c6a27e03e9d86647b2b5b3519cdf4529030064bde3ea219a7599146ece21d7"
+  }
+}
