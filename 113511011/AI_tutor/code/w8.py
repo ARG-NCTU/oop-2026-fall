@@ -76,6 +76,16 @@ def run_tests():
     assert scores == list(range(100000))
     print(f"W8 PASS: {len(fixed)} fixed, {count} exhaustive, 1 large; input preserved.")
 
+    # Verify helper contracts separately: descending merge, ties, no aliasing.
+    left, right = [(0, 9), (1, 5)], [(2, 9), (3, 5), (4, 1)]
+    merged = merge_records(left, right)
+    assert merged == [(0, 9), (2, 9), (1, 5), (3, 5), (4, 1)]
+    assert left == [(0, 9), (1, 5)] and right == [(2, 9), (3, 5), (4, 1)]
+    for records in ([], [(0, 3)], [(0, 3), (1, 3), (2, -1)]):
+        output = sort_records(records)
+        assert output == records and output is not records
+    print("W8 helper contracts PASS.")
+
 
 if __name__ == "__main__":
     run_tests()
