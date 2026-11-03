@@ -99,6 +99,23 @@ def run_tests():
         assert all(values[i] == score for i, score, _ in output)
     print("W8 randomized oracle PASS: 200 seeded cases.")
 
+    # Instrument actual score comparisons, rather than timing a noisy machine.
+    class CountedScore(int):
+        comparisons = 0
+
+        def __ge__(self, other):
+            type(self).comparisons += 1
+            return super().__ge__(other)
+
+    for exponent in range(1, 11):
+        size = 2 ** exponent
+        values = [CountedScore((i * 37) % size) for i in range(size)]
+        CountedScore.comparisons = 0
+        ordered = sort_records(list(enumerate(values)))
+        assert [int(score) for _, score in ordered] == list(range(size-1, -1, -1))
+        assert CountedScore.comparisons <= size * exponent - size + 1
+    print("W8 comparison bounds PASS: powers of two through 1024.")
+
 
 if __name__ == "__main__":
     run_tests()
