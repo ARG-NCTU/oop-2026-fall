@@ -24,3 +24,17 @@ def sort_records(records):
     mid = len(records) // 2
     return merge_records(sort_records(records[:mid]),
                          sort_records(records[mid:]))
+
+
+def rank_scores(scores):
+    """Return (original index, score, dense rank), preserving input."""
+    records = sort_records(list(enumerate(scores)))
+    result = []
+    rank = 0
+    previous = None
+    for index, score in records:
+        if rank == 0 or score != previous:
+            rank += 1
+        result.append((index, score, rank))
+        previous = score
+    return result
