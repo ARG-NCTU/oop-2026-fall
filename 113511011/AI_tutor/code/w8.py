@@ -86,6 +86,19 @@ def run_tests():
         assert output == records and output is not records
     print("W8 helper contracts PASS.")
 
+    # Reproducible non-power-of-two inputs with many cross-half ties.
+    from random import Random
+    rng = Random(20261103)
+    for _ in range(200):
+        values = [rng.randint(-50, 50) for _ in range(rng.randrange(300))]
+        output = rank_scores(values)
+        expected_order = sorted(range(len(values)), key=lambda i: -values[i])
+        assert [row[0] for row in output] == expected_order
+        unique = sorted(set(values), reverse=True)
+        assert [row[2] for row in output] == [unique.index(values[i])+1 for i in expected_order]
+        assert all(values[i] == score for i, score, _ in output)
+    print("W8 randomized oracle PASS: 200 seeded cases.")
+
 
 if __name__ == "__main__":
     run_tests()
