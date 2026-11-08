@@ -1,0 +1,37 @@
+Topic: Recursion, Dictionaries
+Date: 2026/11/08
+
+① Check My Understanding
+
+Questions completed: 5 / 5
+
+Answers revised after AI hints: 2 / 5
+
+② My Misconception
+
+Before: I thought…
+我原本以為遞迴函式只要有終止條件，就一定會停止。另外，我以為函式內修改字典是否會影響外部，要看有沒有使用 global。
+
+Now: I understand…
+遞迴除了要有終止條件，每次呼叫也必須朝能到達終止條件的方向進行。將字典傳入函式後，若直接修改同一個字典物件，外部也會看到變化，與是否使用 global 無關。
+
+③ Challenge the AI
+
+One AI-generated question I challenged:
+第 3 題：計算費氏數列時，將已算出的結果存在字典中，能避免重複計算相同的子問題，但不會改變計算結果。
+
+Why?
+
+☐ Ambiguous
+☐ Oversimplified
+☐ Technically questionable
+☑ Too easy
+☐ Other: __________
+
+Brief explanation:
+這題直接描述記憶化的用途，容易判斷。我認為可以改成比較有無使用字典時，哪些子問題會被重複計算，更能測試是否理解。
+
+④ One-Minute Reflection
+
+One thing I am still unsure about:
+我還不太確定如何判斷一個問題適合用遞迴還是迴圈，以及哪種方法比較有效率。
