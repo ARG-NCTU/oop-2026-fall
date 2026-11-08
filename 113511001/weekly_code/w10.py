@@ -151,3 +151,35 @@ print("All tests passed!")
 # 3. Optimal Substructure
 # 4. Overlapping Subproblems
 # 5. Memoization (Dynamic Programming)
+
+
+# def maxHappiness(prizes, tickets):
+#     memo = {}
+
+#     def solve(i, remaining):
+#         # Base case
+#         if i == len(prizes) or remaining == 0:
+#             return 0
+
+#         # Check memo
+#         if (i, remaining) in memo:
+#             return memo[(i, remaining)]
+
+#         # Don't take the prize
+#         skip = solve(i + 1, remaining)
+
+#         # Take the prize if there are enough tickets
+#         take = 0
+#         if prizes[i][0] <= remaining:
+#             take = prizes[i][1] + solve(i + 1, remaining - prizes[i][0])
+
+#         # Choose the better option
+#         best = max(skip, take)
+
+#         # Store result
+#         memo[(i, remaining)] = best
+
+#         return best
+
+#     return solve(0, tickets)
+
