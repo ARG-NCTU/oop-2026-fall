@@ -1,0 +1,11 @@
+def preview_cart(cart, unwanted):
+    new_cart = []
+    removed_count = 0
+
+    for item in cart:
+        if item in unwanted:
+            removed_count += 1
+        else:
+            new_cart.append(item)
+
+    return new_cart, removed_count
