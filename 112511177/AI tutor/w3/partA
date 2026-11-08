@@ -1,0 +1,39 @@
+AI Tutor Learning Record
+
+Topic: Testing, Debugging, Exceptions, Assertions
+Date: 2026/11/08
+
+① Check My Understanding
+
+Questions completed: 5 / 5
+
+Answers revised after AI hints: 0 / 5
+
+② My Misconception
+
+Before: I thought…
+我對「程式能正常執行」與「程式結果正確」的差別還不夠清楚，也不太確定例外處理是否代表已經修正問題。
+
+Now: I understand…
+程式即使沒有拋出例外，仍可能存在邏輯錯誤。通過目前所有測試，也不代表已涵蓋所有合法輸入。try/except 可以捕捉並處理例外，但不會自動修正造成問題的原因；啟用斷言檢查時，assert 條件不成立會引發 AssertionError。
+
+③ Challenge the AI
+
+One AI-generated question I challenged:
+第 5 題：測試接受串列的函式時，只測試一般案例就足夠，不需要考慮規格允許的空串列、單一元素或重複元素。
+
+Why?
+
+☐ Ambiguous
+☐ Oversimplified
+☐ Technically questionable
+☑ Too easy
+☐ Other: __________
+
+Brief explanation:
+題目直接列出可能漏測的特殊案例，容易判斷答案。我認為可以提供一段程式及現有測試，要求找出尚未涵蓋的案例，更能測試是否理解測試設計。
+
+④ One-Minute Reflection
+
+One thing I am still unsure about:
+我還不太確定實際寫程式時，什麼情況適合使用 assert，什麼情況應該主動引發例外，再用 try/except 處理。
