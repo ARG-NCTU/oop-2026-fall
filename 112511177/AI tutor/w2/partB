@@ -1,0 +1,127 @@
+AI Tutor Learning Record — Coding Challenge
+
+Name: ____________________
+Date: 2026/11/08
+Topic: Recursion, Dictionaries
+
+1. Today’s Challenge
+
+Core concept from today’s OCW lecture:
+使用字典建立資料與出現次數的對應關係，運用講義中 lyrics_to_frequencies() 的計數方式解決新問題。
+
+AI-generated coding challenge title:
+第一個只出現一次的字元（First Unique Character）
+
+Problem statement:
+給定只包含小寫英文字母的字串 s，回傳第一個在整個字串中只出現一次的字元索引。索引從 0 開始；如果不存在，回傳 -1。
+
+Input:
+字串 s。
+
+Output:
+第一個只出現一次的字元索引；若不存在，回傳 -1。
+
+Constraints:
+0 ≤ len(s) ≤ 10,000。
+字串只包含小寫英文字母。
+使用字典協助解題。
+
+Examples:
+輸入："aabbcdd"
+輸出：4
+說明：c 是第一個只出現一次的字元。
+
+輸入："loveleetcode"
+輸出：2
+說明：v 是第一個只出現一次的字元。
+
+輸入："aabb"
+輸出：-1
+說明：所有字元都重複出現。
+
+
+2. My Initial Approach — Before AI Help
+
+My approach:
+我一開始想使用 sliding window，藉由調整視窗範圍尋找符合條件的字元，但當時還沒有明確決定如何移動視窗，以及如何確認字元在整個字串中的出現次數。
+
+
+3. AI Tutor Help
+
+Did you ask the AI Tutor for help?
+
+☐ No — I solved it independently
+☑ Yes — I received one or more hints
+
+The most useful hint/question from AI was:
+AI 使用 "zaab" 作為反例，讓我思考題目中的「第一個」是按照字母排序，還是按照原字串中的位置決定。
+
+It helped me realize that:
+出現次數用來判斷字元是否只出現一次，而原字串的位置才決定哪個字元是第一個。因此應先統計次數，再按原字串由左到右檢查。
+
+補充說明：
+我自行提出解法並完成程式，沒有使用解題提示。完成後，AI 協助檢查程式、執行測試，並提出反思問題。
+
+
+4. My Revision
+
+Did you change your approach or code after interacting with AI?
+
+☐ No
+☑ Yes
+
+What did you change, and why?
+我將原本尚未具體化的 sliding window 想法，改成先建立字典統計所有字元的出現次數，再按照原字串順序尋找次數為 1 的字元。
+
+討論過程中，我也曾考慮使用字典序或出現次數排序，但這些方式無法直接保證找到原字串中最先出現的答案，因此最後採用由左到右走訪原字串的方法。
+
+
+5. Verification
+
+My final program:
+
+☑ Passed the provided examples
+☑ Passed additional edge cases
+☐ Still has unresolved problems
+
+驗證方式：
+由 AI 執行程式測試，三個題目範例與五個額外案例全部通過。
+
+One edge case I tested:
+
+Input: ""
+Expected output: -1
+Actual output: -1
+
+其他測試：
+"aabbcdd" → 4
+"loveleetcode" → 2
+"aabb" → -1
+"z" → 0
+"zaab" → 0
+"aabbz" → 4
+連續 10,000 個 "a" → -1
+
+
+6. One-Minute Reflection
+
+What idea from the OCW lecture did you transfer to this new problem?
+將講義中使用字典統計單字次數的方法，轉用到字元計數。字典的 key 是字元，value 是該字元在整個字串中的出現次數。
+
+One thing I understand better now:
+我更清楚「出現次數」和「出現順序」是不同的資訊。字典可以協助判斷次數，但這題仍需要按照原字串的順序檢查，才能找到第一個符合條件的字元。
+
+One thing I am still unsure about:
+我還不太確定什麼情況適合使用 sliding window，以及如何判斷題目需要維護視窗內的資訊，還是整份輸入的資訊。
+
+
+7. Explanation
+
+Why my solution works:
+第一次走訪字串後，字典會正確記錄每個字元在整個字串中的出現次數。第二次走訪按照索引由小到大檢查，因此遇到的第一個次數為 1 的字元，就是題目要求的答案。如果走訪結束仍未找到，便回傳 -1。
+
+Time complexity:
+O(n)，其中 n 是字串長度。程式最多走訪字串兩次，字典查詢與更新的平均時間為 O(1)。
+
+Space complexity:
+O(1)。因為輸入限定小寫英文字母，字典最多只需要保存 26 個不同字元的計數。
