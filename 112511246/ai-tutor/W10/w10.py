@@ -1,0 +1,17 @@
+def min_coins_naive(coins, amount):
+    if amount == 0:
+        return 0
+    best = -1
+    for c in coins:
+        if c <= amount:
+            sub = min_coins_naive(coins, amount - c)
+            if sub != -1 and (best == -1 or sub + 1 < best):
+                best = sub + 1
+    return best
+
+
+if __name__ == "__main__":
+    print(min_coins_naive([1, 3, 4], 6))
+    print(min_coins_naive([1, 7, 10], 14))
+    print(min_coins_naive([5, 10], 3))
+    print(min_coins_naive([2], 0))
