@@ -8,12 +8,15 @@
 | W5 | 多型任務排程 | [task_scheduler.cpp](../../W5/task_scheduler.cpp) | [verify_scheduler.py](../../W5/verify_scheduler.py) |
 | W6 | 無人載具任務消息狀態機 | [mission_state.cpp](w6/mission_state.cpp) | [verify_challenges.py](verify_challenges.py) |
 | W7 | 安全候選的多行為加權決策器 | [weighted_decision.cpp](w7/weighted_decision.cpp) | [verify_weighted_decision.py](w7/verify_weighted_decision.py) |
+| W8 | 可復原的任務事件處理器 | [undo_mission.cpp](w8/undo_mission.cpp) | [verify_undo_mission.py](w8/verify_undo_mission.py) |
 | W9 | 有容量限制的批次裝載器 | [cargocpp.cpp](w9/cargocpp.cpp) | [verify_cargo.py](w9/verify_cargo.py) |
 | W10 | 帶倒退編輯的括號驗證器 | [edited_brackets.py](w10/edited_brackets.py) | [verify_brackets.py](w10/verify_brackets.py) |
 
 完整題目、三組範例、解法、複雜度與反思在上層的 w2.md～w7.md。
 
 新增 W9、W10 的完整題目見上層 [w9.md](../w9.md)、[w10.md](../w10.md)。2026-11-10 實測分別為 **221／221** 與 **3,070／3,070** 項通過；證據見 [W9 結果](w9/verification.json)、[W10 結果](w10/verification.json)。W9 需 pybind11、g++ 與 Python 開發標頭，測試會在臨時目錄編譯並匯入真實擴充模組；W10 僅需 Python 3。各週重跑方式見其學習單。這兩週未使用既有 W2～W7 的 sanitizer 設定。
+
+W8 期中綜合複習見 [w8.md](../w8.md)：2026-11-10 實測 **664／664** 項通過，含 400 組完整短序列、250 組隨機序列及十萬事件上限。使用 C++11 與 UndefinedBehaviorSanitizer；完整結果見 [W8 結果](w8/verification.json)。以 Python 3 執行 `w8/verify_undo_mission.py` 即可重跑，需要 g++。
 
 ## Reproduce the results
 
