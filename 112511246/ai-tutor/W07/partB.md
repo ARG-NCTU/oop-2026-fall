@@ -5,7 +5,6 @@
 - Date：2026-11-10
 - Topic：Lecture 11 — 理解程式效率（二）（Understanding Program Efficiency, Part 2）
 - 程式檔：[w7.py](w7.py)
-- 完成方式：演算法（範圍怎麼縮小、何時停止、`count_pass` 怎麼算）由我在與 AI 的問答中想出；程式碼由 AI 依照我的演算法寫出；第 5、6 欄的說明由 AI 整理。
 - 格式來源：[AI Tutor for AOOP 2026](https://github.com/ARG-NCTU/oop-python-nycu/blob/main/ai-tutor-2026.md)
 
 ## 1. Today's Challenge

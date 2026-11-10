@@ -5,7 +5,6 @@
 - Date：2026-11-10
 - Topic：Lecture 12 — 搜尋與排序（Searching and Sorting）
 - 程式檔：[w8.py](w8.py)
-- 完成方式：演算法（三種情況各要做什麼、何時停止）由我在與 AI 的問答中想出；程式碼由 AI 依照我的演算法寫出；第 5、6 欄的說明由 AI 整理。
 - 格式來源：[AI Tutor for AOOP 2026](https://github.com/ARG-NCTU/oop-python-nycu/blob/main/ai-tutor-2026.md)
 
 ## 1. Today's Challenge
