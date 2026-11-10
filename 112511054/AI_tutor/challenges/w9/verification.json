@@ -1,0 +1,895 @@
+{
+  "date": "2026-11-10",
+  "python": "3.14.4",
+  "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.43",
+  "passed": 221,
+  "failed": 0,
+  "random_seed": 20261110,
+  "compiler_flags": "-O2 -Wall -Wextra -Werror -shared -std=c++17 -fPIC",
+  "cases": [
+    {
+      "name": "example 1: skip oversized item",
+      "result": "PASS"
+    },
+    {
+      "name": "example 2: state across batches",
+      "result": "PASS"
+    },
+    {
+      "name": "example 3: invalid batch",
+      "result": "PASS"
+    },
+    {
+      "name": "invalid batch leaves object unchanged",
+      "result": "PASS"
+    },
+    {
+      "name": "invalid capacity 0",
+      "result": "PASS"
+    },
+    {
+      "name": "invalid capacity -1",
+      "result": "PASS"
+    },
+    {
+      "name": "invalid capacity 1000000000001",
+      "result": "PASS"
+    },
+    {
+      "name": "empty batch",
+      "result": "PASS"
+    },
+    {
+      "name": "list/vector conversion",
+      "result": "PASS"
+    },
+    {
+      "name": "Python input list unchanged",
+      "result": "PASS"
+    },
+    {
+      "name": "clear resets both counters",
+      "result": "PASS"
+    },
+    {
+      "name": "separate objects own separate state",
+      "result": "PASS"
+    },
+    {
+      "name": "invalid weight -2",
+      "result": "PASS"
+    },
+    {
+      "name": "rollback for -2",
+      "result": "PASS"
+    },
+    {
+      "name": "invalid weight 0",
+      "result": "PASS"
+    },
+    {
+      "name": "rollback for 0",
+      "result": "PASS"
+    },
+    {
+      "name": "invalid weight 1000000000001",
+      "result": "PASS"
+    },
+    {
+      "name": "rollback for 1000000000001",
+      "result": "PASS"
+    },
+    {
+      "name": "batch length limit",
+      "result": "PASS"
+    },
+    {
+      "name": "64-bit capacity",
+      "result": "PASS"
+    },
+    {
+      "name": "100000 item batch",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 0",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 1",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 2",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 3",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 4",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 5",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 6",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 7",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 8",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 9",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 10",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 11",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 12",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 13",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 14",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 15",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 16",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 17",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 18",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 19",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 20",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 21",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 22",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 23",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 24",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 25",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 26",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 27",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 28",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 29",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 30",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 31",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 32",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 33",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 34",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 35",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 36",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 37",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 38",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 39",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 40",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 41",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 42",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 43",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 44",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 45",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 46",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 47",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 48",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 49",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 50",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 51",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 52",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 53",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 54",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 55",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 56",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 57",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 58",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 59",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 60",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 61",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 62",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 63",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 64",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 65",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 66",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 67",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 68",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 69",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 70",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 71",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 72",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 73",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 74",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 75",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 76",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 77",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 78",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 79",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 80",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 81",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 82",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 83",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 84",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 85",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 86",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 87",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 88",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 89",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 90",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 91",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 92",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 93",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 94",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 95",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 96",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 97",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 98",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 99",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 100",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 101",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 102",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 103",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 104",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 105",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 106",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 107",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 108",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 109",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 110",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 111",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 112",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 113",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 114",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 115",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 116",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 117",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 118",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 119",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 120",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 121",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 122",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 123",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 124",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 125",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 126",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 127",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 128",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 129",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 130",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 131",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 132",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 133",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 134",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 135",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 136",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 137",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 138",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 139",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 140",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 141",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 142",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 143",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 144",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 145",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 146",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 147",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 148",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 149",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 150",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 151",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 152",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 153",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 154",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 155",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 156",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 157",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 158",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 159",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 160",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 161",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 162",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 163",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 164",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 165",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 166",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 167",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 168",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 169",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 170",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 171",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 172",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 173",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 174",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 175",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 176",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 177",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 178",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 179",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 180",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 181",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 182",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 183",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 184",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 185",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 186",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 187",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 188",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 189",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 190",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 191",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 192",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 193",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 194",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 195",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 196",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 197",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 198",
+      "result": "PASS"
+    },
+    {
+      "name": "stateful random trial 199",
+      "result": "PASS"
+    }
+  ]
+}
