@@ -1,0 +1,38 @@
+**Topic:** Testing, Debugging, Exceptions, Assertions  
+**Date:** 2026-11-16
+
+### ① Check My Understanding
+
+Questions completed: **5 / 5**
+
+Answers revised after AI hints: **0 / 5**
+
+### ② My Misconception
+
+**Before: I thought…**
+
+I was not completely sure how assertions work or what happens when an assertion condition is false.
+
+**Now: I understand…**
+
+I understand that `assert` is used to check whether a condition is true. If the condition is false, Python normally raises an `AssertionError`.
+
+### ③ Challenge the AI
+
+**One AI-generated question I challenged:**
+
+Question 5 about whether a program without exceptions always produces correct results.
+
+**Why?**
+
+☑ Other: No obvious issues.
+
+**Brief explanation:**
+
+I think the question is clear and easy to understand. It helps explain that a program can run without exceptions but still produce incorrect results because of logical errors.
+
+### ④ One-Minute Reflection
+
+**One thing I am still unsure about:**
+
+I am still unsure when to use `try-except` and when to use `assert` in Python. I need more practice understanding the differences between them.
