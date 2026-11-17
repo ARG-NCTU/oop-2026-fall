@@ -196,6 +196,8 @@ ProcessConfig = pMarineViewer
   button_two = RETURN # RETURN=true
   button_three = SLOWER # WPT_UPDATE=speed=1.5
   button_four = FASTER # WPT_UPDATE=speed=3.5
+  button_five = MUCHSLO # WPT_UPDATE=speed=1.0
+  button_six  = MUCHFST # WPT_UPDATE=speed=4.0
 
   action  = MENU_KEY=deploy # DEPLOY = true # RETURN = false
   action+ = MENU_KEY=deploy # MOOS_MANUAL_OVERRIDE=false
@@ -212,7 +214,7 @@ ProcessConfig = pNodeReporter
   CommsTick	 = 2
 
   platform_type   = kayak
-  platform_color  = yellow
+  platform_color  = pink
   platform_length = 4
 }
 
