@@ -53,3 +53,22 @@ Behavior = BHV_ConstantHeading
     basewidth = 360                // 指定效用函數的基底寬度，360 表示整個圓周都會有效用
   summitdelta = 0
 }
+
+//----------------------------------------------
+// 行為 C：保持固定航速（只在 Case 3 出現）
+//   這段是第 4 題的解法：不刪任何權重，讓 Case 3 的船動起來
+//   go_north 只在乎航向、不在乎航速；船頭朝北時，go_east 會扣「繞路」分
+//   （沒對準目標還開得越快，扣越多），所以速度 0 反而是 go_east 的最高分。
+//   Case 3 沒有任何行為想要速度，helm 就選了速度 0。
+//   加上這個只在乎航速、不管航向的行為，補上「要有速度」的意見。
+#ifdef CASE 3
+Behavior = BHV_ConstantSpeed
+{
+  name      = keep_speed
+  pwt       = 50
+  condition = DEPLOY = true
+
+      speed = 2.0
+   duration = no-time-limit
+}
+#endif
