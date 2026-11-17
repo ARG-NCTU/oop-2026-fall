@@ -9,10 +9,10 @@ import gradecpp  # ← 編譯後才會出現的 C++ 模組
 def task_1():
     """Task 1：呼叫 C++ 的 add_bonus。"""
     # TODO P1：透過 gradecpp.add_bonus(...) 計算 78 + 10。
-    result = None  # ← 替換這一行
+    result = gradecpp.add_bonus(78, 10)
 
     # TODO P2：測試 95 + 10，必須被限制在 100 分。
-    capped = None  # ← 替換這一行
+    capped = gradecpp.add_bonus(95, 10)
 
     assert result == 88, f"預期 88，實際 {result!r}"
     assert capped == 100, f"預期 100，實際 {capped!r}"
@@ -23,10 +23,10 @@ def task_2():
     scores = [60, 80, 100]
 
     # TODO P3：呼叫 gradecpp.average_scores(scores)。
-    avg = None  # ← 替換這一行
+    avg = gradecpp.average_scores(scores)
 
     # TODO P4：呼叫同一個 C++ 函式，計算 [70, 90] 的平均。
-    avg_2 = None  # ← 替換這一行
+    avg_2 = gradecpp.average_scores([70, 90])
 
     assert avg == 80, f"預期 80，實際 {avg!r}"
     assert avg_2 == 80, f"預期 80，實際 {avg_2!r}"
@@ -43,13 +43,16 @@ def task_2():
 def task_3():
     """Task 3：建立並操作 C++ GradeBook 物件。"""
     # TODO P5：用 gradecpp.GradeBook() 建立 book。
-    book = None  # ← 替換這一行
+    book = gradecpp.GradeBook()
 
     # TODO P6：呼叫 book.add(...)，依序加入 60、80、100。
+    book.add(60)
+    book.add(80)
+    book.add(100)
 
     # TODO P7：呼叫 book.count() 與 book.average()。
-    n = None  # ← 替換這一行
-    avg = None  # ← 替換這一行
+    n = book.count()
+    avg = book.average()
 
     assert n == 3, f"預期 3 筆，實際 {n!r}"
     assert avg == 80, f"預期平均 80，實際 {avg!r}"
