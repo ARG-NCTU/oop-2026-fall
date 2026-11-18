@@ -1,0 +1,10 @@
+Question1: True
+如果沒有一個組合滿足限制條件，則不構成最佳化問題
+Question2: True
+每個物品都有選或不選兩個選擇，因此暴力解時間複雜度為O(2^n)
+Question3: True
+先對n個物品排序，再用for迴圈將符合限制的物品放入背包
+Question4: False
+在0/1 knapsack問題中，貪婪演算法不保證最佳解
+Question5: True
+正確
