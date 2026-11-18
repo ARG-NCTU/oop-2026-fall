@@ -1,0 +1,121 @@
+# 學習單一｜觀念是非題
+
+**Topic**：圖論模型、DFS 與 BFS  
+**Date**：2026/11/19（填寫日期）
+
+## ① Check My Understanding
+
+- Questions completed：**5 / 5**
+- Answers revised after AI hints：**2 / 5**（第 1、3 題補充理由，原本的判斷都正確。）
+
+## ② My Misconception
+
+**Before — I thought…**
+
+五題的「是／非」都答對。我一開始在第 1 題只提到避免繞圈，第 3 題只說分支彼此無關。第 2 題則把 BFS 的搜尋順序說成「優先排除」較長的路徑。
+
+**Now — I understand…**
+
+| 題目 | 原先漏掉或說得不準確的地方 | 正確答案與理由 |
+|---|---|---|
+| 第 1 題 | 我用「避免繞圈」解釋 BFS 為何找到最短路徑。 | **是。** 避免繞圈能防止同一路徑重複走。最短的保證來自 BFS 按邊數由少到多搜尋。 |
+| 第 2 題 | 我說邊數較多的路徑會被優先排除。 | **非。** 排序鄰居只會改變同一層的搜尋順序。較長的路徑可能還在佇列裡，BFS 已經回傳邊數較少、總權重卻可能較高的路徑。 |
+| 第 3 題 | 我說分支彼此無關，沒有解釋為什麼要允許再次到達同一節點。 | **非。** DFS 第一次到達 `X` 可能走了 `A→B→C→X`。如果之後永久跳過 `X`，就會漏掉較短的 `A→X→E`。 |
+
+## ③ Challenge the AI
+
+**One AI-generated question I challenged**
+
+第 1 題：在有限、未加權的有向圖中，即使有環，BFS 是否仍能找到邊數最少的路徑？
+
+**Why?**
+
+- [x] Other：題目容易讓人誤判考點。
+
+**Brief explanation**
+
+題目特別提到「即使圖中存在環」，我以為重點是避免繞圈，就用 `node not in path` 解釋。AI 追問的是 BFS 為何能保證最短。若分開問「怎麼避免繞圈」和「為什麼第一條找到的路徑最短」，考點會更清楚。
+
+## ④ One-Minute Reflection
+
+**One thing I am still unsure about**
+
+做完五題是非題時，我沒有提出其他疑問。後來寫程式時，我還不確定：用 `set` 和 `deque`、不另外設 `visited`，要怎麼防止重複搜尋，又要怎麼記錄轉換次數？
+
+---
+
+# 學習單二｜程式練習
+
+**Name**：＿＿＿＿＿＿  
+**Date**：2026/11/19（填寫日期）  
+**Topic**：用 BFS 尋找未加權圖的最短路徑
+
+## 1. Today’s Challenge
+
+**Core concept from today’s OCW lecture**
+
+把問題表示成圖，再用 BFS 按步數搜尋最短路徑。
+
+**AI-generated coding challenge title**
+
+最少單字轉換次數。
+
+## 2. My Initial Approach — Before AI Help
+
+**My approach**
+
+我先選 BFS。打算從起始單字出發，依序替換每個位置的字母，檢查換出的單字是否在 `words` 裡。找到合法單字後，就繼續做下一輪。我起初想跳過已經改過的位置，當時還不知道怎麼避免來回轉換，也不熟悉如何用切片替換字元。
+
+## 3. AI Tutor Help
+
+- [x] Yes — I received one or more hints.
+
+**The most useful hint/question from AI was**
+
+「找到 `cog` 後，如果只記進 `visited`，沒有把它放進佇列，BFS 之後會從哪裡繼續找？」
+
+**It helped me realize that**
+
+`visited` 記錄已發現的單字及其步數，佇列保存接下來還要處理的單字。從 `cot` 找到 `cog` 時，兩邊都要更新，後面才有機會從 `cog` 找到 `dog`。
+
+## 4. My Revision
+
+- [x] Yes
+
+**What did you change, and why?**
+
+| 原本的想法或寫法 | 修正與原因 |
+|---|---|
+| 跳過已經改過的位置。 | 同一位置可以改多次。應記錄已發現的單字，避免回到同一個搜尋狀態。 |
+| 用 `[[start]]` 初始化佇列，後續卻放入單字字串。 | 改成 `[start]`，讓佇列每次取出的都是字串，才能做字串切片。 |
+| 用 `{(start, 0)}`，卻想用 `visited[current_word]` 查步數。 | 改成 `{start: 0}`。前者是裝有元組的集合，後者是能用單字查步數的字典。 |
+| 先檢查 `end` 是否在 `words` 裡。 | 先檢查 `start == end`。兩者相同時，即使清單為空，也要回傳 `0`。 |
+| 把時間複雜度算成 `O(NL)`，後來改成 `O(N²L)`。 | 這版用串列查 `words`，每個候選字最多要和 N 個單字比較，每次比較最多看 L 個字元。乘上 `O(NL)` 個候選，最壞時間上界是 `O(N²L²)`。 |
+
+## 5. Verification
+
+- [x] Passed the provided examples
+- [x] Passed additional edge cases
+- [ ] Still has unresolved problems
+
+修正版共通過五組測試，包含三個題目範例、單步轉換，以及必須重複修改同一位置的案例。
+
+**One edge case I tested**
+
+- Input：`start = "cat"`、`end = "cat"`、`words = []`
+- Expected output：`0`
+- Actual output：`0`（修正前是 `-1`。）
+
+## 6. One-Minute Reflection
+
+**What idea from the OCW lecture did you transfer to this new problem?**
+
+我把每個單字當成節點，把恰好差一個字母的兩個單字視為有邊相連。每次轉換算一步。BFS 用佇列按步數搜尋，第一次到達目標時就能取得最少轉換次數。
+
+**One thing I understand better now**
+
+我原本想用 `for c in current_word` 省掉遍歷 26 個字母。現在知道這樣會漏掉合法轉換，例如 `cat` 裡沒有 `o`，就試不到 `cot`。`c is not i` 也不能判斷字母是否改變，因為 `c` 是字母、`i` 是索引。若要略過原字母，可以用 `c != current_word[i]`。若想完全省掉字母表迴圈，也可以直接掃描 `words`，找恰好差一個位置的單字。
+
+**One thing I am still unsure about**
+
+VS Code 產生了用 `set` 和 `deque` 的寫法，我當時看不懂，改用串列佇列加 `visited` 字典。我還不確定：如果沒有獨立的 `visited`，什麼時候要從 `set` 移除已發現的單字？`deque` 裡又要存什麼，才能在取出單字時知道它走了幾步？
