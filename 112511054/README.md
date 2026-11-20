@@ -15,6 +15,7 @@ AOOP course work.
 | W8 | 期中綜合複習：封裝、多型與可復原狀態 | [w8.md](AI_tutor/w8.md) |
 | W9 | pybind11、Python／C++ 型別轉換與類別綁定 | [w9.md](AI_tutor/w9.md) |
 | W10 | LeetCode、堆疊與帶編輯的括號驗證 | [w10.md](AI_tutor/w10.md) |
+| W11 | 圖論模型、BFS 與具通行限制的最短路徑 | [w11.md](AI_tutor/w11.md) |
 
 2026-11-10 核對：W2～W7 原已提交；缺漏的 W8、W9、W10 共三週於本日補做，日期保留實際時間。W1 依先前確認免做。W8 依期中週也需繳交的確認，以既有 W2～W7 教材做綜合複習。學期週次與 Lab 編號不同：11/2 的 Lab07 記於 W9，11/9 的 Lab08 記於 W10。
 

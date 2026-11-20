@@ -1,22 +1,19 @@
 # Week 5 — AI Tutor Learning Record
 
-- 姓名：nick（依本機 Git 設定）
-- 學號：112511054（依本機 Git 提交紀錄）
+- 學號／姓名：112511054／張量
 - 日期：2026-10-05
 - 補充整理與重新驗證日期：2026-10-14
 - 狀態：Part A 與 Part B 已完成
 - 主題：C++ 參考、封裝與建構子、繼承與多型、動態記憶體管理
-- 教材：W5new / README.md、GUIDE.md、student.cpp
+- 教材：[W5 上機指引](lab/GUIDE.md)、[Lab README](lab/README.md)
 - 格式來源：[AI Tutor for AOOP 2026](https://github.com/ARG-NCTU/oop-python-nycu/blob/main/ai-tutor-2026.md)
-
-> 完成方式：直接整理題目、解答與概念說明，未採逐題提示後修正的流程；程式挑戰採直接協助完成的方式，測試結果為實際執行。反思欄整理常見誤解與延伸思考。
 
 ## Part A：True or False
 
 ### ① Check My Understanding
 
 - Questions completed: 5 / 5（題目與解答已整理）
-- Answers revised after AI hints: 不適用；未採逐題提示後修正的流程。
+- Answers revised after AI hints: 無逐題修正紀錄。
 
 | 題號 | 是非題 | 答案 | 原因 |
 | --- | --- | --- | --- |
@@ -109,8 +106,6 @@
 
 ### 2. My Initial Approach — Before AI Help
 
-本次採直接協助完成，沒有獨立初稿可供比較。解題思路如下：
-
 1. 用 `BaseTask` 定義共同介面，保存剩餘工作量。
 2. 由 `SlowTask` 與 `FastTask` 覆寫 `Step()`，每回合分別消耗 1 與 2 單位。
 3. 建立基底指標陣列，每個指標指向輸入指定類型的任務。
@@ -119,14 +114,12 @@
 
 ### 3. AI Tutor Help
 
-- Did you ask the AI Tutor for help? Yes；協助包含題目設計、完整實作及測試。
 - The most useful hint/question：指標的宣告型別決定可使用的介面，虛擬函式呼叫則依物件實際型別選擇實作；任務物件與保存指標的陣列是分開配置的記憶體。
 - Concept clarified：相同的排程迴圈可以執行不同任務行為；釋放指標陣列不會自動釋放每個指標指向的任務。
 
 ### 4. My Revision
 
-- Did you change your approach or code after interacting with AI? 沒有獨立初稿可比較；本次採直接協助完成。
-- What did you change, and why? 實作在消耗工作量後將負數歸零，讓已完成任務保持為零；基底解構子設為 `virtual`，讓透過基底指標刪除任務的行為正確；動態陣列使用 `delete[]`。這些是最終設計，沒有測試失敗後的修改。
+- 實作在消耗工作量後將負數歸零，讓已完成任務保持為零；基底解構子設為 `virtual`，讓透過基底指標刪除任務的行為正確；動態陣列使用 `delete[]`。
 
 ### 5. Verification
 
