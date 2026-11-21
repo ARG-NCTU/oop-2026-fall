@@ -1,0 +1,11 @@
+Question1: False
+worst case time complexity仍然是指數
+Question2: True
+DP透過記憶來利用optimal substructure和overlapping subproblems的問題性質，降低time complexity
+Question3: False
+taken和current value需要被記憶，但不會影響當下需要做的選擇
+Question4: True
+memoization的主旨是trade time for space
+Question5: True
+透過使用記憶，可以用空間使用量換取快速完成計算
+
