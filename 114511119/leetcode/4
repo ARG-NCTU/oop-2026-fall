@@ -3,7 +3,7 @@ private:
     vector<int> arr;
 public:
     NumArray(vector<int>& nums) {
-        arr = num;
+        arr = nums;
     }
     
     int sumRange(int left, int right) {
