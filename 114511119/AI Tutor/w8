@@ -1,0 +1,38 @@
+**Topic:** Object-Oriented Programming (OOP)  
+**Date:** 2026-11-23
+
+### ① Check My Understanding
+
+Questions completed: **5 / 5**
+
+Answers revised after AI hints: **1 / 5**
+
+### ② My Misconception
+
+**Before: I thought…**
+
+I thought that when a child class defines a method with the same name as its parent class, the parent's method would still be executed.
+
+**Now: I understand…**
+
+I understand that a child class can override a method inherited from its parent class. When the method is called on a child object, Python normally executes the child's version instead.
+
+### ③ Challenge the AI
+
+**One AI-generated question I challenged:**
+
+Question 5 about method overriding in inheritance.
+
+**Why?**
+
+☑ Other: No obvious issues.
+
+**Brief explanation:**
+
+I think the question is clear and helps me understand how method overriding works. I did not find any obvious problems with it.
+
+### ④ One-Minute Reflection
+
+**One thing I am still unsure about:**
+
+I am still unsure how to use `self` and `__init__` correctly in Python classes. I need more practice understanding their roles and how they work together.
