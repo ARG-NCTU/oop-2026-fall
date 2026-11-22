@@ -1,0 +1,38 @@
+**Topic:** Understanding Program Efficiency, Part 1  
+**Date:** 2026-11-23
+
+### ① Check My Understanding
+
+**Questions completed:** 5 / 5
+
+**Answers revised after AI hints:** 1 / 5
+
+### ② My Misconception
+
+**Before: I thought…**
+
+I thought that an algorithm performing a fixed number of operations had linear time complexity because I did not fully understand the question.
+
+**Now: I understand…**
+
+I understand that constant time, O(1), means the number of operations does not increase with the input size, while linear time, O(n), means the number of operations grows proportionally with the input size.
+
+### ③ Challenge the AI
+
+**One AI-generated question I challenged:**
+
+Question 3: Constant Time vs. Linear Time.
+
+**Why?**
+
+☑ Other / No obvious issues
+
+**Brief explanation:**
+
+I did not fully understand the question at first, which led me to choose the wrong answer. After reviewing the explanation, I realized that the question was clear and there were no obvious problems with it.
+
+### ④ One-Minute Reflection
+
+**One thing I am still unsure about:**
+
+I am still unsure how to determine the Big-O time complexity of different programs, especially when they contain multiple loops or more complicated operations. I would like to practice analyzing code to improve my understanding.
