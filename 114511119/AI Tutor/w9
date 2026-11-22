@@ -1,0 +1,38 @@
+**Topic:** Python Classes and Inheritance  
+**Date:** 2026-11-23
+
+### ① Check My Understanding
+
+**Questions completed:** 5 / 5
+
+**Answers revised after AI hints:** 0 / 5
+
+### ② My Misconception
+
+**Before: I thought…**
+
+I was not completely sure how a child class could reuse methods from its parent class.
+
+**Now: I understand…**
+
+I understand that `super()` allows a child class to call methods from its parent class, including the `__init__` method. This helps reuse code without rewriting the same methods.
+
+### ③ Challenge the AI
+
+**One AI-generated question I challenged:**
+
+Question 4: Using `super()` to call methods from a parent class.
+
+**Why?**
+
+☑ Other / No obvious issues
+
+**Brief explanation:**
+
+I think the question is clear and technically correct. The example helps explain how `super()` works in inheritance, so I did not find any obvious problems.
+
+### ④ One-Minute Reflection
+
+**One thing I am still unsure about:**
+
+I am still unsure about some details of class attributes and instance attributes, especially how they behave when their values are changed. I would like to practice more examples to understand the differences better.
