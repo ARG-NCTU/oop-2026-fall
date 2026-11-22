@@ -1,0 +1,10 @@
+Question1: False
+無向圖為有向圖的特例，當所有邊都剛好有雙向指標的時候成立
+Question2: True
+一般圖形可能形成環，在進行BFS或DFS時需要特別排除
+Question3: True
+敘述正確，BFS在遍歷完所有<=n距離的點後，才會開始遍歷距離n+1的點，因此第一此抵達目標節點時就會是最短距離
+Question4: True
+BFS由於由內而外探索的特性會找到shortest weighted path，DFS因為深度優先則不會
+Question5: False
+adjacency matrix只有在表示無向圖時才會對於主對角線對稱，關於adjacency list的敘述正確
