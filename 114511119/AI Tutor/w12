@@ -1,0 +1,29 @@
+# MIT OCW Python Learning Worksheet
+
+**Topic:** Searching and Sorting  
+**Date:** November 23, 2026
+
+### ① Check My Understanding
+
+- **Questions completed:** 5/5
+- **Answers revised after AI hints:** 1/5
+
+### ② My Misconception
+
+**Before:** I thought binary search could work on an unsorted list because it could still divide the list into two halves.
+
+**Now:** I understand that binary search requires a sorted list. Without sorting, we cannot be sure which half contains the target, so we might accidentally eliminate the correct answer.
+
+### ③ Challenge the AI
+
+**Question selected:** Q2 — Binary Search
+
+**Type:** No obvious issues
+
+**Explanation:** I think the question was clear and there were no obvious problems with it. I initially misunderstood the concept, but the AI's hint helped me correct my answer.
+
+### ④ One-Minute Reflection
+
+I learned how Merge Sort uses the divide-and-conquer approach. It divides a list into smaller parts and then merges them back together in sorted order.
+
+However, I am still not very familiar with searching and sorting algorithms, especially how they work step by step. I need more practice to understand them better.
