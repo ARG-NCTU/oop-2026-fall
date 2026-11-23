@@ -4,12 +4,12 @@ public:
         int depth = 0;
         for(string log : logs){
             if(log == "../"){
-                depth--;
+                if(depth > 0) depth--;
             }
             else if(log == "./"){
                 continue;
             }
-            else if(log == "x/"){
+            else{
                 depth++;
             }
         }
