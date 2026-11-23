@@ -1,0 +1,29 @@
+# MIT OCW Python Learning Worksheet
+
+**Topic:** Understanding Program Efficiency, Part 2  
+**Date:** November 23, 2026
+
+### ① Check My Understanding
+
+- **Questions completed:** 5/5
+- **Answers revised after AI hints:** 1/5
+
+### ② My Misconception
+
+**Before:** I thought that any program with two nested loops would have a time complexity of O(n²).
+
+**Now:** I understand that nested loops do not always mean O(n²). The time complexity depends on how many times each loop runs. If the inner loop runs a constant number of times, the overall time complexity can be O(n).
+
+### ③ Challenge the AI
+
+**Question selected:** Q3 — Nested Loops
+
+**Type:** No obvious issues
+
+**Explanation:** There was nothing wrong with the question itself. I initially misunderstood it because I assumed that two nested loops always meant O(n²). After receiving a hint, I realized my mistake and corrected my answer.
+
+### ④ One-Minute Reflection
+
+I learned that nested loops do not always have quadratic time complexity. I need to consider the number of iterations in each loop instead of simply counting the loops.
+
+However, I am still not very confident about how to determine the Big-O complexity of different programs, especially when the code becomes more complicated.
