@@ -1,0 +1,18 @@
+class Solution {
+public:
+    int minOperations(vector<string>& logs) {
+        int depth = 0;
+        for(string log : logs){
+            if(log == "../"){
+                depth--;
+            }
+            else if(log == "./"){
+                continue;
+            }
+            else if(log == "x/"){
+                depth++;
+            }
+        }
+        return depth;
+    }
+};
