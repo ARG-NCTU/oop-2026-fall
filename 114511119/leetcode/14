@@ -8,7 +8,7 @@ public:
     }
     
     void checkIn(int id, string stationName, int t) {
-        checkIns[id] = (stationName, t);
+        checkIns[id] = {stationName, t};
     }
     
     void checkOut(int id, string stationName, int t) {
