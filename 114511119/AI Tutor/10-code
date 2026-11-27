@@ -1,0 +1,94 @@
+
+# -*- coding: utf-8 -*-
+
+########################################
+# EXAMPLE 1: Linear Search
+########################################
+
+def linear_search(L, e):
+    found = False
+    for i in range(len(L)):
+        if e == L[i]:
+            found = True
+    return found
+
+
+testList = [1, 3, 4, 5, 9, 18, 27]
+
+print("---- Linear Search ----")
+print(linear_search(testList, 5))
+print(linear_search(testList, 10))
+
+
+########################################
+# EXAMPLE 2: Search in Sorted List
+########################################
+
+def search(L, e):
+    for i in range(len(L)):
+        if L[i] == e:
+            return True
+        if L[i] > e:
+            return False
+    return False
+
+
+print("\n---- Search in Sorted List ----")
+print(search(testList, 9))
+print(search(testList, 10))
+print(search(testList, 27))
+
+
+########################################
+# EXAMPLE 3: Check Subset
+########################################
+
+def isSubset(L1, L2):
+    for e1 in L1:
+        matched = False
+
+        for e2 in L2:
+            if e1 == e2:
+                matched = True
+                break
+
+        if not matched:
+            return False
+
+    return True
+
+
+testSet = [1, 2, 3, 4, 5]
+testSet1 = [1, 5, 3]
+testSet2 = [1, 6]
+
+print("\n---- Subset Tests ----")
+print(isSubset(testSet1, testSet))
+print(isSubset(testSet2, testSet))
+
+
+########################################
+# EXAMPLE 4: Intersection
+########################################
+
+def intersect(L1, L2):
+    tmp = []
+
+    for e1 in L1:
+        for e2 in L2:
+            if e1 == e2:
+                tmp.append(e1)
+
+    res = []
+
+    for e in tmp:
+        if not (e in res):
+            res.append(e)
+
+    return res
+
+
+print("\n---- Intersection Tests ----")
+print(intersect(testSet, testSet1))
+print(intersect(testSet, testSet2))
+print(intersect([1, 2, 2, 3], [2, 2, 4]))
