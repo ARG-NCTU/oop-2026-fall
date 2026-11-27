@@ -4,15 +4,15 @@ This directory stores the AI Tutor learning records and reflections for the AOOP
 
 | Date | Topic / Lecture | Record Link |
 | :--- | :--- | :--- |
-| **2026-09-07** | MIT 6.0001 Lecture 5: Tuples, Lists, Aliasing, Mutability, Cloning | [W1/Tutoring_Reflection_L5.md](W1/Tutoring_Reflection_L5.md) |
-| **2026-09-14** | MIT 6.0001 Lecture 6: Recursion, Dictionaries, Memoization | [W2/Tutoring_Reflection_L6.md](W2/Tutoring_Reflection_L6.md) |
+| **2026-09-07** | MIT 6.0001 Lecture 5: Tuples, Lists, Aliasing, Mutability, Cloning | [Part A](W1/Tutoring_Reflection_L5.md) · [Part B](W1/Tutoring_Reflection_L5_PartB.md) |
+| **2026-09-14** | MIT 6.0001 Lecture 6: Recursion, Dictionaries, Memoization | [Part A](W2/Tutoring_Reflection_L6.md) · [Part B](W2/Tutoring_Reflection_L6_PartB.md) |
 | **2026-09-21** | MIT 6.0001 Lecture 7: Testing, Debugging, Exceptions, Assertions | [Part A](W3/Tutoring_Reflection_L7_PartA.md) · [Part B](W3/Tutoring_Reflection_L7_PartB.md) |
 | **2026-09-28** | MIT 6.0001 Lecture 8: Object Oriented Programming | [Part A](W4/Tutoring_Reflection_L8_PartA.md) · [Part B](W4/Tutoring_Reflection_L8_PartB.md) |
 | **2026-10-05** | MIT 6.0001 Lecture 9: Python Classes and Inheritance | [Part A](W5/Tutoring_Reflection_L9_PartA.md) · [Part B](W5/Tutoring_Reflection_L9_PartB.md) |
-| **2026-10-12** | MIT 6.0001 Lecture 10: Understanding Program Efficiency, Part 1 | [Part A](W6/Tutoring_Reflection_L10_PartA.md) |
-| **2026-10-19** | MIT 6.0001 Lecture 11: Understanding Program Efficiency, Part 2 | [Part A](W7/Tutoring_Reflection_L11_PartA.md) |
-| **2026-10-26** | MIT 6.0001 Lecture 12: Searching and Sorting | [Part A](W8/Tutoring_Reflection_L12_PartA.md) |
-| **2026-11-02** | MIT 6.0002 Lecture 1: Optimization Problems, 0/1 Knapsack, Greedy Algorithms | [Part A](W9/Tutoring_Reflection_L1_PartA.md) |
-| **2026-11-09** | MIT 6.0002 Lecture 2: Decision Trees, Dynamic Programming, Memoization | [Part A](W10/Tutoring_Reflection_L2_PartA.md) |
-| **2026-11-16** | MIT 6.0002 Lecture 3: Graph-theoretic Models, DFS, BFS | [Part A](W11/Tutoring_Reflection_L3_PartA.md) |
+| **2026-10-12** | MIT 6.0001 Lecture 10: Understanding Program Efficiency, Part 1 | [Part A](W6/Tutoring_Reflection_L10_PartA.md) · [Part B](W6/Tutoring_Reflection_L10_PartB.md) |
+| **2026-10-19** | MIT 6.0001 Lecture 11: Understanding Program Efficiency, Part 2 | [Part A](W7/Tutoring_Reflection_L11_PartA.md) · [Part B](W7/Tutoring_Reflection_L11_PartB.md) |
+| **2026-10-26** | MIT 6.0001 Lecture 12: Searching and Sorting | [Part A](W8/Tutoring_Reflection_L12_PartA.md) · [Part B](W8/Tutoring_Reflection_L12_PartB.md) |
+| **2026-11-02** | MIT 6.0002 Lecture 1: Optimization Problems, 0/1 Knapsack, Greedy Algorithms | [Part A](W9/Tutoring_Reflection_L1_PartA.md) · [Part B](W9/Tutoring_Reflection_L1_PartB.md) |
+| **2026-11-09** | MIT 6.0002 Lecture 2: Decision Trees, Dynamic Programming, Memoization | [Part A](W10/Tutoring_Reflection_L2_PartA.md) · [Part B](W10/Tutoring_Reflection_L2_PartB.md) |
+| **2026-11-16** | MIT 6.0002 Lecture 3: Graph-theoretic Models, DFS, BFS | [Part A](W11/Tutoring_Reflection_L3_PartA.md) · [Part B](W11/Tutoring_Reflection_L3_PartB.md) |
 
