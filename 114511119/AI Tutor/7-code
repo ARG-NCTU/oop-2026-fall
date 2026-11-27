@@ -1,0 +1,161 @@
+
+########################################
+# EXAMPLE 1: Debug Reverse List
+########################################
+
+def rev_list(L):
+    """
+    Input: L, a list
+    Modifies L into reverse order
+    Returns: nothing
+    """
+    for i in range(len(L) // 2):
+        j = len(L) - i - 1
+        temp = L[i]
+        L[i] = L[j]
+        L[j] = temp
+
+L = [1, 2, 3, 4]
+rev_list(L)
+print(L)
+
+
+########################################
+# EXAMPLE 2: Debug Prime Numbers
+########################################
+
+def primes_list(n):
+    """
+    Input: n, an integer > 1
+    Returns all prime numbers up to n
+    """
+    primes = [2]
+
+    for j in range(3, n + 1):
+        is_div = False
+
+        for p in primes:
+            if j % p == 0:
+                is_div = True
+                break
+
+        if not is_div:
+            primes.append(j)
+
+    return primes
+
+
+print(primes_list(2))
+print(primes_list(15))
+
+
+########################################
+# EXAMPLE 3: Exceptions and Input
+########################################
+
+try:
+    a = int(input("Tell me one number: "))
+    b = int(input("Tell me another number: "))
+    print("a/b =", a / b)
+
+except:
+    print("Bug in user input.")
+
+
+try:
+    a = int(input("Tell me one number: "))
+    b = int(input("Tell me another number: "))
+
+    print("a/b =", a / b)
+    print("a+b =", a + b)
+
+except ValueError:
+    print("Could not convert to a number.")
+
+except ZeroDivisionError:
+    print("Can't divide by zero")
+
+except:
+    print("Something went very wrong.")
+
+
+########################################
+# EXAMPLE 4: Raising Exceptions
+########################################
+
+def get_ratios(L1, L2):
+    """
+    Returns a list containing L1[i]/L2[i]
+    """
+    ratios = []
+
+    for index in range(len(L1)):
+        try:
+            ratios.append(L1[index] / L2[index])
+
+        except ZeroDivisionError:
+            ratios.append(float('nan'))
+
+        except:
+            raise ValueError(
+                'get_ratios called with bad arg'
+            )
+
+        else:
+            print("success")
+
+        finally:
+            print("executed no matter what!")
+
+    return ratios
+
+
+print(get_ratios([1, 4], [2, 4]))
+
+
+########################################
+# EXAMPLE 5: Exceptions and Lists
+########################################
+
+def get_stats(class_list):
+    new_stats = []
+
+    for person in class_list:
+        new_stats.append([
+            person[0],
+            person[1],
+            avg(person[1])
+        ])
+
+    return new_stats
+
+
+# Version 1: Without exception
+def avg_without_exception(grades):
+    return sum(grades) / len(grades)
+
+
+# Version 2: With exception
+def avg(grades):
+    try:
+        return sum(grades) / len(grades)
+
+    except ZeroDivisionError:
+        print('warning: no grades data')
+        return 0.0
+
+
+# Version 3: With assert
+def avg_with_assert(grades):
+    assert len(grades) != 0, 'warning: no grades data'
+    return sum(grades) / len(grades)
+
+
+test_grades = [
+    [['peter', 'parker'], [80.0, 70.0, 85.0]],
+    [['bruce', 'wayne'], [100.0, 80.0, 74.0]],
+    [['captain', 'america'], [80.0, 70.0, 96.0]],
+    [['deadpool'], []]
+]
+
+print(get_stats(test_grades))
