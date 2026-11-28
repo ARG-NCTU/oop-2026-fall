@@ -1,2 +1,23 @@
+# Python & pybind11
 __pycache__/
 .pytest_cache/
+*.so
+.venv/
+
+# C++ build artifacts
+lab04-cpp_oop/lab
+*.dSYM/
+*.o
+*.out
+
+# MOOS-IvP logs & generated files
+MOOSLog_*/
+LOG_*/
+XLOG_*/
+.LastOpenedMOOSLogDirectory
+targ_*
+*.moos++
+*~
+
+# macOS
+.DS_Store
