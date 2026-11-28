@@ -1,0 +1,345 @@
+1. What is the result of s[-2]?
+
+
+s = "abcdef"
+
+
+A. "a"
+
+
+B. "b"
+
+
+C. "e"
+
+
+D. "f"
+
+
+正確答案：C
+
+-1 是最後一個 f，-2 是倒數第二個 e。
+
+
+2. What is the output?
+
+
+s = "abcdefgh"
+
+print(s[2:7:2])
+
+
+A. cde
+
+
+B. ceg
+
+
+C. ce
+
+
+D. bdf
+
+
+正確答案：B
+
+取索引2、4、6，得到 c、e、g，不包含stop=7。
+
+
+3. What is the output?
+
+
+s = "abcdef"
+
+print(s[5:1:-2])
+
+
+A. fd
+
+
+B. fdb
+
+
+C. ec
+
+
+D. dcba
+
+
+正確答案：A
+
+從索引5開始往左每次移動2格，取5、3，索引1不包含。
+
+
+4. What is the result of the following code?
+
+
+s = "Python"
+
+print(s[::-1])
+
+
+A. Python
+
+
+B. nohtyP
+
+
+C. nohtyp
+
+
+D. Error
+
+
+正確答案：B
+
+[::-1] 反轉字串，保留原本大小寫。
+
+
+5. Which expression raises IndexError?
+
+
+s = "abc"
+
+
+A. s[0:10]
+
+
+B. s[-1]
+
+
+C. s[3]
+
+
+D. s[10:20]
+
+
+正確答案：C
+
+單一索引3超出範圍；切片會自動處理超出範圍的界線。
+
+
+6. Which statement is TRUE about Python strings?
+
+
+
+A. A string can be modified using s[0] = 'a'.
+
+
+B. A variable bound to a string cannot be rebound.
+
+
+C. Strings are immutable objects.
+
+
+D. Strings cannot be sliced.
+
+
+正確答案：C
+
+字串物件不可直接修改，但變數可以重新綁定到新字串。
+
+
+7. What is the output?
+
+
+s = "hello"
+
+t = s
+
+s = "y" + s[1:]
+
+print(t)
+
+
+A. yello
+
+
+B. hello
+
+
+C. ello
+
+
+D. TypeError
+
+
+正確答案：B
+
+s重新綁定到新字串，t仍然指向原本的hello。
+
+
+8. What is the result of 'ac' in 'abc'?
+
+
+
+A. True
+
+
+B. False
+
+
+C. None
+
+
+D. TypeError
+
+
+正確答案：B
+
+in 檢查連續子字串，ac並未連續出現在abc中。
+
+
+9. What is the final value of count?
+
+
+count = 0
+
+for c in "aabca":
+
+    if c in "ab":
+
+        count += 1
+
+
+A. 2
+
+
+B. 3
+
+
+C. 4
+
+
+D. 5
+
+
+正確答案：C
+
+a出現3次，b出現1次，共4次。
+
+
+10. Guess-and-check is also known as:
+
+
+
+A. Bisection
+
+
+B. Exhaustive enumeration
+
+
+C. Recursion
+
+
+D. Abstraction
+
+
+正確答案：B
+
+Guess-and-Check 又稱 Exhaustive Enumeration，也就是窮舉法。
+
+
+11. What happens when the increment size is decreased in the approximation algorithm?
+
+
+
+A. The program generally becomes slower.
+
+
+B. The program always becomes faster.
+
+
+C. The error tolerance increases.
+
+
+D. The search interval is halved.
+
+
+正確答案：A
+
+步長越小，通常需要更多次猜測。
+
+
+12. What happens if epsilon is increased?
+
+
+
+A. The accuracy requirement becomes stricter.
+
+
+B. The accuracy requirement becomes less strict.
+
+
+C. The increment automatically increases.
+
+
+D. The program always returns an exact answer.
+
+
+正確答案：B
+
+epsilon越大代表容許的誤差越大，因此精度要求降低。
+
+
+13. In bisection search for a cube root, if guess**3 < cube, which update should be made?
+
+
+
+A. high = guess
+
+
+B. low = guess
+
+
+C. guess = 0
+
+
+D. epsilon = guess
+
+
+正確答案：B
+
+猜測值太小，真正答案在右邊，所以提高下限low。
+
+
+14. After k iterations of bisection, what is the remaining interval size if its original size is N?
+
+
+
+A. N-k
+
+
+B. N/k
+
+
+C. N/2^k
+
+
+D. N^k
+
+
+正確答案：C
+
+每次剩下一半，所以k次後剩下N/2的k次方。
+
+
+15. Why can the original cube-root bisection code fail for cube = 0.125?
+
+
+
+A. A fractional number cannot have a cube root.
+
+
+B. The actual root is outside the initial search interval.
+
+
+C. Python cannot divide floats by 2.
+
+
+D. Bisection requires integer guesses.
+
+
+正確答案：B
+
+真正立方根為0.5，不在原本的[0,0.125]搜尋區間內。
