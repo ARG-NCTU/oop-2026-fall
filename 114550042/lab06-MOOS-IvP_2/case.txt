@@ -1,0 +1,27 @@
+1. 幾乎正東北
+2. 東北偏東
+3. 不動
+4. 正右微上
+
+---
+
+PWT 縮放不影響，因為兩邊分數等比縮放
+
+---
+
+PWT_NORTH 佔高權重，導致最佳航向在正北
+又因為只有 go_east 決定航速(同時決定方向)，go_north 完全不提供速度
+導致 go_east 決定不給速度，以拿到最高分
+於是船就不動了
+
+---
+
+加一個常數速度
+Behavior = BHV_ConstantSpeed
+{
+  name      = const_spd
+  pwt       = 100
+  condition = DEPLOY = true
+  speed     = 2.0
+  duration  = no-time-limit
+}
